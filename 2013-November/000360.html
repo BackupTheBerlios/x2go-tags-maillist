@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goserver.git - 4.0.0.6 (annotated tag) created:	4.0.0.6
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-November/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.0.6%20%28annotated%20tag%29%20created%3A%0A%094.0.0.6&In-Reply-To=%3C20131122205927.AD1DE5DB24%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000361.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goserver.git - 4.0.0.6 (annotated tag) created:	4.0.0.6</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.0.6%20%28annotated%20tag%29%20created%3A%0A%094.0.0.6&In-Reply-To=%3C20131122205927.AD1DE5DB24%40ymir%3E"
+       TITLE="[X2go-Tags] x2goserver.git - 4.0.0.6 (annotated tag) created:	4.0.0.6">git-admin at x2go.org
+       </A><BR>
+    <I>Fri Nov 22 21:59:27 CET 2013</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000361.html">[X2go-Tags] x2goserver.git - 4.0.1.7 (annotated tag) created:	4.0.1.7
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#360">[ date ]</a>
+              <a href="thread.html#360">[ thread ]</a>
+              <a href="subject.html#360">[ subject ]</a>
+              <a href="author.html#360">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 4.0.0.6 has been created
+        at  3b73832a59f6e4636750f849d690fea0731cf8bf (tag)
+   tagging  638a08b7944463d19654d91b52e360e12bc77d4f (commit)
+  replaces  4.0.0.5
+ tagged by  Mike Gabriel
+        on  Fri Nov 22 21:57:15 2013 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 4.0.0.6
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABCAAGBQJSj8UsAAoJEJr0azAldxsxPIcP/jAyBXOZJTjqcFLud/pD3Q6C
+ZehKU6VnKgGo93bhTpy38rGjzsblo77v9ilO0EDoITrQD9YkdYJ8W68EYT0q3hQV
+F5rfqNM01mlXwe+cG90H5nyDwR8fytf7F3UvQ1XwUoREkxL1v81qZplg5BtjUcXx
+bwDXryIv+HZB8TryMcT9zbCeCC2IcdKI7p2WkvOvfcnKV8Br+uVYZITjKo1PGeSj
+d/bbNGy+JvuBqXt5/Oms8DrI+43T7QbTfsUAd/t5UcprgJG72foT6thxuAOYrcbW
+gST2zLUbGYkXLckDWz/kqY/X0j1iMpYJDHHzm73eyikIut+KlVVFmuDbmFNRJgTu
+vOQI7pAbY0qk6UKALmsv2ycNDo52nZEdiMkmo0hgkiuQN5h6GpKUV1/j3WGjABZ9
+zqAciluL/BK+jQZv4w3n2h3RbCuNx78vmj7QjgwlwP0RVIyFFSUKXRyKMfDOtL69
+jTgtsNHIULHvvR30QVW5My+7p3+agriJCZET94VV/OYaRcZAkITglSq6m1RAJwNq
+K7jukI6dbmHRgKakmN/TZPUhoXsgSzrgKtZ8yb3Rzg98TWNVcIyvtUVUR7Ka8zCg
+ZJIbY0arn2hfPCDU5Y1PWfegzviluzVx3+kyhwTiJbpto4CjPmlsGzBQ6AKFLAyw
+i212iRainGRV6cWTKq5B
+=vRTm
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (4):
+      Work around buggy X2Go Client on Mac OS. If the keyboard type is set to &quot;query&quot;, we force X2GO_SET_KBD to 1. (Partly resolves: #112).
+      indentation fix
+      Revert &quot;Fix x2goruncommand: &quot;type -P $cmd&quot; can create new lines in EXEC variable if command have the arguments wich have same names as existing commands, for example &quot;rdesktop -k nl&quot; -&gt; &quot;/usr/bin/rdesktop\n/usr/bin/nl&quot;. Now we splitting $cmd and taking only first part.&quot;
+      release 4.0.0.6
+
+Oleksandr Shneyder (1):
+      Fix x2goruncommand: &quot;type -P $cmd&quot; can create new lines in EXEC variable if command have the arguments wich have same names as existing commands, for example &quot;rdesktop -k nl&quot; -&gt; &quot;/usr/bin/rdesktop\n/usr/bin/nl&quot;. Now we splitting $cmd and taking only first part.
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goserver.git (X2Go Server)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goserver.git&quot; (X2Go Server).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000361.html">[X2go-Tags] x2goserver.git - 4.0.1.7 (annotated tag) created:	4.0.1.7
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#360">[ date ]</a>
+              <a href="thread.html#360">[ thread ]</a>
+              <a href="subject.html#360">[ subject ]</a>
+              <a href="author.html#360">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goclient.git - 4.0.1.2 (annotated tag) created:	4.0.1.2
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-December/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goclient.git%20-%204.0.1.2%20%28annotated%20tag%29%20created%3A%0A%094.0.1.2&In-Reply-To=%3C20131217145522.075485DB16%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000367.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goclient.git - 4.0.1.2 (annotated tag) created:	4.0.1.2</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goclient.git%20-%204.0.1.2%20%28annotated%20tag%29%20created%3A%0A%094.0.1.2&In-Reply-To=%3C20131217145522.075485DB16%40ymir%3E"
+       TITLE="[X2go-Tags] x2goclient.git - 4.0.1.2 (annotated tag) created:	4.0.1.2">git-admin at x2go.org
+       </A><BR>
+    <I>Tue Dec 17 15:55:21 CET 2013</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000367.html">[X2go-Tags] python-daemonize.git - debian/2.2.1-1 (annotated tag)	created: debian/2.2.1-1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#366">[ date ]</a>
+              <a href="thread.html#366">[ thread ]</a>
+              <a href="subject.html#366">[ subject ]</a>
+              <a href="author.html#366">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 4.0.1.2 has been created
+        at  34591fd62844b2b955e6a4bf3cf44d4759c5e44c (tag)
+   tagging  f7cdada8c57c45ee9ea3b6c42bd680fae26d728c (commit)
+  replaces  4.0.1.1
+ tagged by  Mike Gabriel
+        on  Tue Dec 17 15:33:56 2013 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 4.0.1.2
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABCAAGBQJSsGDUAAoJEJr0azAldxsxaZcP/ikAt0eBMDySp6YHP0tlZavW
+oB0HyI4C8sbfmOHdZt7IGiITA+h+50tKxBa4PXTePeKHMAoCO/WPYzfZUnW/bdtm
+AuQ/AGaGRUjNsBVpNW7N96YzalGU608V3zZduKV37qEOM7IZx/TwnMPLgSd8zkQz
+RsrhViJOKss6pCEJZIUFTSnvef5LsIvpLExHGtRt7fOC3dpqk/1DBFVn8yKJFtAc
+WUZrT7C/Uv7MdF51pl45TjqSwV1YE1p3SRnw2DfgzwCLWCEnRaO+5q7gG+IWceY0
+G6l/VGA+d/9dQ0Thq+H79xh1k4rCHdFmNJADa1CN/oW/umQ/cXyYfzy9nftNawc+
+tLsljuJ3/lXtQZGQcsIrKWMxNIDcyCCUJ0dD/IR8yoCW4KIK4Ipj4CqkjW7RfKjL
+coa9xJY2fCPZvvaVwzm0mLJSh43kuCm112XqMw69Idk1cWo/QP2RKL2bqZVXas7Y
+EDh7vgJwtjg6PGTx4I99YAdOqZUJeKuYr7yYMlsT8NV5qi2NyKy+2Yi4tnjo2KD3
+MOZDg9yHBGWB8rf2CS5IDVl2KhENjMSLK8nRmOKe/67JQkJ8xaHk14UZNpZlHAyx
+oUB8WRD0k1yVHo4C/iaOF3iR9J/iQ+lWDaYhlBd/Bpk2AD4rMFJgwvFIzP2I7KTV
+GjUSDd4bgU8TAGFUvoAR
+=3YQG
+-----END PGP SIGNATURE-----
+
+Heinrich Schuchardt (1):
+      Handle SSH host key changes more elegantly and allow user interaction if such a host key change occurs. (Fixes: #241).
+
+Mike DePaulo (2):
+      win32: Add uninstall information to Add/Remove Programs. (Fixes: #230).
+      Change NSIS version string from 4.0.1.2-pre02 to 4.0.1.2
+
+Mike Gabriel (57):
+      Continue development...
+      fix spelling error
+      Provide Keywords: key in .desktop file.
+      Pull-in packaging changes from Debian.
+      try to build without apache2
+      reformat log entry
+      Add NSIS packaging files for win32 builds to source tree. (Files provided by Oleksandr Shneyder, thanks!!!).
+      Store broker HTTPS certificate exceptions in $HOME/.x2go/ssl/exceptions (before: $HOME/ssl/exceptions). (Fixes: #328).
+      Perform sanity checks on data that comes in from X2Go Servers. Prohibit the execution of arbitrary code via the ~/.bashrc file. (Fixes: #333).
+      always have X2GODATAEND in commands' stdout, even if the executed X2Go command fails
+      Add option --broker-cacertfile. Allow usage of non-system-wide installed (self-signed) SSL certificate chains for https (SSL) session broker connections. (Fixes: #311).
+      fix changelog syntax
+      New option --tray-icon. Force showing the tray icon, even for hidden sessions. Also allow creation of .desktop files with --tray-icon optionally being enabled. (Fixes: #316).
+      Update man page for new --tray-icon cmdline option.
+      Properly handle (=expand) the &quot;~&quot; character in key filenames. (Brought to attention by Eldamir on IRC. Thanks!).
+      Expand tilde operator for all other file paths handed over to X2Go Client via sessions file or cmdline parameter.
+      improve/fix last commit
+      remove unwanted patch file
+      move expandHome into separate file: x2goutils.cpp
+      forgot new files...
+      Update man page for --broker-url. Explain the syntax of &lt;URL&gt;.
+      update language files
+      Syntax fix of x2goclient.desktop file.
+      use expandHome(...) for more cmd line options
+      debian/source/format: Switch to format 1.0.
+      change versioning scheme
+      Ship x2goclient.spec (RPM package definitions) in upstream project.
+      fix for commit 2cbf163
+      adapt version scheme in .spec file
+      add some credits for the Fedora maintainers for their x2goclient.spec file
+      Test for various file locations of the pulseaudio cookie file.
+      Make package build on Fedora/EPEL versions that do not have the qtbrowserplugin package.
+      Allow patching of qmake-qt4 executable path in Makefile. x2goclient.spec: Replace qmake-qt4 path in Makefile.
+      fix sed expr in x2goclient.spec
+      x2goclient.spec: try to fix faulty path to qmake-qt4
+      typo fix
+      simplify conditional qtbrowserplugin build dependency
+      make sure our RPM package version is lower than a package version from EPEL
+      x2goclient.spec: (hopefully) fix distro version checks
+      Clear (Fedora package) changelog.
+      package for Fedora 18 has to be built against shipped qtbrowserplugin, epel6 has /usr/bin/qmake-qt4
+      x2goclient.spec: more fixes for EPEL-5
+      Make qmake-qt4 and lrelease path in Makefile easily replacable (as RHEL-5 does not have those tools in $PATH). + For EPEL-5 builds: replace full path to qmake-qt4 and lrelease. For EPEL-5 builds: replace full path to qmake-qt4 and lrelease.
+      Make sure that build_client and build_plugin are not build with parallel make.
+      fix lrelease/qmake binary replacement with EPEL-5 builds
+      x2goclient.spec: rather build EPEL-6 package against qt4-devel
+      Make x2goplugin-provider installable via Makefile.
+      Split up package into bin:packages: x2goclient, x2goplugin, x2goplugin-provider.
+      x2goclient.spec: fix dependency token
+      x2goclient.spec: add forgotten %description tags
+      x2goclient.spec: fix creation of /etc/httpd/conf.d
+      fix x2goplugin-provider installation
+      Rename win32 desktop and startmenu icon from &quot;X2goClient&quot; to &quot;X2Go Client&quot;.
+      Make sure lrelease-qt4 is executed (not just lrelease).
+      x2goclient.spec: add missing Group: fields to subpackages
+      Revert &quot;changed keyboard settings. Supported modes: auto, none and config with model/layout(variant)&quot;
+      release 4.0.1.2
+
+Oleksandr Shneyder (11):
+      - support for keys &quot;shadowuser&quot; &quot;shadowdisplay&quot; and &quot;shadowmode&quot; in
+      Support for GSSApi(Kerberos 5) authentication. Using ssh/scp commands on Linux and Mac and plink/pscp on Windows.
+      Support for ChallengeResponseAuthentication (Google Authenticator)
+      Setting main window focus on mac (Fixes: #139).
+      - Setting main window focus on mac (Fixes: #139).
+      Additional check if authentication with GSSApi successfull
+      c121b7e2d3d83abdc2d7a29637bc3294e38b2ec3 broke checking if remote command produce only stderr and not stdout. It made x2goclient crash if x2gostartagent send LIMIT error. Current commit fixes this issue.
+      SshMasterConnection should use current user name if no user name is specified in session settings
+      GSSApi(Kerberos 5) authentication for sshproxy and sshbroker
+      fixed GSSApi(Kerberos 5) authentication for sshproxy and sshbroker on windows
+      changed keyboard settings. Supported modes: auto, none and config with model/layout(variant)
+
+Ricardo Diaz (1):
+      Update Spanish translation.
+
+Ricardo D&#237;az Mart&#237;n (1):
+      Strip whitespaces off of user name, host name and other strings when loading / saving session profiles.(Fixes: #315).
+
+U-DEPAULO\mike (1):
+      Update NSIS VERSION to 4.0.1.2-pre01
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goclient.git (X2Go Client)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goclient.git&quot; (X2Go Client).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000367.html">[X2go-Tags] python-daemonize.git - debian/2.2.1-1 (annotated tag)	created: debian/2.2.1-1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#366">[ date ]</a>
+              <a href="thread.html#366">[ thread ]</a>
+              <a href="subject.html#366">[ subject ]</a>
+              <a href="author.html#366">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

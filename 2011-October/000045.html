@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goserver.git - 3.0.99.6 (annotated tag) created:	3.0.99.6
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2011-October/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%203.0.99.6%20%28annotated%20tag%29%20created%3A%0A%093.0.99.6&In-Reply-To=%3C20111012100743.709F65DD11%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000044.html">
+   <LINK REL="Next"  HREF="000046.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goserver.git - 3.0.99.6 (annotated tag) created:	3.0.99.6</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%203.0.99.6%20%28annotated%20tag%29%20created%3A%0A%093.0.99.6&In-Reply-To=%3C20111012100743.709F65DD11%40ymir%3E"
+       TITLE="[X2go-Tags] x2goserver.git - 3.0.99.6 (annotated tag) created:	3.0.99.6">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Oct 12 12:07:43 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000044.html">[X2go-Tags] x2golxdebindings.git - 1.0.1.1 (annotated tag) created:	1.0.1.1
+</A></li>
+        <LI>Next message: <A HREF="000046.html">[X2go-Tags] x2gothinclient.git - 1.0.1.3 (annotated tag) created:	1.0.1.3
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#45">[ date ]</a>
+              <a href="thread.html#45">[ thread ]</a>
+              <a href="subject.html#45">[ subject ]</a>
+              <a href="author.html#45">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 3.0.99.6 has been created
+        at  f38a3c286b1ef8c2866bec9beb89841155af3f1a (tag)
+   tagging  322d387aa0bc77f31f1f0a255551ec756a4ff58f (commit)
+  replaces  3.0.99-2
+ tagged by  Mike Gabriel
+        on  Wed Oct 12 12:07:35 2011 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 3.0.99.6
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJOlWbnAAoJEIlP3EWN3QKAgYIH/1oe1sMrel6laA39bosH6Vrc
+BcxAefBXwpdDJsBAT9cc131G2xGgpEds9naUPAae6TuWsyq2+LM1QJkd/QH3ubwc
++g2mhcL+xOU7Ykm5WoXIomZnHgRphXNIwPZ3th99PWLB8BECtN/m4PJ4+NLPyeeT
+b0npofS1sZVU/V8b9f/KP4X1GfPwDc5T2JS6CIQXVR0IkErwNI68nDHloyUNNnXc
+3uFP1aXbtdvZ/EyMaSeCvL09gCtb4S3ZM7Kg6FeZbnJ1guJZ/ykYtrwf9G/25ZUE
+icRWugi4kiXVPlSqXuokAu3ec2IgDgWFkrNk6olSaXENVaCodmInauAGsAeWWd8=
+=BUzL
+-----END PGP SIGNATURE-----
+
+Alexander Wuerstlein (4):
+      whitespace fixes
+      cleanup c&amp;p-code
+      Use prepared statements, fix sql injections
+      Set sqlite db location from x2gouser home dir
+
+Git Administrator (1):
+      Add setgid for x2gosqlitewrapper to Makefile.
+
+Ivan Kabaivanov (4):
+      Makefile fix around man page installation in x2goserver-compat package.
+      minor Makefile fix
+      Makefile fix around man page installation in x2goserver-extensions package.
+      Proof-reading code, fixing typos
+
+Martin Oehler (1):
+      Removes old debug code fragment, fixes x2golistsessions parsing.
+
+Mike Gabriel (306):
+      replaced tabs with spaces
+      applies dropbox patch, used in PyHoca-GUI / Python X2go
+      added x2goprint as in x2goprint_3.0.0-1
+      apply patch that allows x2goprint with homes on NFSv3+4/Kerberos
+      adds x2goprint to debian/x2goserver.install
+      renamed x2godropbox to x2gomimebox
+      updates control file
+      adds xbase-clients as dependency
+      adds Mike Gabriel as Uploader
+      adds some Replaces: to control file
+      updates debian changelog
+      typo fix
+      adds a simple kill method for x2gocleansessions on init script stop
+      being a bit more precise (stop vs reload et al)
+      completely restructures x2goserver code, adds Makefile
+      adds copyright header to each individual file
+      remove SQL passwords directory
+      adds init script section to INSTALL
+      sending x2gocleansessions to background (INSTALL file)
+      fixes path to x2godbadmin script
+      remove deprecated dir /usr/lib/x2go/scripts
+      Debian changelog update
+      adds VCS information to control file
+      failing killall for x2gocleansessions should be ignored
+      adds new line at end of file
+      renamed x2goumount_session to x2goumount-session (with symlink for compat)
+      fixes lintian issue (full path in postinst)
+      simplifies dh_install
+      adds x2goversion support
+      adds man file installation to Makefile
+      changelog update
+      fixes x2goversion script, adds license header
+      symlink fix
+      adds html versions of man pages
+      replaces blanks by tabs
+      adds x2gosetkeyboard script (allows client-side settings of server-side xkbmap)
+      adds man page for x2gosetkeyboard
+      adds html version of x2gosetkeyboard man page, update man2html files
+      splits up x2goserver package into x2goserver + x2goserver-extras
+      Makefile fixes
+      fixes lintian issue clean: debian-changelog-line-too-long
+      manual man2html update
+      renamed x2goserver-extras to x2goserver-extensions
+      fixes lintian: debian-changelog-line-too-long
+      forgot to re-add files after renaming x2goserver-extras-&gt;x2goserver-extensions
+      adds man2html as build-dep
+      Rename x2goumount_session calls to x2goumount-session calls in x2goserver internal scripts.
+      add options and return values to x2gostartagent man page
+      layout fix for man pages (x2goserver package)
+      layout fix for man pages (x2goserver-extension package)
+      React to bug #627990, prefer man2html-base over man2html.
+      Fix wrong version file name.
+      really conflict with x2goserver-* and x2goprint packages
+      removed tab
+      removed setuidwrapper test code
+      added man pages
+      rebuilt html man pages
+      Re-arranged script files in /bin and /lib directories, this is still compensated by dh_install and dh_link and needs more work.
+      Tab'ified all script files, proper indentation, coding style.
+      Fix for x2gomountdirs, now also usernames containing blanks can use local folder sharing.
+      re-arranged compat scripts
+      x2goresume is no compat script, moving it to /lib dir
+      Add setuidwrapper to x2goserver package to replace usage of perlsuid.
+      Fixup for Conflicts stanza, make x2goserver-extensions binNMUable again.
+      rebuilt html man pages
+      fix setuidwrapper script (accept options as x2gosqlitewrapper.pl does)
+      disabled perlsuid check...
+      fix for typo that stem from indentation cleanup
+      let package build with setuidwrapper
+      Provide C wrapper for setuid call of x2gosqlitewrapper.pl. Remove dependency from perlsuid.
+      Use source format 3.0 (native).
+      rebuilt html man pages
+      make man2html build easily available in base folder's Makefile
+      * Fix of Debian clean rules, fix of Makefile's clean rules.
+      Breaks/replaces packages: x2goserver-one, x2goserver-home, x2goprint (instead of Conflicts).
+      Revert &quot;disabled perlsuid check...&quot;
+      Switch to setgid instead of setuid for SQLite wrapper.
+      Tab'ified postinst/postrm scripts.
+      indentation fix
+      Make sure upgrades from old x2goserver versions work more cleanly.
+      Update of INSTALL, UNINSTALL file.
+      x2goserver.postrm fix
+      run x2goserver.postinst configure also on upgrades
+      fixed x2goserver.preinst script...
+      fix for dpkg-statoverride in x2goserver.postinst script
+      path fix
+      make old x2gousers group warning louder
+      permissions fix
+      add some more cleanup for x2goserver versions that installed to /var/lib/x2go
+      make sure the x2gouser has correct home dir and shell
+      debian-changelog-line-too-long line 14
+      line lenght fix for changelog
+      syntax fix for usermod used in x2goserver.postinst
+      dh_dirs fix, create /var/db/x2go instead of /var/lib/x2go
+      write access to /var/db/x2go for egid x2gouser.
+      x2godbadmin: write access to /var/db/x2go for egid x2gouser
+      Store SQLite db in /var/lib/x2go to comply to latest FHS.
+      Tab'ified (forgotten) scripts in /usr/sbin.
+      Tab'ified (forgotten) init script.
+      Tab'ified (forgotten) scripts in x2goserver-extensions package.
+      /var/lib/x2go FHS path fixup in x2goserver.dirs
+      add Makefile.docupload to provide html man pages ttw.
+      re-arranged server-side paths for man pages
+      Install internal x2goserver scripts to /usr/lib/x2go, make sure scripts in /usr/bin find these scripts.
+      re-added lost/moved script x2gosuspend-agent
+      line-too-long fix for Debian changelog
+      tab fix
+      moved x2gosessionlimit to $PREFIX/bin
+      relying on $PATH, not using full paths at all
+      adapting x2golistsessions_root to new $PREFIX/lib/x2go path
+      moved x2golistsessions_root to $PREFIX/sbin
+      syntax fix
+      X2GO_LIB_PATH fix for x2golistsessions_root
+      ooopps... lost the first line...
+      man page separation (section 1 + 8)
+      moved compat scripts into separate package x2goserver-compat
+      moved man pages of x2goserver-extensions from section 8 -&gt; 1
+      Makefiles, control file update (for package x2goserver-compat)
+      x2gosqlitewrapper -&gt; $PREFIX/lib/x2go, removal of compat scripts from x2goserver package
+      moved x2gosqlitewrapper into $PREFIX/lib/x2go
+      updated man page section (8 -&gt; 1)
+      updated man page section (8 -&gt; 1)
+      man pages for x2goserver-compat complete (for now)
+      add version file for x2goserver-compat package
+      provide man pages for all script in $PREFIX/sbin
+      add man page for x2gosessionlimit
+      add dh doc install script
+      enable x2gosqlitewrapper to find x2gosqlitewrapper.pl again (same folder now)
+      path fix for $x2go_lib_path in x2godbwrapper.pm
+      x2gocleansessions fix for $X2GO_LIB_PATH changes
+      Add x2gobasepath script to reliably detect x2goserver install path.
+      syntax fix
+      using x2gobasepath script whenever we have to find the X2GO_LIB dir
+      Add man page for x2gobasepath.
+      Makefile fix for obsolete folder x2goserver/compat/bin
+      fixes man page sections in Makefile
+      typo fix
+      Makefile fix, uncommented SHAREDIR
+      more Makefile fixes related to man pages.
+      typo
+      update of INSTALL file
+      fix for setgid part in Makefile
+      calling build-arch when making build
+      installing x2gosqlitewrapper also through Makefile
+      permission fix for scripts in lib/x2go
+      changing uninstall order of components, making uninstallation more robust
+      section typo
+      making uinstall through Makefile even more robust
+      also uninstall x2gosqlitewrapper (explicitly)
+      silencing misleading error output during x2goserver postinst
+      fixes dpkg-statoverride on package removal/purge
+      replaced bashism in x2goserver.postinst
+      INSTALL howto update
+      Remove Debianisms from INSTALL howto.
+      fixed numbering scheme in INSTALL howto
+      Add INSTALL howto section for local folder sharing.
+      Add short note on X2go printing in INSTALL howto.
+      Add a note on fuse membership to printing section of INSTALL howto.
+      Add chromium-browser as possible WWWBROWSER to x2goruncommand.
+      Add lxterminal as possible TERMINAL to x2goruncommand.
+      comment fix
+      indentation fix
+      Add LibreOffice.org as possible OFFICE application to x2goruncommand.
+      Fix for TERMINAL command execution if konsole (KDE4) is installed on the server (closes upstream issue #87)
+      remove redundant which call in x2goruncommand
+      Silence x2golistsessions on missing session.log files.
+      typo fix
+      Fixing x2goserver.postinst
+      Spelling fix for error message.
+      Create x2goprint user/group on package installation, add same info to INSTALL howto. Change permissions on x2goprint, using 2755:root:x2goprint (setgid).
+      Change X2go printing concept: use setgit and a sgid wrapper instead of sudo.
+      Just realized, that I forgot to re-add many files after the /bin -&gt; /lib migration in x2goserver source tree... So here come the man pages...
+      ... and here the scripts x2gosessionlimit, x2golistsessions_root...
+      ... and more man pages for x2goserver-extensions package
+      and... at last... a compat script...
+      Makefile update for x2goprint setgid wrapper.
+      INSTALL howto update.
+      Lintian fix: debian-changelog-line-too long.
+      Man pages of compat package moved to section 8, add man page for compat script x2gosuspend-agent, fix man page header of x2gosuspend man page.
+      Update of x2goserver-compat.manpages DH config file.
+      typo fix in postinst script
+      remove x2gouser group and x2gousers group if empty...
+      Purge section for x2goprint user and setgid bit on x2goprint wrapper in x2goserver.postrm.
+      make sure permissions for /var/spool/x2goprint are set correctly
+      add permission setting for home dir
+      now also installing x2goprint into the x2goserver package... (grml)
+      fix for x2goprint install location
+      derive x2goprint.pl full path name properly
+      Hand over creation of ~x2goprint to adduser script.
+      Partially revert setgid changes committed earlier.
+      revert setgid wrapper for x2goprint
+      revert test code in dbwrapper
+      postinst fix
+      Add sanity checks to x2goprint, script can only be run as root.
+      Fix x2goprint, add syslogging, add inline comments.
+      Add script lib/x2gologlevel: introduce [log] section in x2goserver.conf with only parameter ,,loglevel''.
+      x2gologlevel delivers int (instead of str) so that Perl scripts can handle it immediately
+      Change x2gologlevel script into a Perl module (and a script that calls it). Using x2gologlevel function in x2goprint to set loglevel mask.
+      Initialize Syslog module for all Perl scripts in x2goserver package.
+      comment update that explains different loglevels
+      fix for module import
+      dropping duplicate script x2gosessionlimit from lib dir
+      add package statement for x2gologlevel package
+      Add debugging support for almost all DB functions in x2godbwrapper.pm, fix for Syslog module initialization in all Perl scripts.
+      fix line-too-long in changelog
+      Add info loglevel messages for all scripts in bin dir.
+      properly closing syslog socket
+      Fix for x2godbwrapper.pm: we can't open/close the syslog socket in a package. This has to be done by the scripts that use x2godbwrapper.pm.
+      mark log messages with loglevel err with the string ERROR
+      Add info loglevel messages for x2goserver-extensions scripts.
+      syslogging for x2gocmdexitmessage
+      Add debug messages to x2gomountdirs script.
+      fix data type mismatch (Mike's learning Perl...)
+      minor fix
+      log message fix
+      add port in x2gomountdirs log message
+      Use usermapping for SSHFS mount points.
+      minor log message fix
+      minor log message fix
+      notice message for x2goresume-session
+      notice message for x2gosuspend-session, x2goterminate-session
+      minor log message fix
+      notice log message for x2gostartagent
+      changelog update
+      log message fix for x2gostartagent
+      log message fix for x2gostartagent
+      add log messages to x2goruncommand
+      add log messages to x2goumount-session
+      minor log message fix
+      not showing x2golistsessions calls in loglevel mode info
+      loglevel warn has to be warning
+      Cleanup of man page area, thanks to Ivan Kabaivanov for pointing that out.
+      Rename example user and group for session limits in x2goserver.conf so that people do not get the idea to put users in x2gouser group.
+      Makefile and man page area fix for x2goserver-extensions.
+      x2goserver.postinst: fix home path updates if new home path already exists
+      Add real error message if client fails to resume/suspend/terminate a session.
+      SQLite DB backend: Fix typo in date format template.
+      Present an ISO-8601 compliant datetime string in session lists rendered by x2golistsessions (and similar) command(s).
+      (awful syntax error fixes)
+      grammar fix in log messages
+      Silence knotify SIGHUP signals in case that no knotify is running in the X2go session.
+      Fix x2goumount-session for individual paths (folder type: disk), ToDo: folder type CDROM and removable media.
+      Let db_insertmount create a proper return value (success vs. failed).
+      Improvement of man pages.
+      replace - by _ in man pages
+      typo fixes
+      add newline at EOF
+      tab fixes
+      Add return value information of X2go commands to man pages.
+      If resuming or suspending of a session fails, mark the session has finished (because the session's x2goagent is very probably dead). Do not write an error to stderr if x2goterminate-session fails (i.e. if x2goagent is dead).
+      Man page update for x2gosession-terminate, x2gosession-resume.
+      path fix in dh manpages for x2goserver-extensions
+      changelog-line-too-long fix
+      Split up x2goprint script + man page + adduser x2goprint as seperate package x2goserver-printing.
+      Add man page for x2gobasepath and man page draft for x2gosessionlimit.
+      spelling-error-in-changelog seperate separate
+      control description improvement for x2goserver-printing
+      Identified x2goumount script (x2goserver-compat) as a necessary component of x2gognomebindings and moved it there (with new name: x2goumount-session-gnome).
+      removed obsolete copy of x2golistsessions_root from /lib dir, current version is in /sbin dir
+      newline and EOF
+      Add x2golistmounts script to X2go server core.
+      fix debian-changelog-line-too-long line 78
+      moved x2golistmounts to x2goserver-extensions
+      Add x2gofeature script and x2gofeature.d subscript for x2goserver-extensions and x2goserver-printing.
+      Add x2gofeature man page.
+      split off x2goserver.features feature.d script from x2gofeature, remove placeholder
+      add x2gofeature man page
+      fix for x2goserver-printing.features
+      update of x2golistmount man page
+      Move x2goversion into x2goserver core package.
+      add more features to x2gofeature
+      add X2GO_COMPAT_SCRIPTS feature to x2goserver-compat
+      Makefile update for including x2gofeature scripts into installation, minor fixes to x2goserver core package Makefile.
+      Add debug output around shadow session startup (in x2gostartagent).
+      log message improvement
+      Pass extra argument $USER to client-mode x2godesktopsharing, requires x2godesktopsharing (&gt;=3.0.1.3) for it to work.
+      Clean session dir ~/.x2go/C-&lt;session_id&gt; after session terminates, if not running in debug mode.
+      Change of Desktop icons for shared folders. This change is needed for parallel installation of x2gognomebindings and x2golxdebindings.
+      version increment
+      fix detection of current desktop
+      fix detection of current desktop(2)
+      fix detection of current desktop(3)
+      Only remove server-side session directory if x2goruncommand has not failed.
+      Improve Makefile.docupload.
+      typo fix
+      Syntax fix in x2golistsessions_sql, hopefully fixes broken x2gocleansessions.
+      Add usage to x2gofeature, exit with -1 if feature is not available, with -2 if usage has been called.
+      Terminate x2godesktopsharing for current session on x2goterminate-session or when x2goruncommand is about to exit.
+      changelog-line-too-long fixes
+      copy+paste error
+      Resume/suspend x2godesktopsharing during x2goresume-session, x2gosuspend-session.
+      Provide pluggable X2go extension system for main X2go server functions.
+      add debug message
+      Makefile fix for x2goserver-extensions
+      add log messages to x2goserver-run-extensions
+      Adapt to renaming of x2godesktopsharing scripts.
+      Provide man page for x2goserver-run-extensions that explains the new plug-in mechanism of x2goserver.
+      man page improval: x2goserver-run-extensions
+      X2go server extensions have to completely quiet, diverting stdout/stderr to /dev/null.
+      Make digits at the beginning of X2go server extension scripts a must, not a suggestion. Contributed by Morty.
+      Use find instead of ls to list up installed X2go server extensions scripts/binaries.
+      some shots are to quick... fix for last commit
+      path fix for x2go-run-extensions
+      Fix for session dir cleanup, x2gologlevel returns int value, not string.
+      tabfix
+      release 3.0.99.6, rework changelog
+
+Moritz 'Morty' Str&#252;be (3):
+      x2gosuspend-session and x2goterminate-session will now suspend/terminate the current session, if no parameter is given
+      Make S-bit wrapper more robust
+      Fix copyleft
+
+Moritz Morty Str&#252;be (1):
+      Romoved static DB-Path
+
+Oleksandr Shneyder (3):
+      support for ssl connect (postgresql)
+      fixed db_getserver
+      remove session directory after 10 sec delay to let x2goclient check cmdoutput file
+
+Patrick Willam (1):
+      Fix for failing x2goresume-session script after removing hard-coded paths from all x2goserver scripts.
+
+Paul van der Vlis (1):
+      support dependency based booting in Squeeze
+
+Reinhard Tartler (10):
+      cleanup example files
+      remove unused preinst.bc file
+      port x2gosqlitewrapper from sudo to suidperl
+      ensure clean purges
+      cleanup init script
+      Remove files that get cleaned by the Makefile
+      Allow users to edit their *own* sessions only
+      fix $realuser variable after 6ec99657c4be82fe659cf3d13614be7a9734a380
+      restore behavior that allows 'root' to execute any command
+      Do proper error checking in maintainer scripts
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goserver.git (X2go Server)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goserver.git&quot; (X2go Server).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000044.html">[X2go-Tags] x2golxdebindings.git - 1.0.1.1 (annotated tag) created:	1.0.1.1
+</A></li>
+	<LI>Next message: <A HREF="000046.html">[X2go-Tags] x2gothinclient.git - 1.0.1.3 (annotated tag) created:	1.0.1.3
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#45">[ date ]</a>
+              <a href="thread.html#45">[ thread ]</a>
+              <a href="subject.html#45">[ subject ]</a>
+              <a href="author.html#45">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

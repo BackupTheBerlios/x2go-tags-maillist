@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] python-x2go.git - 0.1.1.0 (annotated tag) created:	0.1.1.0
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2011-June/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20python-x2go.git%20-%200.1.1.0%20%28annotated%20tag%29%20created%3A%0A%090.1.1.0&In-Reply-To=%3C20110623234919.59E5A5DB38%40ymir.das-netzwerkteam.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000000.html">
+   <LINK REL="Next"  HREF="000002.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] python-x2go.git - 0.1.1.0 (annotated tag) created:	0.1.1.0</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20python-x2go.git%20-%200.1.1.0%20%28annotated%20tag%29%20created%3A%0A%090.1.1.0&In-Reply-To=%3C20110623234919.59E5A5DB38%40ymir.das-netzwerkteam.de%3E"
+       TITLE="[X2go-Tags] python-x2go.git - 0.1.1.0 (annotated tag) created:	0.1.1.0">git-admin at x2go.org
+       </A><BR>
+    <I>Fri Jun 24 01:49:19 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000000.html">[X2go-Tags] pyhoca-gui.git - 0.1.0.3 (annotated tag) created:	0.1.0.3
+</A></li>
+        <LI>Next message: <A HREF="000002.html">[X2go-Tags] pyhoca-gui.git - 0.1.0.4 (annotated tag) created:	0.1.0.4
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1">[ date ]</a>
+              <a href="thread.html#1">[ thread ]</a>
+              <a href="subject.html#1">[ subject ]</a>
+              <a href="author.html#1">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.1.1.0 has been created
+        at  d7f28a59f575eef558bc465a6ea776d9c1442d9f (tag)
+   tagging  0b8784cb8777bcb486e32a87b754ca93b98a7871 (commit)
+  replaces  0.1.0.3
+ tagged by  Mike Gabriel
+        on  Fri Jun 24 01:49:49 2011 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 0.1.1.0
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJOA9EdAAoJEIlP3EWN3QKAkn8IAJowP5cQ98CW5qsExR5JbsMZ
+jwYYjYdTJLZ7y/c2nzrr+km9g18w+dpWiQhipNI36y0M3GmuwBttUgs4odhDlyaM
+irA0w4mE9RH7mxg6QIeLiVv4V/bpHs7VT9qo4SzMq1Ae4U4MDcRcYBHTe2/oI6mq
+X0yeKV7YpfvmU5YpT1tWLCfTf0moYUK92m3dLeEwyk2uQEJ1Yqz8s/JmAN3TF2Oh
+HdE2zmvkvtx/oa0Gg4sR66J7hWzX9uojC6yNErYZzWJ+ZxWFBMP7wAUCHNXKKyXP
+SoZeQp7Id2Su1cf3S9YZcYdXTdemVrJ83gleOcjVK+kpYA0PxgTFnQWuACBOerU=
+=Mc48
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (55):
+      New upstream version (0.1.1.0): -Add X2go desktop sharing support.
+      Fix version strings
+      Typo fix
+      Fix SSH authentication failures (close session on failure).
+      fixed type
+      another type fix
+      catch SSHException during x2go_exec_command
+      not closing SSH transport on authentication failures
+      not closing ssh proxy on AuthenticationExceptions
+      Close SSH connection first, then close down SSH proxy.
+      calling update_status only once after all sessions have been registered
+      call desctructor of mimebox_queue on object destruction
+      Make sure SSH proxy password gets forgotten between two sessions, fix for mutiple open SSH client sessions.
+      Fix SSH proxy stop_thread on Windows.
+      import fix
+      Add X2goSession status property ,,faulty''.
+      dropping redundant code in cache.py
+      Forget SSH proxy password after auth failures, fix local folder sharing.
+      Reduce delays during authentication / session list cache updates.
+      Initialize list sessions/desktops cache with a more precise default value.
+      Make stylish adjustments...
+      Add debug output that signals that the X2goGuardian loop is running...
+      Make sure list session and list desktop commands always return.
+      condition fix
+      Rely on X2goSessionListInfo backend to handle exceptions appropriately.
+      Assure that rev forwarding tunnels use IPv4 (replace localhost with 127.0.0.1)
+      Explicitly tunnel over IPv4 for NX proxy.
+      Make cache more configurable (session list updates, desktop list updates), add an auto_update_listdesktops_cache to X2goClient constructor argvs.
+      Add X2goTimeOutException
+      Fix multiple notifications for the same session state change, reliably differentiate between found sessions after connect and newly started  sessions from another client.
+      Wait for 10 secs when taking over an active session, remove debug output.
+      Mark terminal session as PENDING even before actual X2goTerminalSession object get created.
+      Change of sleep times when starting/stopping NX proxy.
+      Session notification fixes, session resume/suspend fixes, fw tunnel stabalized.
+      Re-introduce fix for failing forwarding tunnels (on tunnel shutdown).
+      typo fix
+      Add X2goSession lock support.
+      Skip session auto registration during startups of new sessions (avoids duplicate sessions in the session registry.
+      Use X2goSessionRegistryException here...
+      Do not start X2go service tunnels (audio, sshfs) if session startup failed.
+      Fix NX proxy startup post-check.
+      syntax fix (missing bracket)
+      tidy up usage of &lt;terminal_session&gt;.release_proxy() method
+      typo fix
+      Force 16bit colour depth for RDP-proxy sessions.
+      Faulty sessions (without a NX proxy fw tunnel) will get terminated whenever the X2go server (SSHd) denies the tunnel setup.
+      remove unnecessary brackets
+      re-fix session resume/suspend functionality
+      property fix...
+      revert fixed color depth for RDP, now using default again: 24bit
+      Detect local color depth and use it as default for new sessions.
+      Add compatibility check methods for color depth.
+      Provide X2goClient method for retrieval of session by session name.
+      fix/improval of color depth check code
+      releasing version 0.1.1.0
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+python-x2go.git (Python X2go Client API)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;python-x2go.git&quot; (Python X2go Client API).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000000.html">[X2go-Tags] pyhoca-gui.git - 0.1.0.3 (annotated tag) created:	0.1.0.3
+</A></li>
+	<LI>Next message: <A HREF="000002.html">[X2go-Tags] pyhoca-gui.git - 0.1.0.4 (annotated tag) created:	0.1.0.4
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1">[ date ]</a>
+              <a href="thread.html#1">[ thread ]</a>
+              <a href="subject.html#1">[ subject ]</a>
+              <a href="author.html#1">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

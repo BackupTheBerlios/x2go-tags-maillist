@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2gognomebindings.git - 2.0.1.3 (annotated tag)	created: 2.0.1.3
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2011-October/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gognomebindings.git%20-%202.0.1.3%20%28annotated%20tag%29%0A%09created%3A%202.0.1.3&In-Reply-To=%3C20111012093400.11DD15DD11%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000041.html">
+   <LINK REL="Next"  HREF="000043.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2gognomebindings.git - 2.0.1.3 (annotated tag)	created: 2.0.1.3</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gognomebindings.git%20-%202.0.1.3%20%28annotated%20tag%29%0A%09created%3A%202.0.1.3&In-Reply-To=%3C20111012093400.11DD15DD11%40ymir%3E"
+       TITLE="[X2go-Tags] x2gognomebindings.git - 2.0.1.3 (annotated tag)	created: 2.0.1.3">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Oct 12 11:34:00 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000041.html">[X2go-Tags] x2godesktopsharing.git - 3.0.1.3 (annotated tag)	created: 3.0.1.3
+</A></li>
+        <LI>Next message: <A HREF="000043.html">[X2go-Tags] x2golxdebindings.git - 1.0.1.1 (annotated tag) created:	1.0.1.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#42">[ date ]</a>
+              <a href="thread.html#42">[ thread ]</a>
+              <a href="subject.html#42">[ subject ]</a>
+              <a href="author.html#42">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 2.0.1.3 has been created
+        at  c4a71ef8e06177e7ee66caff81a6e13cf116aee7 (tag)
+   tagging  8227f81ad06cfafd26de1fded85d355c1fefd110 (commit)
+  replaces  2.0.1.1
+ tagged by  Mike Gabriel
+        on  Wed Oct 12 11:33:57 2011 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 2.0.1.3
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJOlV8FAAoJEIlP3EWN3QKAIwAH/0m0D0MZY2k4JQaZsv0HvvX3
+HSaeX8H0NVH155LSCMhcLN90CpX3ylSAkWeQQdMQivxtNAi5sDFZ5KbOoMIXMk5q
+nx09cP7FNx3HKSlwEl3ce3hjbJHTkdJzzE+bSA3LSuQgSs1jsmB84or2KvW5QyHE
+O4Of/+2fU8Gb0idtHQEqVPUbJXb2iHf8NEYhF4hjOOlFyQyll3SgyKLK2+VNOjvQ
+7o+J1FuPu/0wvemrYTB0hGP6iMFEgdX3Gnuf1YxpeYIwRPs3veutBcWpIU5dB4lg
+XdgmpJFLytWXw9441eM+dfomngaOlAp7o65/70qWHoAz1K18plJ//2KA771we0s=
+=9x40
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (31):
+      FSF address update
+      whitespace cleanup, happy new year 2011
+      adds VCS information to control file
+      renames dh install scripts
+      adds x2goversion support
+      updates changelog, nano version increment
+      Add gnome-menus as dependency.
+      * Preparing for new upstream version (2.0.1.3):
+      add some copyright headers where missing...
+      Now fully use debhelper for packaging. Reduced linitian issues nearly completely (still open: old-format-menu-file /usr/share/menu/x2gognomebindings).
+      fix auto-configure, config.sub and config.guess were missing
+      fix for debian-changelog-line-too-long
+      Remove XDG menu item, not needed for GNOME specific package.
+      Use source format 3.0 (native).
+      Add linitian-overrides an man pages to package.
+      newline at EOF fix
+      re-added x2gosuspend xdg-menu item (now that I have understood the mechanism...)
+      Add simple man page for x2gonautilus.
+      changelog fix
+      Place x2go-suspend.desktop icon in GNOME Network submenu.
+      forgot to add x2gonautilus man page
+      Define unique MIME name spaces for X2go SSHFS GNOME icons.
+      Rename sshfs.xml to sshfs-x2go-gnome.xml.
+      Use desktop icon names that contain the name of the desktop session. Depend on x2goserver (&gt;=3.0.99.6).
+      x2goserver dependency version fix
+      rename of desktop icons(2)
+      Allow blanks in desktop icon names.
+      Provide more GNOME'ish way to derive icon path name from GNOME object URI.
+      Let x2goumount-session-gnome be able to handle icons with blanks in their name.
+      version increment
+      release 2.0.1.3, rework changelog
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2gognomebindings.git (X2go bindings for GNOME)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2gognomebindings.git&quot; (X2go bindings for GNOME).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000041.html">[X2go-Tags] x2godesktopsharing.git - 3.0.1.3 (annotated tag)	created: 3.0.1.3
+</A></li>
+	<LI>Next message: <A HREF="000043.html">[X2go-Tags] x2golxdebindings.git - 1.0.1.1 (annotated tag) created:	1.0.1.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#42">[ date ]</a>
+              <a href="thread.html#42">[ thread ]</a>
+              <a href="subject.html#42">[ subject ]</a>
+              <a href="author.html#42">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

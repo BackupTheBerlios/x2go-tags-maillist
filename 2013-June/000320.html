@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goserver.git - 4.0.0.3 (annotated tag) created:	4.0.0.3
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-June/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.0.3%20%28annotated%20tag%29%20created%3A%0A%094.0.0.3&In-Reply-To=%3C20130607210448.2A6475DB27%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000321.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goserver.git - 4.0.0.3 (annotated tag) created:	4.0.0.3</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.0.3%20%28annotated%20tag%29%20created%3A%0A%094.0.0.3&In-Reply-To=%3C20130607210448.2A6475DB27%40ymir%3E"
+       TITLE="[X2go-Tags] x2goserver.git - 4.0.0.3 (annotated tag) created:	4.0.0.3">git-admin at x2go.org
+       </A><BR>
+    <I>Fri Jun  7 23:04:48 CEST 2013</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000321.html">[X2go-Tags] x2goserver.git - 4.0.1.0 (annotated tag) created:	4.0.1.0
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#320">[ date ]</a>
+              <a href="thread.html#320">[ thread ]</a>
+              <a href="subject.html#320">[ subject ]</a>
+              <a href="author.html#320">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 4.0.0.3 has been created
+        at  a2566e8e1ac815b530378b2843520cd694ca164d (tag)
+   tagging  8a82fe757e5b944d55441b9cf457a7879a9b4688 (commit)
+  replaces  4.0.0.2
+ tagged by  Mike Gabriel
+        on  Fri Jun 7 23:03:40 2013 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 4.0.0.3
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABAgAGBQJRskqsAAoJEJr0azAldxsxTB0QAKS4Q5uYSZRKAy5ITkN8+3BC
+dbElj5d6wHMMa0KuOiMaN8fdRSA4gmnRZ/LAA5G4V2IcDRaCjnYeuDDW2F/uU/jz
+AjygJ+FqcGWDXkOZCD7eedq5iCrEfWUb8UpjkSnTbtyPX5q/JqtDv2P6wHCNeQuZ
+YUAp6OyMNb1zgSwFeIeEA193khc8uEmDcVjQHEbJAQCMforyX7vJc3XJ4Q0UB6kQ
+INXuq5FI+7oDo+kF6ufNl0BbSOYucST6wPaEIFaW7iXp5qLpg5RnZtq/tvvMOddN
+0ce0EO9/ES6G8ZhwGAYxD76DToBadaKlSnIiSfVW1rqJm98dd0f4iV+pFd5NkePi
+t6BuGJFPmnRgGk4qmF/2Lrdr3Xtnc56bH+AIkmJ8Doj2Tm4wZGf3xC9rPK+8VBt3
+oAFXcqqSF1MUO1yrk9rBuHR90xwjTPGcnZrBLC/mHAtwn+tsNGOk/XjpUW15AlBx
+pMYYtMLV9nznvK0IRrURXwVCAODQn+2GnqJ2nI6MJ02rAFQ34d7VQKxeMPrN0BVj
+ZLuXzvaj4bmr4J1ZwQ5tgfELyxVoq3C3/z3Weuhg7HrbEinyUMB4g3qYyhsqeNaK
+LMBJ2P7XKITo+twYFmH2zSUVhpWxUOmoudQMswrXWV5XK5q4uQFyQoDOnXjL7sPL
+nbzlx1+U41t10JbuTwF4
+=Syav
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (28):
+      Continue development...
+      Make pre-set DESTDIR and PREFIX traverse through all Makefiles. Do not include DESTDIR in Makefile-hard-coded path in x2gosqlitewrapper.
+      typo fix in x2gosuspend-session comment
+      Add support to x2gocleansessions to suspend session via state changes in the session DB.
+      Make x2gomountdirs / x2goumount-session UNC path aware.
+      Add support for terminating sessions via the session DB.
+      Raise the frequency of the x2gocleansessions loop to every two seconds.
+      Send SIGKILL to blocked X-Server (x2goagent) processes, if they do not disappear within 20secs. (Fixes: #32).
+      only remove old sessions from the DB if the agent process is gone (not while it is still there)
+      syntax fixes
+      another follow-up fix
+      typo
+      fix missing curly bracket
+      fix for one of the last commits
+      fix missing parentheses
+      Revert &quot;fix for one of the last commits&quot;
+      Revert &quot;fix missing curly bracket&quot;
+      Revert &quot;typo&quot;
+      Revert &quot;another follow-up fix&quot;
+      Revert &quot;syntax fixes&quot;
+      Revert &quot;only remove old sessions from the DB if the agent process is gone (not while it is still there)&quot;
+      Revert &quot;Send SIGKILL to blocked X-Server (x2goagent) processes, if they do not disappear within 20secs. (Fixes: #32).&quot;
+      Revert &quot;Raise the frequency of the x2gocleansessions loop to every two seconds.&quot;
+      Revert &quot;Add support for terminating sessions via the session DB.&quot;
+      Revert &quot;Make x2gomountdirs / x2goumount-session UNC path aware.&quot;
+      Revert &quot;Add support to x2gocleansessions to suspend session via state changes in the session DB.&quot;
+      Partially revert USED_PORTS detection code back to the old-style awk-way. (Fixes: #155).
+      release 4.0.0.3
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goserver.git (X2Go Server)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goserver.git&quot; (X2Go Server).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000321.html">[X2go-Tags] x2goserver.git - 4.0.1.0 (annotated tag) created:	4.0.1.0
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#320">[ date ]</a>
+              <a href="thread.html#320">[ thread ]</a>
+              <a href="subject.html#320">[ subject ]</a>
+              <a href="author.html#320">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

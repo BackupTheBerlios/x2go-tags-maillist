@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2gobroker.git - 0.0.1.1 (annotated tag) created:	0.0.1.1
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-April/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gobroker.git%20-%200.0.1.1%20%28annotated%20tag%29%20created%3A%0A%090.0.1.1&In-Reply-To=%3C20130423195150.3AE975DB33%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000309.html">
+   <LINK REL="Next"  HREF="000311.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2gobroker.git - 0.0.1.1 (annotated tag) created:	0.0.1.1</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gobroker.git%20-%200.0.1.1%20%28annotated%20tag%29%20created%3A%0A%090.0.1.1&In-Reply-To=%3C20130423195150.3AE975DB33%40ymir%3E"
+       TITLE="[X2go-Tags] x2gobroker.git - 0.0.1.1 (annotated tag) created:	0.0.1.1">git-admin at x2go.org
+       </A><BR>
+    <I>Tue Apr 23 21:51:50 CEST 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000309.html">[X2go-Tags] x2gobroker.git - 0.0.1.1 (annotated tag) created:	0.0.1.1
+</A></li>
+        <LI>Next message: <A HREF="000311.html">[X2go-Tags] x2gobroker.git - 0.0.1.1 (annotated tag) created:	0.0.1.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#310">[ date ]</a>
+              <a href="thread.html#310">[ thread ]</a>
+              <a href="subject.html#310">[ subject ]</a>
+              <a href="author.html#310">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.0.1.1 has been created
+        at  4085176be6f5895c931e34e6549ea9849e13ca0b (tag)
+   tagging  e5464f0dc50adbef2802e9f851ec82af31af7644 (commit)
+  replaces  0.0.1.0
+ tagged by  Mike Gabriel
+        on  Tue Apr 23 21:38:37 2013 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 0.0.1.1
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABAgAGBQJRduM9AAoJEJr0azAldxsx8c4QAKo3f7XKpkKtJXdtWBuNHn8Q
+smqZNtyZopG2jKpbWANKI5x/28JToi/HufVtHuHJUebM9EKEeyT2Na+FTiv4u1Zp
+96/2XNht8Ms+EdszLF7mJGYYCO4J7S/9npmficL5sqRWZqIiqRvIcFl16E/75ukv
+fzHy3vd/DJvWqMuqT1zRyWZRvlaF2ywDdjODDjPvq5e6rfvCbGY3woLu55LITDoW
++yh3iImv9RldoKz/7x3K/mVDRsXJ/uxR5GMoYNaq1EJ2faQ/Q9XpNW403XJL3kMV
+iNPUBgPpZ1zRn1auLfokaJVkttFXYq4uXvgcfU1EObjI8quoAJhNw8KzOOYsgsqz
+cTtYwqHB+sf5q6eExiZ17Ms1hig7y9hNiQrAB18bbfItwyl52xXYiCOk82QyHExe
+czB3T/mdbMUqzqBkVKrhm76iqn+uPcdoNOXeTr82kDJ3ZJrLLJ9L/9qy+qpNz4ZL
+6FeJJoygaD7fnR879rypF4rp7d/pbpKQ1D/b+2xLQczHcJUrRvXZFntUCDvVpb2E
+A/jP4yunLT6AIOOvvMgwB1dH2g2kkdcoNe5gcT+Zm0e6apJ7XMAXn2fQDHZ8hxWI
+GcvQTuewsjhzkQN3rpUrd+6AGyGyixpHs/493EqhAes21HRKJ8ksiH5lyAPnvoOe
+nYMrmwzTGkxG+z4x0MA4
+=3cOO
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (52):
+      Continue development...
+      /debian/control: Fix --root parameter in DEB_PYTHON_INSTALL_ARGS.
+      Add WSGI support to X2Go Session Broker. Allows plugging into Apache2 by using the mod_wsgi module.
+      fix x2gobroker-wsgi.install
+      Properly remove the X2Go Session broker log files on package purgal.
+      fix creation of x2gobroker's home dir
+      remove -x from shell script
+      For sessions profiles with autologin enable, add a dummy key session profile parameter that triggers key based auth in X2Go Client. (Fixes: #154).
+      Fix hard-coded path to x2gobroker's authservice socket.
+      throw a 404 if broker backend cannot be found (plain webui)
+      throw a 404 if broker backend cannot be found (html webui)
+      postrm script for x2gobroker-authservice
+      Add Apache2 configuration for WSGI support that shows how to setup a VirtualHost for X2Go Session Broker.
+      Let bin:package x2gobroker-authservice create x2gouser:x2gouser, as well. (Fixes: #171).
+      /debian/control: Let bin:package x2gobroker-authservice depend on python-x2gobroker (of the same version). (Fixes: #170).
+      Separate logging logic of x2gobroker-authservice from the rest of the logging in x2gobroker. (Fixes: #172).
+      follow-up fix for last commit
+      x2gobroker-pubkeyauthorizer: no logging-to-file support anymore (Fixes: #175).
+      Fix name of get() for /pubkeys/ URL path. (Fixes: #176).
+      fix changelog entry
+      return empty page instead of 404 if no pubkeys for x2gobroker exist, fix args+kwargs in get() method
+      add more debug messages to authservice
+      Move AuthService server code fully into x2gobroker-authservice daemon script.
+      Add forgotten file: x2gobroker-authservice-logger.conf. (Fixes: #180).
+      install x2gobroker-authservice-logger.conf into x2gobroker-authservice package
+      avoid binaries-have-file-conflict lintian issue
+      add dependency on adduser for x2gobroker-authservice
+      allow trailing slash in /pubkeys/ URL
+      Add script: x2gobroker-testauth.
+      some nice cosmetics on x2gobroker-testauth
+      mention Tornado instead of Web.py in x2gobroker man page
+      fix comment text
+      add man page for x2gobroker-testauth
+      import pwd and grp classes in x2gobroker-authservice
+      mark missing log output with a FIXME in authservice.py
+      return 405 instead of 404 if method is not allowed (html webui)
+      return 405 instead of 404 if method is not allowed (plaintext webui)
+      fix exception call, add debug message when authentication is requested
+      make --debug cmdline option work in x2gobroker-testauth
+      Add enable()/disable() methods to broker backends.
+      Move complete authservice logic into x2gobroker-authservice script.
+      fix pam_authmech.py
+      Add cmd and directrdp session profile parameters to defaults.
+      Fix wrong usage of session option &#187;cmd&#171;, has to be &#187;command&#171;.
+      missing comma in test_broker_inifile.py
+      add directrdp to session profiles defaults
+      fix dependency set of x2gobroker-wsgi
+      enable WSGIPassthrough in x2gobroker-wsgi.apache.conf
+      fix test_broker_base.py
+      enable BR tests in test unit
+      remove debug output
+      release 0.0.1.1
+
+Mike gabriel (1):
+      fiddle with the packaging on Ubuntu lucid: the python-x2gobroker package does not contain any module files
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2gobroker.git (HTTP(S) Session broker for X2Go)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2gobroker.git&quot; (HTTP(S) Session broker for X2Go).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000309.html">[X2go-Tags] x2gobroker.git - 0.0.1.1 (annotated tag) created:	0.0.1.1
+</A></li>
+	<LI>Next message: <A HREF="000311.html">[X2go-Tags] x2gobroker.git - 0.0.1.1 (annotated tag) created:	0.0.1.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#310">[ date ]</a>
+              <a href="thread.html#310">[ thread ]</a>
+              <a href="subject.html#310">[ subject ]</a>
+              <a href="author.html#310">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

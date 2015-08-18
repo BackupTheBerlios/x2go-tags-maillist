@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2gobroker.git - 0.0.0.1 (annotated tag) created:	0.0.0.1
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gobroker.git%20-%200.0.0.1%20%28annotated%20tag%29%20created%3A%0A%090.0.0.1&In-Reply-To=%3C20130212215053.590505DB1A%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000278.html">
+   <LINK REL="Next"  HREF="000280.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2gobroker.git - 0.0.0.1 (annotated tag) created:	0.0.0.1</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gobroker.git%20-%200.0.0.1%20%28annotated%20tag%29%20created%3A%0A%090.0.0.1&In-Reply-To=%3C20130212215053.590505DB1A%40ymir%3E"
+       TITLE="[X2go-Tags] x2gobroker.git - 0.0.0.1 (annotated tag) created:	0.0.0.1">git-admin at x2go.org
+       </A><BR>
+    <I>Tue Feb 12 22:50:53 CET 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000278.html">[X2go-Tags] webpy.git - upstream/0.37+20120626 (annotated tag)	created: upstream/0.37+20120626
+</A></li>
+        <LI>Next message: <A HREF="000280.html">[X2go-Tags] python-x2go.git - 0.4.0.1 (annotated tag) created:	0.4.0.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#279">[ date ]</a>
+              <a href="thread.html#279">[ thread ]</a>
+              <a href="subject.html#279">[ subject ]</a>
+              <a href="author.html#279">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.0.0.1 has been created
+        at  0ae2b255e010bfd7b972824179698a934280540d (tag)
+   tagging  6d343a60b4adb1041ba8cbef1839e8fd9ec09642 (commit)
+ tagged by  Mike Gabriel
+        on  Tue Feb 12 22:52:40 2013 +0100
+
+- Log -----------------------------------------------------------------
+Upstream test release 0.0.0.1
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABCAAGBQJRGrmoAAoJEJr0azAldxsx8bMQAKkPrGwS14TJ9PNeupN8m2Fi
+woQAlRuFtaoM/f3zlDe/yVxL7OFDcVJzGV3QSRZ+V+1RBJr2gqrrC1oWSbF+MqNE
+smMlBqoZ7PleZH7GzBM7ErVOGz5pqMY9Oku/OvEoxHL0R/SjrbRjf2B911+6PGa3
+GSLBfUQ7gzorWS6+3eoQ2AieUw6zfSisDXMhEn3e3G1B7rN6Cek53Nxoq6UvaOg8
+JgyorWHso8GdE8PlIT0MkVXaq3uAqsAx67IMbHbQ0Rn2B8H5yiufMQ4pvxfpy4mB
+3i/DLFvBkCq8+QsbdpwSCpKpnV9DWdNFoP1Z+qFliUD9sUHyFcXlbLWtepfiHemM
+uofGdBp+Nhf5mCe09PVku4KhyQG7qxNN+pzJIMoMF/fXlo1ZKUXwnMqIpbWA24GW
+n6tj2a6Zf1y6tQLqm464nh2W3aGqzCVuJMiaW7AgmtiVGgbEWhv5UPRzC/j6ahOB
+VjV4WT9NXBaUY3+pwkGEXOVM+OEwGw3fclCWleJfLuxPEdc/ezt3kTgG7iJXIzqJ
+xU9JlsoYZk9aKw1ZohtJQNJZvpXHXkfkC0qRjWxFjK69l5Ctu4d3s2xKwq3NapFM
+tLU9fXrAwwHXCoajuItl84h0jLU6aqRuvajuXXtaX8xhCFkATvmEKmhh0zEQMuU8
+qybd7gAvj3oB+XZUNpVC
+=ZEH5
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (142):
+      import simple-broker example as obtained from Oleksandr Shneyder
+      re-arrange files into a Debian-package-like source tree
+      silence lintian
+      fix typo in /debian/control' long descs
+      get rid of suidperl, draft only for now
+      fix paths in Makefile
+      split up x2gobroker-command into a separate binary arch-dep package
+      rename x2gobroker-command to x2goserver-broker as it has to be installed on the host running X2Go server
+      /debian/control: Add an initial dependency selection to the various Depends fields.
+      add license headers and full text license: AGPL-3+
+      Fix code indentations (spaces replaced by tabs, use proper indentation levels).
+      find proper name for the setuid command: x2gobroker-agent
+      filename fix in x2gobroker-agent.install
+      re-arrange file structure again, prepare for several broker backend: ldap, simple, zeroconf
+      fixing Debian package build issues
+      rename x2gobroker-ldap.pm inside its code, add Depends: libnet-ldap-perl
+      WARNING: do not try-out the X2Go Session Broker until announced for testing on our development mailing lists.
+      mass code commit: transfer parts into a Perl module source tree, work on modules
+      remove comment
+      create x2gobroker user/group and set x2gobroker-agent setuid root, make sure that only users in the x2gobroker group can execute that script
+      /debian/control: add adduser to Depends for x2gobroker-agent
+      fixing, securing x2gobroker-agent
+      no homedir for x2gobroker user
+      fix perl expression, use -t for executing perl
+      x2gobroker-agent.pl: remove -t option when starting perl
+      fix project name
+      Using our own PAM service ,,x2gobroker''.
+      fix x2gobroker-common.install
+      Make sure libx2go-broker-perl of the same version gets installed with x2gobroker-common. Add dependencies: libauthen-pam-perl, libauthen-simple-pam-perl.
+      start serious work on the zeroconf broker
+      migrate Perl-based code into a Python-based solution using web.py
+      first draft of packaging the Python approach of x2gobroker.git
+      add defaults.py
+      fork web.py process to background in x2gobroker-daemon.init script
+      comment out x2gobroker-cgi in debian/control for now...
+      /debian/control: add build-dep python-setuptools
+      stricten dependencies on our own co-binary packages
+      create PID file when starting x2gobroker-daemon
+      set process title when running x2gobroker in standalone mode
+      /debian/control: add dependency python-setproctitle for x2gobroker bin:package
+      x2gobroker-daemon.init: make sure daemon process gets stopped properly
+      /debian/control: python-x2gobroker depends on python-pampy
+      draft for possible configuration file
+      add .gitignore file
+      prepare for future API changes, current API name: html, possible API in the future: JSON, provide working check_access method for now
+      white space fix
+      catch socket.error exceptions when starting web.py
+      X2Go Client uses the POST method, not the GET method
+      more work on the broker, get zeroconf broker working
+      make daemon bind address+port configurable through /etc/default/x2gobroker-daemon
+      add documentation for playing with the zeroconf backend
+      fix URL in zeroconf README
+      allow configuration of some default through environment vars (default broker backend, path to x2gobroker-agent)
+      remove debug output
+      check enable option for backends and return 404 if backend is disabled
+      fix import error for simple backend
+      rename session broker backend simple to singlenodes, start designing the config files for the singlenodes backend
+      complete design of INI file format for x2gobroker-sessionprofiles.conf, more work on rest of code
+      adapt x2gobroker.conf to renaming of the new inifile backend
+      new backend option: auth-mech, allow several authentication mechanisms to be implemented
+      Add notice about the acl-... lines in the session profile template file.
+      move the individual auth mechanisms into different methods, so that they can be easily overridden in customized broker implementations
+      fix missing variable declaration
+      allow specification of config_defaults in X2GoBroker class(es)
+      add basic unit testing framework
+      adding a basic testsuite to the project
+      fix --config-file cmdline option of x2gobroker-daemon
+      replace hard-coded path to x2gobroker.conf by a path that can be influence by cmdline option and env var
+      drop concept of a session profile / user map in separate file
+      whitespace fix
+      add unittests for the zeroconf broker backend run via the text/plain web renderer
+      return 401 Unauthorized rather then 200 with output value Access Denied
+      do not hard-code /etc/x2go/x2gobroker-sessionprofiles.conf anymore, make it configurable through os.environ
+      add env vars X2GOBROKER_CONFIG, X2GOBROKER_SESSIONPROFILES to Debian-specific daemon startup mechanism
+      fix copyright header in unittests
+      comment out html web renderer
+      inifile backend: get get_profile_ids and get_profile_defaults working properly
+      implement get_profile() method of inifile backend
+      extend test_getprofile so that ACL's can be placed into session profiles (and defaults) and these ACL's get ignored all the way down
+      add test for get_profile_acls (inifile backend), fix get_profile_acls
+      add get_profile_acls() method to base.X2GoBroker
+      add code+tests for user base ACLs
+      code cleanup after pyflakes took a look
+      fix backend name in x2gobroker.conf
+      fix daemon startup
+      no &lt;br&gt; text in text/plain web renderer anymore, waits for fixing #81 in X2Go BTS
+      add EOL char behind section tag in session profile list rendered by text/plain renderer
+      move inifile backend's list_profiles() method into base.X2GoBroker, as it is so generic
+      config file design update: common backend options (like auth-mech, etc.) shall be configurable globablly. Add new parameters for x2gobroker.conf: user-db, group-db.
+      comment out all config file options, as they are the hard-coded defaults, anyway. Rename *-db and auth-mech in global section to default-*
+      force config processing to unicode
+      simplify test: x2gobroker/tests/test_backend_inifile.py
+      implement base.X2GoBroker.get_authentication_mechanism(), including its unittest
+      add unit tests for get_userdb_backend and get_groupdb_backend
+      remove FIXMEs from web/plain.py
+      add nameservices functionality to X2Go Session Broker
+      move authentication mechanisms into separate files and classes, makes the authentication backend easily extendable
+      rename submodule x2gobroker.backends to x2gobroker.brokers
+      fully rework user ACLs, add group ACLs and many tests that test group ACLs and user+group combined ACLs
+      remove unused import
+      commit forgotten subfolder ,,brokers''
+      fix package build, rename authmech and nameservice submodules, so they do not interfere with existing python modules on the system
+      adapt ACLs in x2gobroker-sessionprofiles.conf to latest ACL concept changes
+      fix comment in x2gobroker.conf
+      change submodule names, so that each file denotes what its function is
+      whitespace cleanup
+      more global bugfixing, tidying up after submodule rename
+      make sure that the nameservice backend can fall back to hard-coded defaults (=libnss)
+      add test to verify that the configuration of nameservice backend also works
+      make sure that the profile default are deleted from the session profile
+      test list_profiles for inifile backend, make sure that the list profile_ids matches the dictionary keys of the list_profiles return falue
+      some output fixes for the plain web backend
+      sort profiles by profile ids when returned TTW
+      find more occurences of session profiles path that got changed recently
+      add test for the inifile backend that tests a session profile template with ACLs
+      fix comments still pointing to SafeConfigParser, slight change for DEFAULT value
+      UTF-8 fixes in ACL verification code, implement a basic select_session method for the inifile backend
+      change the data structure returned by broker.select_session method
+      UTF-8 fix
+      X2Go Client uses the profile ID to initiate session start up (not the profile name)
+      make sure that all default values appear in rendered session profiles
+      whitespace fixes
+      more whitespace fixes at EOL
+      adapt tests and zeroconf broker to changes in commit 5b273ab1ecaf19c40ce1ea3de05290d5a7fc46cf
+      test explicit user denial in ACLs
+      (re-)add authmech for testsuite
+      fix detection of primary group membership and detection of user list derrival from primary group memberships; also make sure the nameservice backends use unicode objects instead of strings
+      speed-up libnss nameservice: only query all users and groups once
+      fix typo
+      add config option (global): ignore-primary-group-memberships, defaults to true
+      add cmdline switch --debug, only enable http GET method in debugging mode
+      add X2GOBROKER_DEBUG to x2gobroker-daemon.default
+      empty test unit for the web frontend + inifile broker backend
+      no load balancing support, yet
+      update README, TODO
+      fix X2GOBROKER_DEBUG env var
+      enable debug mode when running unit tests
+      typo fixes in test_broker_base.py
+      add client address ACL checks
+      be more tolerant about the value found in env var X2GOBROKER_DEBUG
+      make SSL feature available
+      release 0.0.0.1
+
+Orion Poplawski (1):
+      Importing all of x2gobroker in setup.py causes rpmbuild problems due to DISPLAY not being set.  It is overkill as well, causing extra dependencies to be installed at build time. (Fixes: #91).
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2gobroker.git (HTTP(S) Session broker for X2Go)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2gobroker.git&quot; (HTTP(S) Session broker for X2Go).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000278.html">[X2go-Tags] webpy.git - upstream/0.37+20120626 (annotated tag)	created: upstream/0.37+20120626
+</A></li>
+	<LI>Next message: <A HREF="000280.html">[X2go-Tags] python-x2go.git - 0.4.0.1 (annotated tag) created:	0.4.0.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#279">[ date ]</a>
+              <a href="thread.html#279">[ thread ]</a>
+              <a href="subject.html#279">[ subject ]</a>
+              <a href="author.html#279">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

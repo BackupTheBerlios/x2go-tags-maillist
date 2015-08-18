@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] nx-libs.git - redist-server/3.5.0.17 (annotated tag)	created: redist-server/3.5.0.17
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-January/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-server/3.5.0.17%20%28annotated%20tag%29%0A%09created%3A%20redist-server/3.5.0.17&In-Reply-To=%3C20130104122520.7DA685DB14%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000270.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] nx-libs.git - redist-server/3.5.0.17 (annotated tag)	created: redist-server/3.5.0.17</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-server/3.5.0.17%20%28annotated%20tag%29%0A%09created%3A%20redist-server/3.5.0.17&In-Reply-To=%3C20130104122520.7DA685DB14%40ymir%3E"
+       TITLE="[X2go-Tags] nx-libs.git - redist-server/3.5.0.17 (annotated tag)	created: redist-server/3.5.0.17">git-admin at x2go.org
+       </A><BR>
+    <I>Fri Jan  4 13:25:20 CET 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000270.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.17 (annotated tag)	created: redist-server/3.5.0.17
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#271">[ date ]</a>
+              <a href="thread.html#271">[ thread ]</a>
+              <a href="subject.html#271">[ subject ]</a>
+              <a href="author.html#271">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, redist-server/3.5.0.17 has been created
+        at  d0cffd49e2c33200b539637acd2b2b70984d7404 (tag)
+   tagging  69c809af9659d1b429d832d05642beb78722f67c (commit)
+  replaces  redist-client/3.5.0.16
+ tagged by  Mike Gabriel
+        on  Fri Jan 4 13:25:30 2013 +0100
+
+- Log -----------------------------------------------------------------
+release NX-redistributed 3.5.0.17
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABCAAGBQJQ5so6AAoJEJr0azAldxsxShQP/3mYbvSKiM42QBnp2nmVEUY8
+sX8kEVGvGYY1qM7zD7mQFDvwFjUIbpusaEHn1xkaKNP8t/oDdlbYkfgwWGlwEeYZ
+E7PsKCmDsIls+JvivlsjnBziRsgWfz0JPlGX8CeadjoqBUyx478xyD5uXP/Z1lj6
+DcMZMJdlqc+QUL3tbJPvOiWuSMg9PlzI8N0NOYzTluT7k4zULJFZkY0w2HVATMAh
+fVwVxBSdm5ZqwghDuP4eHF466jy1Wmeb08VBGnLjud5DuvVh8WyBc1k1DusdcWQS
+wTBtN6AlVApHi0oy1fMs3amy8oispH3T0TVxXK+crT8fogHG7R94cNyxSaNJsNEN
+PrHoH44pZQoPE76jww5HJPcEM7NoRZ1hwum/A8xHkoMJ3IQpeeFhID0/z+VIXEZV
+YhGloC/IPgsqa/sc3zt6UBXvttuaRAs4ReuklGz9nu7BlJjREu2LxlPTGCH3qibD
+Jym0yRhXYGSoQwPTRJVgU3jKi24oaG3N6uJvBz26fWOoGxBILKO83Cqao1ZDBwkZ
+biGlgxxC+oHW/4Wck6XjTJq/p3ng7RyI4acKbAhvueiI8tnSozVnHEnaYVEwPwsU
+GVOgrm7fz962w8YnOIsnXQatxnPCxWVtkH3FAFzzwvE1V38ZWS33Y1ZEUiyg4yAi
+2cXu3sgkiyfnmJN55tDR
+=nZUX
+-----END PGP SIGNATURE-----
+
+Alexander Wuerstlein (2):
+      Add patch: 210_nxagent_configurable-keystrokes.full.patch, replaces the hardcoded nxagent keybindings by a configurable table of keybindings.
+      Follow-up commit for 302_nxagent_configurable-keystrokes.full.patch, fixes FTBFS problem with the first version of that patch.
+
+Mike Gabriel (22):
+      Continue development...
+      Fix /bin/Makefile. Add $(DESTDIR) to every install path.
+      Add patch: 302_nxagent_configurable-keystrokes.full.patch, replaces the... (fixing
+      re-add renamed patch file
+      add bug closure for X2Go BTS issue #74
+      whitespace fix
+      Add README.keystrokes to doc section of bin:package nxagent.
+      Add pkg-config to build dependencies.
+      control file: add some kommata at EOLs, fix dependency of x2goagent on nxagent
+      changelog entry for having added libxml2-dev to build dependencies
+      exchange X2Go by NX
+      changelog cleanup
+      add (forgotten) files belong to last commit
+      add changelog entries for Reinhard's previous commits
+      add closure for #87
+      fix lintian: missing-separator-between-items in x2goagent depends field between nxagent (&gt;= ${source:Version}) and ${misc:Depends}
+      Continue Reinhard's work on top-level install/uninstall. Esp. integrate debian/post-nx-build.sh into main Makefile. Make value of CONFIGURE variable traversable through the Makefile tree.
+      fix multiple binaries-have-file-conflicts lintian issue
+      add misc:Depends to nx-x11-dbg
+      fix multiple binaries-have-file-conflicts lintian issue
+      let nx-x11-dbg depend on libnx-x11 and nxagent
+      release 3.5.0.17
+
+Orion Poplawski (1):
+      Add patches: 026_nxcomp*_honour-optflags.full*.patch. (Closes upstream issue #84).
+
+Reinhard Tartler (17):
+      install debug symbols for all packages in a new binary package 'nx-x11-dbg'
+      make xfonts-base a recommends
+      remove unnecessary build-conflict on xbitmaps
+      disable parallel builds
+      Rely on shlibs files instead of hard coding library dependencies
+      integrate debian/pre-build-nx.sh into debian/rules
+      drop debian/patches/001_add-main-makefile.full+lite.patch
+      add rewritten roll-tarballs.sh script
+      drop debian/patches/025_nxproxy_no-configure-file.full+lite.patch
+      delete nxproxy/configure
+      fix installation of libxcompext
+      update 031_nx-X11_parallel-make.full.patch.
+      reenable parallel builds
+      simplify clean rule in debian/rules
+      Use Fixes instead of Closes syntax
+      integrate nx*/x2go* shell wrappers into debian/wrappers
+      integrate install and uninstall rules into the top-level Makefile
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+nx-libs.git (NX (redistributed))
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;nx-libs.git&quot; (NX (redistributed)).
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000270.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.17 (annotated tag)	created: redist-server/3.5.0.17
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#271">[ date ]</a>
+              <a href="thread.html#271">[ thread ]</a>
+              <a href="subject.html#271">[ subject ]</a>
+              <a href="author.html#271">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

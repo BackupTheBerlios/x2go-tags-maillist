@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goserver.git - 3.1.0.0 (annotated tag) created:	3.1.0.0
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%203.1.0.0%20%28annotated%20tag%29%20created%3A%0A%093.1.0.0&In-Reply-To=%3C20120222134019.7940E5DB17%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000174.html">
+   <LINK REL="Next"  HREF="000176.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goserver.git - 3.1.0.0 (annotated tag) created:	3.1.0.0</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%203.1.0.0%20%28annotated%20tag%29%20created%3A%0A%093.1.0.0&In-Reply-To=%3C20120222134019.7940E5DB17%40ymir%3E"
+       TITLE="[X2go-Tags] x2goserver.git - 3.1.0.0 (annotated tag) created:	3.1.0.0">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Feb 22 14:40:19 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000174.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.10 (annotated tag)	created: redist-client/3.5.0.10
+</A></li>
+        <LI>Next message: <A HREF="000176.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.11 (annotated tag)	created: redist-client/3.5.0.11
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#175">[ date ]</a>
+              <a href="thread.html#175">[ thread ]</a>
+              <a href="subject.html#175">[ subject ]</a>
+              <a href="author.html#175">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 3.1.0.0 has been created
+        at  5e820bf2e1440c334389eb25c36ab27d5f0a1670 (tag)
+   tagging  988da7922e3dc848d49c42ad2b6cff8fb2783297 (commit)
+  replaces  3.0.99.10
+ tagged by  Mike Gabriel
+        on  Wed Feb 22 14:38:31 2012 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 3.1.0.0
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJPRO/XAAoJEIlP3EWN3QKAKqAH/1T6fPagKZqDjImjcBbTC0gw
+d2Zc9IuHT+n4BAGHwN60nnqYIXhdfs4R6OaAJm3DWlRwK5G6lV9X8BOf7jK9KqyG
+WLOzpzYT3KqH29Yo42W3lTDE0U1Lp0oO/3UusG+xLNCNh+X05dU7t6c7Jg3rfL0j
+s6wkV0zEdVphAnF2+bFDw/ENX3KpXSDhCG//4dKtzaKw0Us9X0k2ld78/fk8s9pY
+Yst/i78t7J96fYjZIWEXW3p8n7FLQLpAyNuiVHe6D4aPLDFMD4HOE8VHK6Z+VPKZ
+Z9OiCULC9yzYmgLDCHfWzwfKsSNKOggFTae3S8gLgKB1oHe9d7ZKX8pun/j0Xzg=
+=rW5I
+-----END PGP SIGNATURE-----
+
+Jan Engelhardt (2):
+      Use /cgi-bin/man/ path in web'ified man pages.
+      Use ,,${MAKE}'' instead of ,,make'' in Makefile.
+
+Mike Gabriel (35):
+      increment version, continue development...
+      changelog cleanup
+      whitespace cleanup
+      changelog, typo fixes
+      Provide new package x2goserver-fmbindings. Derived from a package draft provided by Milan Kn&#237;&#382;ek (Thanks!).
+      remove cruft (version file at irrelevant location)
+      add FIXME to x2gomountdirs
+      Do not create desktop icons for rootless (i.e. non-desktop) sessions.
+      Revert &quot;Remove -auth /home/mike/.Xauthority option from x2goagent start-up command line as it breaks .Xauthority path names of GDM and other display managers.&quot;
+      Allow other $XAUTHORITY values than the default ($HOME/.Xauthority).
+      whitespace fix
+      For x2gomountdirs / x2goumount-session allow other TMP paths than /tmp. Use ENV{'TMP'} instead, unless it is empty. Then use /tmp.
+      Let x2goserver package suggest x2goserver-fmbindings.
+      typo fix
+      Place quotations where appropriate into shell scripts.
+      Fix call to x2goterminate-desktopsharing in x2goruncommand.
+      remove one quotation pair in x2gostartagent
+      more quotation pairs
+      Tolerate user names containing &quot;-&quot; characters (SQLite DB backend).
+      Revert &quot;Tolerate user names containing &quot;-&quot; characters (SQLite DB backend).&quot;
+      Tolerate user names containing &quot;-&quot; characters (SQLite DB backend).
+      make check_user a bit more picky
+      Make sure x2gocleansessions close _all_ open file handles after forking as a daemon.
+      Add package upgrade warning for installation using PostgreSQL. The upgrade warning refers to README.upgrade-pgsql-database.
+      forgot to add /debian/x2goserver.config to the list of VCS files
+      update PostgreSQL-Upgrade-Readme and debconf warning dialog
+      Add copyright header for x2gofm script.
+      Add man page for x2gogetservers script.
+      Add man page for x2gofm wrapper script.
+      Update date and release version in man pages.
+      whitespace fix
+      forgot to add man pages folder for x2goserver-fmbindings
+      install x2goserver-fmbindings man page via Makefile and via debhelper
+      x2goserver-fmbindings does not have to depend on ${shlibs:Depends}.
+      release 3.1.0.0
+
+Milan Kn&#237;&#382;ek (4):
+      Fix removal of desktop link on x2goumount-session if local folder of a Windows client gets unmounted.
+      Remove redundant -S option from x2goagent start-up command line.
+      Remove -auth /home/mike/.Xauthority option from x2goagent start-up command line as it breaks .Xauthority path names of GDM and other display managers.
+      Use -f  with xauth calls.
+
+Oleksandr Shneyder (1):
+      Modification of X2Go concept/protocol related to port detection:
+
+S&#246;ren Pl&#246;nnings (1):
+      Only run kdialog/zenity from x2goumount-session if either of them exists in the system's $PATH.
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goserver.git (X2Go Server)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goserver.git&quot; (X2Go Server).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000174.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.10 (annotated tag)	created: redist-client/3.5.0.10
+</A></li>
+	<LI>Next message: <A HREF="000176.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.11 (annotated tag)	created: redist-client/3.5.0.11
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#175">[ date ]</a>
+              <a href="thread.html#175">[ thread ]</a>
+              <a href="subject.html#175">[ subject ]</a>
+              <a href="author.html#175">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] cups-x2go.git - 3.0.0.3 (annotated tag) created: 3.0.0.3
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2011-October/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20cups-x2go.git%20-%203.0.0.3%20%28annotated%20tag%29%20created%3A%203.0.0.3&In-Reply-To=%3C20111012085132.5BBD75DD11%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000036.html">
+   <LINK REL="Next"  HREF="000038.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] cups-x2go.git - 3.0.0.3 (annotated tag) created: 3.0.0.3</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20cups-x2go.git%20-%203.0.0.3%20%28annotated%20tag%29%20created%3A%203.0.0.3&In-Reply-To=%3C20111012085132.5BBD75DD11%40ymir%3E"
+       TITLE="[X2go-Tags] cups-x2go.git - 3.0.0.3 (annotated tag) created: 3.0.0.3">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Oct 12 10:51:32 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000036.html">[X2go-Tags] cups-x2go.git - 3.0.0.3 (annotated tag) created: 3.0.0.3
+</A></li>
+        <LI>Next message: <A HREF="000038.html">[X2go-Tags] pinentry-x2go.git - 0.7.5.1 (annotated tag) created:	0.7.5.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#37">[ date ]</a>
+              <a href="thread.html#37">[ thread ]</a>
+              <a href="subject.html#37">[ subject ]</a>
+              <a href="author.html#37">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 3.0.0.3 has been created
+        at  18f82604905a9da6ba3b3f5982c81db4f79dfc95 (tag)
+   tagging  eeb0842b295fb02d1a58611cecab640a65bb1300 (commit)
+  replaces  3.0.0.2
+ tagged by  Mike Gabriel
+        on  Wed Oct 12 10:51:30 2011 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 3.0.0.3
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJOlVUSAAoJEIlP3EWN3QKAepAH+QEaPezIcpVpZrwvamO+Pz4C
+o0Rcx4zyrclzzxzQA9auUUkhLsUUhaIlBYeRp3k79ujDAm5sIPksZtaNzCPDb/Dw
+Edu9aQwzwNapfEM4hi6SJNyDyf/8dqcgQ/fUhyO0jKyiCKXeAMIB1s/tHQvZre/1
+HNVEB7mlhEhEyKU84i58ipqOe6k64NVWfaO9x5ZlLH+I7MSYYgSS3iquoCiF3m44
+61QtZlEsw5rqWElgE6uP9BhvbwlQzhZwt0yZ+6ReCgw5TfiJaK3AngwoInQnEuDw
+eEo7+/pbe+u40Pnnk62zQWXudU2hZMtSLloA6/3y/9wSLGLgx1miYSaF9CEAkE4=
+=PZ7g
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (29):
+      copyright 2009-2011
+      removed whitespaces
+      more whitespaces
+      more whitespaces cleaned up
+      control file layout
+      adds VCS information to control file
+      adds VERSION.cups-x2go file to package (for x2goversion script)
+      Add dpkg-statoverride for CUPS backend cups-x2go, file permission 0700 on CUPS backend makes CUPS run this backend with root-privileges which is needed for cups-x2go to work.
+      forgot to add postinst script
+      indentation fix
+      Multiple changes in this commit...
+      After thinking more thoroughly about x2goprint execution variants (different x2goserver versions)...
+      Add a proper dpkg-statoverride check in postinst script.
+      Fix for syslog command.
+      syslog fixes
+      tab'ified cups-x2go backend script
+      Call x2goprint directly with root privileges if x2goserver and CUPS server share the same machine.
+      Major change of code, add comments, syslogging, fix ghostscript call.
+      improve comments for config file options
+      improve comments for config file options (2)
+      Fix remote printing, use host specified in X2go session information for destination of print jobs, not the host specified in cups-x2go.conf.
+      remove commented code block
+      Add loglevel config option, allow different log levels (i.e. levels of syslog verbosity).
+      fix for setting syslog level
+      comment update of those that explain different loglevels
+      cosmetic fix
+      loglevel warn has to be warning
+      release 3.0.0.3, rework changelog
+      version increment (forgotten)
+
+Oleksandr Shneyder (1):
+      * fixed reading deprecated /etc/x2go/sql
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+cups-x2go.git (CUPS Backend for X2go Printing)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;cups-x2go.git&quot; (CUPS Backend for X2go Printing).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000036.html">[X2go-Tags] cups-x2go.git - 3.0.0.3 (annotated tag) created: 3.0.0.3
+</A></li>
+	<LI>Next message: <A HREF="000038.html">[X2go-Tags] pinentry-x2go.git - 0.7.5.1 (annotated tag) created:	0.7.5.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#37">[ date ]</a>
+              <a href="thread.html#37">[ thread ]</a>
+              <a href="subject.html#37">[ subject ]</a>
+              <a href="author.html#37">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

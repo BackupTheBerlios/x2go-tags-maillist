@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] nx-libs.git - redist-client/3.5.0.22 (annotated tag)	created: redist-client/3.5.0.22
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2014-January/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-client/3.5.0.22%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.22&In-Reply-To=%3C20140104204245.9ADA75DB35%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000370.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] nx-libs.git - redist-client/3.5.0.22 (annotated tag)	created: redist-client/3.5.0.22</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-client/3.5.0.22%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.22&In-Reply-To=%3C20140104204245.9ADA75DB35%40ymir%3E"
+       TITLE="[X2go-Tags] nx-libs.git - redist-client/3.5.0.22 (annotated tag)	created: redist-client/3.5.0.22">git-admin at x2go.org
+       </A><BR>
+    <I>Sat Jan  4 21:42:45 CET 2014</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000370.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.22 (annotated tag)	created: redist-client/3.5.0.22
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#369">[ date ]</a>
+              <a href="thread.html#369">[ thread ]</a>
+              <a href="subject.html#369">[ subject ]</a>
+              <a href="author.html#369">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, redist-client/3.5.0.22 has been created
+        at  b07b3cca09f5aa4a5c32dc4f75df2978a8aacaac (tag)
+   tagging  626b5dbae6b7b432d573f88abc8e3e8ae2bdba85 (commit)
+  replaces  redist-server/3.5.0.21
+ tagged by  Mike Gabriel
+        on  Sat Jan 4 21:40:56 2014 +0100
+
+- Log -----------------------------------------------------------------
+NX-redistributed 3.5.0.22 (client-only)
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABCAAGBQJSyHHYAAoJEJr0azAldxsxXWIP/3SwkePqHn9DekxoQqZyuTAq
+6i2xDWu9K2HqJyeDd6KpehEDbOlr9wAGIvb/dp9dk7EXK02ij/j6A8MRdN34vIWB
+SF+ZUxTqXMMaOfYH4ey/8sXx4LkXhTQgoo+uhlPA4oFCMcm8itu7M0jk+WlxHHxc
+eGyNji9rP6uuP8Qs/uvrfnKf1jJh7LbCwRJHjiGkEHB73RaQ7oSMs7yF/KU7uqhV
+9runk2KJwEEHEi++JGguqH7XA3Y7zI+WfyA9NHyvfOzRx1iEDQcclm+kXuoGaV7Z
+WJqBOLa/HRMKyBsNyKV5RKFXuKaW75WRzy6vtralUp3K2YJe39S9LgHuIBcEEB1w
+skhbYOvT5XAZ7xoqNc45R5zqDL0YA9nZwy3fcuFg11feFRK0mW67V++HoKtUHfCL
+mqWV4W2viL3Dc2Wr1Zuh907jcRMwQBPESmHrMM3D47/K9yVBiJQFPcZ8iemJiOUL
+fEf7GcK743M78cqX6sQn5TB8WWSkUkngeSgFsodwMvzG4e8+J3vxqKzK4ogXOX9U
+nhWfMM19MJ9bZ6m8qflEKQauzHQeu9RyTcZKkLe5BPsMvFZrf+9tFOF6w5oly8bX
+d9i6qa+F6YVVB/67TjYAjC1N7ofBceMUWNM6d+fuDjzNJOkNtjY3BCyOoX8vOQ1K
+ZKE793Xy/y5hOGV+vgDl
+=MhGZ
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (29):
+      Continue development...
+      Add patch: 603_nx-X11_compilation_warnings.full.patch. Fix 3 evident bugs: one implicit function declaration issue and two array index out of bounds issues. (Fixes: #314).
+      debian/source/format: Switch to format 1.0.
+      change versioning scheme
+      debian/control: Add libfreetype6-dev to Build-Depends: field.
+      Add patch 604_nx-X11_recent-freetype-API.full.patch. Fix FTBFS against recent (&gt;= 2.5.0) libfreetype6 API.
+      Add patch 605_nxcomp_Types.h-dont-use-STL-internals-on-libc++.full.patch. Fix FTBFS of nx-libs-lite on Mac OS X Mavericks. (Fixes: #337).
+      Refresh patch: 600_nx-X11+nxcompext+nxcompshad_unique-libnames.full.patch.
+      Ship nx-libs.spec (RPM package definitions) in upstream project. (Thanks to the Fedora package maintainers). File differs from the Fedora file already.
+      nx-libs.specs: remove duplication of file contents
+      nx-libs.spec: Use local tarball, don't expect  ,,-full'' in tarball name.
+      prep source tree after unpacking tarball, bring files from debian/ folder in place before building the RPM package
+      Add patch: 302_nx-X11_do-not-build-bundled-libs.full.patch. Rename patch: 302_nxagent_configurable-keystrokes.full.patch.
+      Improve patch: 601_nx-X11_build-option-changes-to-not-use-bundled-libraries.full.patch. Improvements taken from the current Fedora package. Thanks to Orion Paplowski!!! Also adapt roll-tarball.sh do dropping more bundled libraries.
+      adapt spec file to last commit
+      debian/rules: Remove bundled libraries from source tree before building the package.
+      The RPM macro for the linker flags does not exist on EPEL. Thus, hardcode __global_ldflags macro for EPEL builds.
+      compensate missing %buildroot macro in EPEL5
+      typo fix
+      make sure our RPM package version is lower than a package version from EPEL
+      nx-libs.spec: fix spellings in package descriptions
+      nx-libs.spec: x2goagent does not depend on x2goserver (rather vice versa)
+      Clear (Fedora package) changelog.
+      Drop symlinking libNX_xrandr for setting a custom LD_LIBRARY_PATH. Not in use anymore and not recommended at all to have that.
+      Enable Xinerama support for RPM packages. (Fixes: #370).
+      Make sure all nx-libs components depend on the very same version.
+      attempt to correct symlink creation for Xinerama support
+      nx-libs.spec: fix symlink creation for Xinerama (missing subfolder)
+      release 3.5.0.22
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+nx-libs.git (NX (redistributed))
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;nx-libs.git&quot; (NX (redistributed)).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000370.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.22 (annotated tag)	created: redist-client/3.5.0.22
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#369">[ date ]</a>
+              <a href="thread.html#369">[ thread ]</a>
+              <a href="subject.html#369">[ subject ]</a>
+              <a href="author.html#369">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

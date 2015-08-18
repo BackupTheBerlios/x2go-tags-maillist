@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] python-x2go.git - 0.2.0.0 (annotated tag) created:	0.2.0.0
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-May/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20python-x2go.git%20-%200.2.0.0%20%28annotated%20tag%29%20created%3A%0A%090.2.0.0&In-Reply-To=%3C20120529153922.A07145DB34%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000191.html">
+   <LINK REL="Next"  HREF="000193.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] python-x2go.git - 0.2.0.0 (annotated tag) created:	0.2.0.0</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20python-x2go.git%20-%200.2.0.0%20%28annotated%20tag%29%20created%3A%0A%090.2.0.0&In-Reply-To=%3C20120529153922.A07145DB34%40ymir%3E"
+       TITLE="[X2go-Tags] python-x2go.git - 0.2.0.0 (annotated tag) created:	0.2.0.0">git-admin at x2go.org
+       </A><BR>
+    <I>Tue May 29 17:39:22 CEST 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000191.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.13 (annotated tag)	created: redist-server/3.5.0.13
+</A></li>
+        <LI>Next message: <A HREF="000193.html">[X2go-Tags] python-x2go.git - 0.2.0.1 (annotated tag) created:	0.2.0.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#192">[ date ]</a>
+              <a href="thread.html#192">[ thread ]</a>
+              <a href="subject.html#192">[ subject ]</a>
+              <a href="author.html#192">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.2.0.0 has been created
+        at  1f18435ece8e2015b81a650672a79969470807dd (tag)
+   tagging  9ab80b65fb6ffb9d1651786d7412e1a3a82f2d5c (commit)
+  replaces  0.1.1.4
+ tagged by  Mike Gabriel
+        on  Tue May 29 17:39:16 2012 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 0.2.0.0
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJPxO2kAAoJEIlP3EWN3QKAIucH/1qtK473sU9KxQhxK2JE7r0M
+TxRd/jt5sOwefFkST++cHWMBlYtmjUln0vX6Pp1iCXo+PB/2lrpftjmb5J49e+aU
++IBeeuFldr4BlaZLpwvuYuXABdCS8eaI3YAnqj9YaWna5BQualPiuwoUnkHjrqLJ
+qpygJ18EByQ2etWkMv5UZJgvMmNZ6sZdcp/zj9CiTaW5acKp2qhMQoY8jSQF3am0
+IAxQSmE3sZIEaCevux63yTbNyxlKoR7roqhkxwSvop9/LIOEW6lPn1gwLion4PJw
+Gm1vnuLjGNdhj5l9Ra+ISiUzivMSUqyeGAoNfZpNDOG+y+0FISsYBgvmC7J1aTk=
+=PCle
+-----END PGP SIGNATURE-----
+
+Dick Kniep (1):
+      Typo in utils.py (true instead of True).
+
+Mike Gabriel (268):
+      License Change!!! GPLv3 -&gt; AGPLv3
+      doc update
+      cosmetics
+      License change upstream: GPLv3+ -&gt; AGPLv3+
+      tab fix
+      Call a hook method in case a session startup has failed (was: exception raisal).
+      Handle full path cmd strings adequately: check existence of full path, but use basename for cmd startup.
+      manually merged in changelog entries from release/0.1.1.x branch
+      remove interpreter from defaults.py
+      Renamed/restructured NX compression pack method names.
+      fix for link quality patch
+      catching a socket.error exception during command execution
+      Fix for X2goSessionRegistry.forget method, do not complain if session_uuid is already forgotten.
+      changelog update
+      fix for Makefile.docupload
+      If sound is set to false in session profile use snd_system='none' in terminal session.
+      Stabilize sshfs related problems in case remote user is not in fuse group.
+      add some logging to failing sshfs sessions
+      Do not ignore usekbd session profile option anymore, closes upstream issue #81.
+      launch the x2goagent+command earlier during session creation...
+      typo fix (with impact)
+      cosmetic fix for share_desktop method
+      Fix for X2goSession.has_terminated method.
+      log message fix in x2gosession.py
+      Fix for executing commands with arguments that contain a slash (thanks to Dick Kniep for digging this out).
+      Make X2goTerminalSessionSTDOUT.has_command resistable against empty command strings.
+      Catching fautly x2gostartagent behaviour.
+      release 0.1.1.5
+      * New upstream version (0.1.1.6), bugfix release for 0.1.1.x series:
+      Fix handling of lists in session profiles (i.e. ini files). Fixes breakage with x2goclient's rootless vs. desktop mode after pyhoca-gui has been used.
+      release version 0.1.1.6
+      Add support for x2goumount-session calls.
+      remove debug code
+      Differentiate between spool folders and data folders when unsharing all folders, return exitcode from X2goTerminalSessionSTDOUT.unshare_* methods.
+      Use TCP_NODELAY option for audio rev forwarding tunnels.
+      changelog fixes
+      comment fix
+      changelog fix
+      Use TCP_NODELAY socket option for graphics forwarding tunnels.
+      changelog cleanup
+      Typo fixes in session.py, related to calling _X2goSession__disconnect method.
+      Compatibility fix for X2go folder sharing (session profile attribute: export).
+      fix for new/compat export field interpretation
+      minor method name extension in X2goClient class, indent fix
+      Provide test method to query server if folder sharing is available. Test for existence of remote home directory on connect.
+      log message fix
+      be more precise, when allowing local folder sharing
+      remove code duplications
+      fix for boolean condition, related to folder sharing
+      release 0.1.1.7
+      re-add version 0.1.2.0 header to changelog
+      Bugfix for: Test for existence of remote home directory on connect.
+      Unshare local folders during session cleanup.
+      remove code duplications
+      Remove local session cache folders after sessions have terminated.
+      provide better __repr__ output for debugging session infos
+      Improve local session cache dir removal.
+      Fix missing import of socket module in backends/control/_stdout.py.
+      Catch failures on sftp_write in control session instance.
+      Always disconnect from X2goSession instance.
+      fix SSH proxy authentication
+      Use random passwords for checking SSH host keys.
+      fix hostname parameter in checkhosts.py
+      change random pwd mechanism in checkhosts.py
+      Fix duplication of SSH keys in known_hosts file, use hashed hostnames in known_hosts file. Make sure SSH keys written to known_hosts file are  available to other SSHClient instances immediately.
+      continue development (0.1.1.x branch)
+      Ignore session registry exceptions for profiles that just got disconnected.
+      Fix exception raisal in X2goTerminalSessionSTDOUT.
+      Print access to an X2Go server is not controlled by x2goprint group membership, but by fuse membership.
+      Add XFCE4 support.
+      use public control session method to detect availability of local folder sharing
+      Add ,,autostart'' parameter to default session profile parameters.
+      Add support for session window title renaming from client-side.
+      Introduce additional session profile parameter: setsessiontitle.
+      Fix for list processing in  INI files.
+      Make terminal backend ,,applications'' aware.
+      Allow session parameter change for already registered sessions.
+      remove debug code
+      use control session method to access hostname of remote server
+      use control session method to access port of remote server
+      Add support for session window title renaming.
+      Add support for bringing session windows on top.
+      Depend on python-xlib.
+      new Xlib code shall only be used on non-Windows platforms
+      fix for last commit
+      add __doc__ strings to new session_window functions in utils.py, make sure the Xlib.display is only initialized once on every call.
+      Terminal session now remember the X window of a terminal session in as an internal property.
+      handle missing X display on package build
+      fix simultaneous X_DISPLAY.sync() calls on session resuming
+      control file, copyright file update
+      whitespace fix in changelog
+      Fix many undefined symbols reported by Debian developer Jakub Wilk. (THANKS!). Changelog cleanup+fix after release of version 0.1.1.9.
+      The Python setuptools modules does not have to be installed as dependency with python-x2go.
+      typo fix
+      Add default value for new session profile parameter xinerama (ignored by Python X2Go for now).
+      Replace any non-code string ,,X2go'' by ,,X2Go''.
+      more X2go -&gt; X2Go replacements
+      more X2go -&gt; X2Go
+      Add support for session port re-allocation on session resume (feature of x2goserver &gt;= 3.1.0.0).
+      Provide client-side cache of shared local folders, detect server-side unsharing of client-side folders.
+      Introduce concept of master sessions per profile to X2goClient class. Only the master session can mount/unmount client-side shared folders.
+      remove debug code
+      fix __doc__ strings
+      Fix IndexError if x2gomountdirs did not deliver any of the expected results to stdout.
+      Handle session titles that just contain blanks (e.g. &quot; &quot;) gracefully.
+      Fix X2Go desktop sharing support.
+      New feature, allow/fix sessions on localhost system.
+      fix for commit b3bf6d63c5914984585e64d68630e0ac9bced9ec
+      Tolerate names containing &quot;-&quot; characters.
+      Provide hook methods for SSHFS failures (local folder sharing, printing, MIME box).
+      fix undefined names in terminal backend
+      Code cleanup: remove all unnecessary imports. Stop defining variables that get never used.
+      fine-tune new hook methods
+      Rename control session method is_folder_sharing_available to is_sshfs_available.
+      Make x2go module importable on Win32 platforms again.
+      Fix faking of WindowsError exception object in printactions.py and mimeboxactions.py.
+      Draw all Xlib code into utils.py
+      Run print actions in background (gevent.spawn).
+      Run MIME box actions in background (gevent.spawn).
+      complete background printing feature
+      fix faking of WindowsError
+      __doc__ string fixes
+      fix setting of session window title on Unix platforms (after changing stuff on Windows)
+      Amend list of default session options.
+      Update list of unsupported session options.
+      Retrieve feature list from X2Go server per session.
+      silence which command
+      fix x2gofeaturelist query
+      Add published applications support.
+      Fix base64 encoded icon string.
+      Fix master session recognition.
+      silence log output
+      Handle empty control session in the session list cache.
+      fix for last commit
+      bundle commit, stabilize code
+      remove debug code
+      Render and cache dictionary based published applications menu tree in Python X2Go. Cache the tree once rendered.
+      Fix availablity check of client-side folder sharing.
+      Add support for published applications with no category submenus. Fix default language in published applications menu tree.
+      Fix X2Go printing, do not spawn a gevent process for printing.
+      Make published_applications_no_submenus an &lt;int&gt; session option that controls how many menu items will be shown without rendering category based submenus.
+      Support auto-resuming and auto-starting of session with Python X2Go.
+      typo fix in log output
+      changelog cleanup
+      Include development location of nxproxy in possible file locations.
+      Add X2goClient method is_profile_connected.
+      Fix auto_start_or_resume method when using SSH proxy with interactive authentication. Provide default value for PUBAPP_MAX_NO_SUBMENUS in defaults.py.
+      For the Windows version, make shipped VcXsrv-Server known to Python X2Go. The shipped VcXsrv has to rest in $CLIENTAPPDIR/VcXsrv/vcxsrv.exe.
+      typo fix
+      For the Windows version, make VcXsrv-Server at the development location known to Python X2Go.
+      add newline at EOF
+      add missing VcXsrv_development to known_xservers
+      slight change in logging X-Server activities
+      handle thread cleanup and Xserver process on Windows
+      Normalize paths to configuration files.
+      fix call of os.path.normpath
+      more path normalizing
+      Make new ini config defaults available in configurations, update list of known X-Servers if new ones are provided in defaults.py
+      Provide function merge_sorted_lists in utils.py.
+      Provide function merge_ordered_lists in utils.py, merge list of default known_xservers with configured known_xservers.
+      Make sure xconfig configuration changes provided by defaults.py get written to the config file.
+      Docstring fix, add X2goClient method is_session_profile(), return registered session for a specific session name if it has already been registered instead of registering a new session.
+      Provide X2goClient method get_session_info(), do not auto start/resume sessions in published applications mode, provide hook method for auto-connecting interactively.
+      stabilizing code
+      setup.py: fix typos, license info
+      fix lintian issues (debian-changelog-line-too-long and out-of-date-standards-version)
+      Provide X2goSession method get_session_profile_option().
+      Fix unexpected keyword error during connect() in X2goSession instance.
+      whitespace/tab fix
+      Fix metatype detection of session profiles.
+      happy new year
+      fix license / copyright passages
+      Implement X2Go-Top category in .desktop files that get used in the context of published applications.
+      lintian issue fixed: extra-license-file
+      If the SSH proxy connection tries to bind to a used port, detect an unused local port and write this port change to the session profile.
+      Use double-quotes for pulseaudio options.
+      Export X2GO_SESSION and PULSE_CLIENTCONFIG to published applications.
+      When starting pulseaudio on Windows use --exit-idle-time=0.
+      fix for last commit
+      Fix X2goSession.get_shared_folders() method on Windows.
+      typo fix
+      fix detection of shared folders on Windows
+      make sure backslashed Windows paths arrive properly in x2goumount-session script
+      try to sedate a gevent IOError (no error)
+      No list_sessions() calls on server when querying the status of an X2goSession instance.
+      set pulseaudio exit-idle-time to -1
+      add some capturing code for bad implementations of published applications menu tree queries in client applications
+      fix for last commit
+      Fix automatic mounting of Windows-stylish shared local folders.
+      Transform blanks in mount points into underscores.
+      Add support for renaming X2Go session windows on Windows.
+      fix for last commit
+      Add support for Windows for bringing X2Go session windows to foreground.
+      Provide X2goClient.get_published_applications() method.
+      Fill session profile configurations with missing default values and then detect the profile meta type.
+      Support published applications that have to be run in a terminal window.
+      Make sure that pulseaudio.exe has its PID directory. Otherwise it will fail to start the first time if the user is new to X2Go.
+      typo fix
+      typo fix 2
+      make sure the LOCAL_HOME path is normalized
+      use makedirs instead of mkdir
+      Silence warnings that occur during session info queries in case a session startup has not yet been completed fully.
+      no GenericName field evaluation
+      Use nxproxy-3.5.0.12 when testing Python X2Go applications.
+      Use VcXsrv-1.12.0.1 when testing Python X2Go applications.
+      If configured X-server display port is already in use, try to detect the next available display number.
+      Make transitions of master sessions more robust. Only allow local folder sharing for running sessions.
+      Re-use a left behind stray X-server that might have not get killed by a previous instance of Python X2Go Client. This trick is nasty, but works around faulty abortion of client implementations.
+      os.environ elements can only be strings
+      Handle detection of free TCP/IP X display port far more intelligently.
+      fix syntax and attribute errors
+      On unused port detection bind to 127.0.0.1 by default.
+      finally fix last 2-3 commits
+      Provide X2goSession.get_session_type() method.
+      typo fix
+      fix for last commit
+      Do not call HOOK method if self.allow_share_local_folders is False.
+      Try to derive language information from X2goClient instance.
+      Make timeout on command execution customizable.
+      fix typo
+      Fix SSHException usage.
+      fix missing kwarg timeout in X2goSession.exec_published_applications()
+      fix __doc__ string indentation
+      Make sure path names in X2goPrintActions and X2goMIMEboxActions get transformed to OS-specific path names.
+      Not using gevent to spawn MIME box default applications.
+      cleanup commit for last commit
+      fix undefined protected property in X2Go session info
+      Protect session cache from deletion while being processed.
+      handle import and usage of defautls.X2GO_DESKTOPSESSIONS differently
+      Adapt python-x2go to launching Unity-2d on Ubuntu precise.
+      Ignore X windows with empty title while finding session window..
+      Catch exceptions while calling SSH transport's getpeername() method.
+      minor change in listsessions cache
+      missing colons (typos)
+      Fix control session failure notifications. Show them immediately after the connection broke.
+      Allow custom commands to be desktop sessions.
+      fix detection of rootless sessions
+      X2goSession instances cannot raise X2goClientExceptions.
+      Be more tolerant against suspension failures while taking over a session.
+      do not import unused module
+      Bundle commit, fixing several issues:
+      Fix local folder sharing when the master session changes during runtime.
+      typo fix
+      use gevent.spawn for wait=0 and gevent.spawn_later for wait&gt;0
+      recognize session parameter type during import
+      wait 2 seconds before invoking share_all_local_folders script
+      Add support for re-registering sessions after session profile changes.
+      drop experimental keyboard setting code
+      Add new session profile parameter: ,,variant''. Add support to set the keyboard layout _and_ the keyboard variant from the client-side.
+      Give functionality to the ,,setdpi'' and the ,,dpi'' session profile parameter (setting the DPI allows font scaling).
+      __doc__ string fixes for terminal backend
+      Use proper locking of session actions that are critical to being executed in parallel.
+      reworked all non-backend __doc__ strings
+      re-add a lost line (HOOK_on_control_session_death)
+      fix __doc__ strings
+      more work on __doc__ strings (backend classes)
+      only reported virgin sessions to have been started by someone else
+      doc string work on the control session backend
+      work on the terminal session __doc__ strings
+      update README/TODO file
+      bump upstream version towards 0.2.0.0
+      reintroduce compat X2goClient parameter ,,use_cache'' as alias for use_listsessions_cache
+      Fix example file x2go_resume_session.py
+      HOOK_forward_tunnel_setup_failed fixed
+      cosmetic fixes
+      set activated property to False on session cleanup
+      last pre-release checks with pyflakes
+      release 0.2.0.0
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+python-x2go.git (Python X2Go Client API)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;python-x2go.git&quot; (Python X2Go Client API).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000191.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.13 (annotated tag)	created: redist-server/3.5.0.13
+</A></li>
+	<LI>Next message: <A HREF="000193.html">[X2go-Tags] python-x2go.git - 0.2.0.1 (annotated tag) created:	0.2.0.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#192">[ date ]</a>
+              <a href="thread.html#192">[ thread ]</a>
+              <a href="subject.html#192">[ subject ]</a>
+              <a href="author.html#192">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

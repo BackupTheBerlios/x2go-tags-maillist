@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goserver.git - 4.0.1.10 (annotated tag) created:	4.0.1.10
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2014-January/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.1.10%20%28annotated%20tag%29%20created%3A%0A%094.0.1.10&In-Reply-To=%3C20140106172855.D48925DB33%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000373.html">
+   <LINK REL="Next"  HREF="000375.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goserver.git - 4.0.1.10 (annotated tag) created:	4.0.1.10</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.1.10%20%28annotated%20tag%29%20created%3A%0A%094.0.1.10&In-Reply-To=%3C20140106172855.D48925DB33%40ymir%3E"
+       TITLE="[X2go-Tags] x2goserver.git - 4.0.1.10 (annotated tag) created:	4.0.1.10">git-admin at x2go.org
+       </A><BR>
+    <I>Mon Jan  6 18:28:55 CET 2014</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000373.html">[X2go-Tags] x2goserver.git - 4.0.1.11 (annotated tag) created:	4.0.1.11
+</A></li>
+        <LI>Next message: <A HREF="000375.html">[X2go-Tags] x2gognomebindings.git - 2.0.2.1 (annotated tag)	created: 2.0.2.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#374">[ date ]</a>
+              <a href="thread.html#374">[ thread ]</a>
+              <a href="subject.html#374">[ subject ]</a>
+              <a href="author.html#374">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 4.0.1.10 has been created
+        at  1a793e3d843bbeee3e597c762d9fe1d19c97baa7 (tag)
+   tagging  18702f6ea834854b9777c43714d3047ab4a543f4 (commit)
+  replaces  4.0.1.9
+ tagged by  Mike Gabriel
+        on  Fri Jan 3 11:36:16 2014 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 4.0.1.10
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABCAAGBQJSxpKgAAoJEJr0azAldxsxaQAP/3BNHTk0mt829HKbGp1RjHCN
+bo728+BonDoVz3BrsJCmjfvUae8ut3IrcKtXF4qNQex6dAzxPCWp1NitL5BGc8qL
+HNnHdOomfMxEFQpnr8PDb7X6kfI3Xmr3JG3G0XDzFd7RD3hcqaR0T8ADFOw5gnqU
+WSkAWLmlyIJWShb2Clpm17UMFTJvGvTquRDCeb1lQacDB9z2tTq/u3h1g6Zj48NM
+M+bYTPOQ+amsXTyvIENiatZEXurfzvlt8LQDHCAshUc4pxeMGZrX/AkTQPYooS8N
+ll6X4nAYjvVfOvOM295+DEVXCTocHC9f50jGFYF8XFqR0dflTk11YuxZoO5LWEEp
+JKKPeV1YwT8Vc+KoeWXzkees5+TpT2JLlE9YyPLcaKoDD+/3iRa8sowogToOOlY8
+Gu9cbJbEkzSZAH2goxDEdHTFtjWbQpl/QseauC/TsqRgtdJz8YG/FSmC12mqRg/k
+nwKq1HN4M2I0dxbNHwEW1K+bV31XJwbG13CzLyv7VMrrbbBApfc48rpSyAV11HMa
+PgRqfzRJBSOV3fNqt2KSZXJ7evlrjHtHCpmXYA6Jn1F/Ru3j9WL6/nu4XHV5577u
+Mtbm27LRCKj1hHqeuEBjmS9n6XuAK+5KRM15sKnh31cr/eoeLfaACckpBiT5FKVr
+GLQanW0teURTnWvMWu2f
+=dp1F
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (42):
+      Continue development on stable branch of X2Go Server...
+      Test commit... This should trigger the package build in Jenkins.
+      jenkins test commit (2)
+      Revert &quot;jenkins test commit (2)&quot;
+      Revert &quot;Test commit... This should trigger the package build in Jenkins.&quot;
+      Use mktemp instead of tempfile (because Fedora does not have the tempfile binary). (Fixes: #347).
+      Replace makepasswd by pwgen (because Fedora does not have makepasswd).
+      Grab systemd service file from Fedora and ship it upstream.
+      Add init script for RPM based distro. Taken from the Fedora package.
+      Ship x2goserver.spec (RPM package definitions) in upstream project. (Thanks to the Fedora package maintainers). File differs from the Fedora file already.
+      Fix x2goresume-session. The several parameters placed into the NX options file are expected by x2goresume-session at very specific positions. This we broke by trying to fix the fullscreen/geometry issue in x2gostartagent. Thanks to Harvey Eneman for tracking this down!!! (Fixes: #355).
+      Improve parsing of the NX session.log file where unexpected extra logging takes place during session suspension/resumption. Thanks to Gerald Richter for finding this!!! (Fixes: #356).
+      x2goserver-fmbindings/Makefile: install x2gofm.
+      x2goserver-fmbindings/Makefile: install share/applications and share/mime.
+      x2goserver-printing/Makefile: create feature.d directory before installing files into it.
+      Handle TCP listening of x2goagent in x2goagent.options. (Fixes: #354).
+      Clean up Makefiles, remove commented out line.
+      Use xkb ruleset 'base' rather than xfree86 as on RHEL systems the xfree86 symlink to base rulset does not exist.
+      changelog update
+      changelog update(2)
+      Provide RHEL/Fedora support in x2goserver-xsession.
+      x2goserver-xsession/Makefile: fix syntax error
+      Only sanity check for existence of /etc/x2go/Xsession.d on Debian (derived) systems.
+      x2goserver.spec: copy in spec file from master branch, needs reworking\!\!\!
+      x2goserver.spec: adapt spec file to release/4.0.1.x branch
+      pull in x2goserver.init script for RPM distros from master branch
+      x2goserver.spec: whitespace fix
+      Provide man page for x2goserver.conf.
+      update Makefiles from master branch
+      x2goserver.spec: disable making x2goserver-compat, x2goserver-pyhoca
+      Avoid one argument system calls and backticks in x2gocleansessions and x2golistsessions_root.
+      move vulnerability fix in x2gocleansessions/x2golistsessions_root to 4.0.0.8
+      whitespace fix
+      Avoid one argument system calls and backticks in x2golistsessions.
+      Avoid one argument system calls and backticks in x2goprint.
+      fix system() call in x2golistsessions_root
+      Avoid backticks in x2goshowblocks, move script to &lt;prefix&gt;/sbin/ as it is for being run with root privileges.
+      whitespace fix
+      Sanitize session ID string, port numbers, display numbers and agent PID numbers.
+      improve changelog entry
+      release 4.0.0.8 (cherry-picked from release/4.0.0.x branch)
+      release 4.0.1.10
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goserver.git (X2Go Server)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goserver.git&quot; (X2Go Server).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000373.html">[X2go-Tags] x2goserver.git - 4.0.1.11 (annotated tag) created:	4.0.1.11
+</A></li>
+	<LI>Next message: <A HREF="000375.html">[X2go-Tags] x2gognomebindings.git - 2.0.2.1 (annotated tag)	created: 2.0.2.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#374">[ date ]</a>
+              <a href="thread.html#374">[ thread ]</a>
+              <a href="subject.html#374">[ subject ]</a>
+              <a href="author.html#374">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

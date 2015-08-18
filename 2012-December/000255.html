@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] python-x2go.git - 0.2.1.0 (annotated tag) created:	0.2.1.0
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-December/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20python-x2go.git%20-%200.2.1.0%20%28annotated%20tag%29%20created%3A%0A%090.2.1.0&In-Reply-To=%3C20121210120247.0B3705DB1A%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000256.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] python-x2go.git - 0.2.1.0 (annotated tag) created:	0.2.1.0</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20python-x2go.git%20-%200.2.1.0%20%28annotated%20tag%29%20created%3A%0A%090.2.1.0&In-Reply-To=%3C20121210120247.0B3705DB1A%40ymir%3E"
+       TITLE="[X2go-Tags] python-x2go.git - 0.2.1.0 (annotated tag) created:	0.2.1.0">git-admin at x2go.org
+       </A><BR>
+    <I>Mon Dec 10 13:02:46 CET 2012</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000256.html">[X2go-Tags] pyhoca-gui.git - 0.2.1.0 (annotated tag) created:	0.2.1.0
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#255">[ date ]</a>
+              <a href="thread.html#255">[ thread ]</a>
+              <a href="subject.html#255">[ subject ]</a>
+              <a href="author.html#255">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.2.1.0 has been created
+        at  2c5f71524cb543e166b7ce49d508097603b4dbc1 (tag)
+   tagging  86a4bfdb9c720bc4dd24a59dc9bf7b2403f52005 (commit)
+  replaces  0.2.0.10
+ tagged by  Mike Gabriel
+        on  Mon Dec 10 13:02:34 2012 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 0.2.1.0
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABCAAGBQJQxc9aAAoJEJr0azAldxsxZfUP/i/ojxD9yed8L85PRlKE8Itj
+oiGgOdU2Z7geN5ozQ1cmi/pxJEmFi7qksrP69sk+NpWzKQa1mDVX/4vUzhY1IGIO
+Ka8SqAmwW1pPY8qZJEO4ZqnIGee/JuwWQXTejnLP9litypoCXPEjblP5iA/ccGVZ
+bof37z/+Gyu71OQMrgZINIZ6u0lcZhO2cFHGoRxqHxXztKthacrGMx8XHA/5P1Pt
+JssL3+zs0wcI06Dq79W9GFrufRJLQff5bIvIv9oOEpcxcKNXTYXHFnfKPZb6uzoo
+wMKXIf0vXokKE862liWon4Co3MR4WFke4eQa2i27HxYirXnI+TNldPRRQfC2JB2+
+TUqEA5YvWwJY/l2DAw/gO1McrzkBZOY1LaUf5C4gM23M5s62emg8HYkHVwPG77vm
+jh7vzidL59/UN5aXFIyo0jdyPbZ4dTTpymTeR9me64w7hfYkQosPcL2G2AEdH42O
+DgqpxH8hQ2ZrsZ/PFvuziOmDWF51lHy8IcHcwBLNQKDrqvYEZ5sP1OjDWPu87diw
+bbZXLRqTEgIvjLABLat1WpkYbC0nF0bMCuvs74EapXB5O96VLN+FmgXztBGU+S0t
+76YuxMHD8qatDtiekKLACIoAlhdW3EsapLyA5OydTfgruC1VbnLLi4SlET2O8ST2
+YQ2WKBnxUc4zik6qrz06
+=Y44Y
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (96):
+      /debian/control: Allow build on Ubuntu 10.04 (reduce Python version in Build-Depends).
+      package revision 0~x2go2
+      Prepare for staying compatible with new SSH proxy feature in X2Go Client.
+      typo fix
+      increment egg version
+      changelog fix
+      Add sshproxy_port option to session (SSH proxy) options.
+      /debian/rules: Allow package build on systems with missing dh_python2.
+      Implementation of session profile parameters ,,sshproxysameuser'' and ,,sshproxysameauth''.
+      Fixing typos in __doc__ strings.
+      Add x2goclient sessions parameter ,,usebrokerpass''.
+      Revert &quot;Add x2goclient sessions parameter ,,usebrokerpass''.&quot;
+      Add support for starting maximized session windows.
+      add closure of issue #12 to changelog
+      move session window maximization into terminal backend
+      Fix category ,,Utility'' when parsing .desktop files.
+      For ,,maxdim'' session property fallback to _NET_DESKTOP_GEOMETRY if _NET_WORKAREA is not available from the window manager.
+      follow-up fix for last commit
+      set fallback geometry if maximize is not available, fix for if clause
+      fix __doc__ string indentation
+      fix __doc__ string indentation(2)
+      Mention ,,maximize'' as possible value for session option geometry in __doc__string of class X2goTerminalSessionSTDOUT.
+      Allow smooth session profile migration, prefer &lt;host&gt;:&lt;port&gt; (set via sshproxy_host) for SSH proxy port detection.
+      Implement SSH agent authentication forwarding.
+      bump version towards 0.2.1.0
+      Implement X2Go session profile features ,,autologin'' and ,,sshproxyautologin'' (meaning: look_for_keys and allow_agent in Python Paramiko terms).
+      fix last two commits
+      add _paramiko.py (renamed) file
+      /debian/control: Versioned depend on python-paramiko (&gt;= 1.8-0~).
+      /debian/pyversions: Drop file as it is deprecated.
+      Make X2goClient instance available in initial X2goSession instances.
+      fix-up after some tests for look_for_keys and allow_agent feature
+      Allow post-initialization updating of forward_sshagent class property.
+      Enable autologin and sshproxyautologin for new session profiles.
+      fix __doc__ string
+      close agent forwarding objects explicitly
+      Only monkey patch Python Paramiko based on the currently used Paramiko version (our monkey patches have been sent upstream, so we might not need the monkey patching for paramiko &gt;= 1.8.0 anymore).
+      Rename session type XFCE4 to XFCE (using an unversioned name).
+      Avoid false positive notifications about started-by-other sessions.
+      fix wrong class property name
+      trying to activate a session asap
+      fix for last commit
+      fix: session_uid referenced before assignment
+      improve __repr__ methods
+      Introduce locks for session registrations.
+      Wait for mounting of print and mimebox spooling share.
+      typo fix
+      also release profile locks during session registration if a session_uuid is re-used
+      Allow mixing key file, key object, key discovery and agent authentication.
+      Add progress bar support for session startup / resuming. Closes upstream issue #14.
+      consolidate progress bar support in Python X2Go
+      white space fix
+      Set the session name in case a session start failed due to lack of forwarding tunneling support in the server's SSH daemon.
+      fix for last commit
+      fix for last commit(2)
+      clean up code
+      Fall back to password auth if agent auth and key discovery fail.
+      Give the session window more time to appear.
+      Catch rare condition in utils.find_session_window in case where the list of window IDs is not available.
+      convert the command to be run to string
+      convert self.params.cmd to string when testing if command exists
+      fix syntax error
+      add __doc__ strings for progress status methods in X2goSession class
+      reduce version of python-paramiko
+      Revert &quot;reduce version of python-paramiko&quot;
+      Versioned depend on python-paramiko (&gt;= 1.8.0-0~).
+      fix allow_printing in session registration of X2goClient
+      Disable SSH agent forwarding on MS Windows platform for current versions of Python Paramiko.
+      Allow usernames containing space characters in user names (common on MS Windows).
+      Use threading.Lock to prohibit simultaneous calls of get_published_applications() of control sessions.
+      fix for last commit
+      Implement some internal locking for X2goSession objects.
+      prevent blocking ourselves
+      try a more intelligent approach for method locking
+      use non-locking _suspend method for transferring sessions from one client to another
+      use non-locking terminate method
+      Add option to disable auto-registration of pubapp sessions.
+      whitespace fix
+      code cleanup using pyflakes
+      re-fix connect after pyflakes cleanup
+      fix skip_pubapp_sessions param
+      Implement functionality for restoring mounted shares on session resumption / re-start. Sponsored by Dick Kniep, LinDix NL.
+      improve share local folders code
+      Catch exceptions where a user tries to resume a session that has just been removed from the session list on the server (race condition).
+      Consolidating management of shared and unshared client-side folders.
+      more work on the folder mounting code
+      fix add_profile in X2goSessionProfilesFILE, thanks to Dick Kniep for noticing this issue
+      Before suspending/terminating a session, make sure that the list of shared folders is up-to-date.
+      mark a session startup as PENDING asap
+      cleanup X2goSession.connect()
+      Fix password authentication in case no private RSA/DSA key for a client user exists.
+      new connect option sshproxy_force_password_auth, improve detection code that tells if a session can auto-connect or not
+      fix faulty boolean expression in auto-connect detection code
+      fix license in setup.py
+      fix indentations in default.py
+      release 0.2.1.0
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+python-x2go.git (Python X2Go Client API)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;python-x2go.git&quot; (Python X2Go Client API).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000256.html">[X2go-Tags] pyhoca-gui.git - 0.2.1.0 (annotated tag) created:	0.2.1.0
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#255">[ date ]</a>
+              <a href="thread.html#255">[ thread ]</a>
+              <a href="subject.html#255">[ subject ]</a>
+              <a href="author.html#255">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

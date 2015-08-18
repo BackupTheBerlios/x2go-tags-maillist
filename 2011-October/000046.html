@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2gothinclient.git - 1.0.1.3 (annotated tag) created:	1.0.1.3
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2011-October/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gothinclient.git%20-%201.0.1.3%20%28annotated%20tag%29%20created%3A%0A%091.0.1.3&In-Reply-To=%3C20111012102106.0A5945DD11%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000045.html">
+   <LINK REL="Next"  HREF="000047.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2gothinclient.git - 1.0.1.3 (annotated tag) created:	1.0.1.3</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gothinclient.git%20-%201.0.1.3%20%28annotated%20tag%29%20created%3A%0A%091.0.1.3&In-Reply-To=%3C20111012102106.0A5945DD11%40ymir%3E"
+       TITLE="[X2go-Tags] x2gothinclient.git - 1.0.1.3 (annotated tag) created:	1.0.1.3">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Oct 12 12:21:05 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000045.html">[X2go-Tags] x2goserver.git - 3.0.99.6 (annotated tag) created:	3.0.99.6
+</A></li>
+        <LI>Next message: <A HREF="000047.html">[X2go-Tags] x2goserver.git - 3.0.99.7 (annotated tag) created:	3.0.99.7
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#46">[ date ]</a>
+              <a href="thread.html#46">[ thread ]</a>
+              <a href="subject.html#46">[ subject ]</a>
+              <a href="author.html#46">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 1.0.1.3 has been created
+        at  04dd2013c8ba9ae86a0542df06a45e7edc473ef3 (tag)
+   tagging  5ae6b6661a327d11dfb0a86906ba72d0352bb283 (commit)
+ tagged by  Mike Gabriel
+        on  Wed Oct 12 12:21:00 2011 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 1.0.1.3
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJOlWoMAAoJEIlP3EWN3QKAZc8H/3Oohe7/G0b2ITKymZCqTD3u
+pjLVYkympOCuoT4WKONLv+smUWaTdmoEm3rZdonvkz29eyUsZHQ/bAn60Z8j2RBZ
+FNuXo84QC5yr0BVoQwGOW4uOgFCOPVJgtR4F/NsJKjwIaULcEcKfcOSrcOO1caTh
+yHwQDJR8CuBcK1FmhbOS+SYbU5MvTxft9erZOit/KIcsFvPo2JKsVTC+VJf9CjQZ
+QYPCR5j0YYqWkiPEgaX8KDluAyInl+Mjz2PNthlvpfgt4Q9z6DOitzfMK+yPVdSn
+TYnlXfcl91U8uuKiHMzywKSet/ynPD8VWj2k2ypDoSeThlDIG0w1jhWqa9QANaU=
+=ZgM0
+-----END PGP SIGNATURE-----
+
+Coco (1):
+      Replace tmpfs mount on /etc/network/run with symlink /etc/network/run -&gt; /dev/shm.
+
+Mike Gabriel (228):
+      changed version numbering scheme, added VERSION file
+      fixed a typo
+      removed duplicate option --add-to-known-hosts
+      fixes dpkg-source conflict around package name, uses standards version 3.9.1
+      rename of x2gothinclientsystem to x2gothinclientmanagement
+      fixes some typos in README
+      adds build scripts for x2gothinclientmanagement
+      updates the descriptions fields in control file
+      minor control files description fix
+      tweaking first changelog entry
+      removed docs files
+      being dh7 compatible
+      translated README.howto into English, contains FIXMEs
+      adds newline at end of file
+      whitespace cleanup in x2gothinclientmanagement
+      reorganized package structure of x2gothinclientmanagement
+      debian changelog entry for x2gothinclientmanagement changes, update of control file
+      updates dependencies of x2gothinclientmanagement package
+      x2gothinclient_settings -&gt; /etc/x2go, created subfolders for scripts (bin, etc)
+      allows tce management script testing without installing them as .deb
+      adds directories to dh7 installer
+      fixes old-fsf-address-in-copyright-file
+      fixed install dirs
+      fixes possible-unindented-list-in-extended-description
+      fixes lintian issue: udev-rule-in-etc
+      fixes lintian issue: spelling-error-in-description authentification authentication
+      fixes lintian issue: init.d-script-missing-lsb-section
+      fixes lintian issue: package-lacks-versioned-build-depends-on-debhelper 7
+      setting a+x bits on script file
+      typo
+      updates/adds copyright headers to individual scripts
+      fixed lintian issue: script-not-executable ./etc/default/x2gothinclient
+      adds generic man page for x2gothinclientd
+      adds dh7 install file for x2gothinclientd.8 man page
+      fixes dh7 man page path
+      call dh_installmanpages
+      using installman as installmanpages is deprecated in dh7
+      man page section update
+      another copyright header added
+      typo fix
+      minor man page update for x2gothinclientd
+      adds man pages for X2go CD Manager
+      renamed x2gousb-storage udev script to ,,usbmount''
+      adds manpage to x2gousbmount
+      cleanup
+      adds variable TCSHELL to x2gothinclient_settings
+      adds manpages to x2gothinclientmanagement
+      adds source format file
+      updates debian changelog
+      too many brackets
+      LANG fix, fstab layout, SHAREDIR added, ...
+      re-arranging variable names, make DEBURL for X2go packages configurable
+      whitespace cleanup
+      only process TC_X2GO_DEBURL related commands if appropriate
+      being more verbose in x2gothinclient_settings
+      fixes variable mismatch in x2gothinclient_create
+      fixes missing folder in DEBMIRROR url
+      fixes test statment
+      fixes grammatical expression
+      removes lenny work-around
+      halt on errors...
+      fixes echo output (quot marks)
+      fixes unmounting in x2gothinclient_create
+      fixes shell variable TC_SHELL
+      adds a headline to x2gothinclient_* scripts
+      adds a blank line
+      adds TMP envvar
+      adds a /tmp/user/0 folder to the TCE chroot
+      dropping x2gothinclient_update script
+      dropping x2gothinclient_update script, using passwd -l instead of setting a passwd for root
+      being less Debianic... placing startup script into /etc/x2go
+      silencing umount, display success message
+      adds /var/lib/xkb path in TCE, purging udev's *-persistent-*.rules
+      adds udev/rules.d tmpfs mount, tab cleanup
+      adds pulseaudio support
+      moved x2gothinclient_start script to x2gothinclient package
+      adds /var/lib/nfs as required folder in TCE
+      removes share folder from x2gothinclientmanagement package
+      practicing Perl-syntax... (semicolons missing)
+      x2gothinclient package depends on xbase-clients
+      location of Xserver ,,Xorg'' has changed since squeeze
+      re-arranges package structure x2gothinclient, adds example session profile
+      allowing a little delay between session profile copying and x2goclient startup
+      starting pulseaudio as user x2goclient (of course...)
+      fixes pulseaudio daemon startup
+      typo fix
+      removed not-use-any-more man page
+      removes duplicate code
+      using new paths for x2gocdmanager
+      using /media as tmpfs mntpoint
+      using new tmpfs paths for x2gousbmount
+      whitespace fix
+      fixes order of pulseaudio start and stop
+      recommend vim on x2go thin clients (for developmental testing, editing session profiles etc.)
+      removed blank
+      fixes user+group creation
+      splitting x2gothinclient_start into two files, killing Xorg on x2gothinclient script stop
+      updates debian changelog
+      adds user pulse to group audio
+      adds x2gothinclient_init to dh installer
+      killing pulseaudio on SIGTERM (x2gothinclientd)
+      providing TCE config in /opt/x2gothinclient/etc instead of /etc/x2go
+      adds output of variable values for TC_BASE and TC_CONFIG
+      creating /etc/x2go in chroot env
+      calling x2gothinclient_update after chroot creation
+      using bash instead of /bin/sh
+      adds a little verbosity to x2ogthinclient_update script
+      typo fix
+      using bash for script calls on X2go thin client
+      chown/chmod on home dir
+      whitespace cleanup
+      x2gothinclient recommends other thin client packages
+      control file layout, adds xauth, xinit as dependency for x2gothinclient package
+      typo fix
+      splits up x2gocdmanager and x2gothinshutdown into two packages
+      fixes package build in rules file (remnant of package split-up)
+      perm a-x on x2goclient_sessions
+      adding x2gothinclient_* scripts from x2gothinclientmanagement package to x2gothinclient package as examples
+      fixes Conflicts: for x2gothinshutdown
+      cancel init script if /etc/x2go/x2gothinclient_* files are missing
+      typo fix
+      adds /etc/x2go for x2gothinclient package
+      x2gocdmanager init scripts may always return true on stop action
+      syntax fix of x2gothinclient's init script, adds verbosity if not configured
+      adds locale as dependency for x2gothinclient (too many console errors otherwise)
+      moves thinshutdown control into x2gothinclientd daemon
+      start thinshutdown after x2goclient, fork x2goclient to background
+      inline comments for x2gocdmanager
+      removes empty line
+      re-enable --read-exports-from mechanism...
+      fixes+improves pulseaudio startup
+      quotation fix for x2gothinclientd
+      more inline comments, tabulatorized x2gothinclientd
+      tabs for x2gousbmount, inline comments
+      x2gothinclient added as Pre-Depends (this is nasty, there has to be another way...)
+      removes x2gothinclient as dependency for x2gocdmanager
+      removes service dependency between x2gothinclient and x2gocdmanager
+      modified session template
+      using uni_xlate as mount option for USB drives, removes deprecated BUS= udev rule
+      Add HTTP_PROXY and FTP_PROXY support to x2gothinclientmanagement (APT package download)
+      Fix for proxy code, env variables are $http_proxy and $ftp_proxy.
+      Add empty line at end of x2gothinclient_create script.
+      adds example folder for tftpboot environment to x2gothinclientmanagement package
+      changelog update
+      Add syslinux boot splash with X2go flavour.
+      Converted splash to 16bit coloring
+      Add a verbose note that we are now working in the chroot env
+      Remove ssh (=openssh-server) dependency for x2gothinclient package.
+      Add acpid to x2gothinclient's Recommends: section.
+      Install 486 and 686 kernels in TCE chroot.
+      Add memtest86+ to x2gothinclient's Recommends: section.
+      Move PXE tftpboot examples to x2gothinclient/share/tftpboot, improval of syslinux boot screen.
+      Use quotation marks on strings
+      Add x2gothinclient_preptftpboot script.
+      Add a test for already existing PXE boot configs
+      Add man page for x2gothinclient_preptftpboot.
+      Remove symlinks from tftpboot template configuration
+      Add some comment after PXE installation.
+      Fix x2gothinclient_shell, silence mounts/umounts
+      Revert one line of last commit.
+      Silence mounts/unmounts
+      Grammar fix.
+      Another grammar fix.
+      Using quotation marks...
+      Symlinks fixed.
+      More verbose comment at end of x2gothinclient_prepftpboot script
+      Do not run management script if there is a problem with the X2go TCE chroot.
+      X2go TCE management script have to run as root.
+      Add https_proxy env variable support.
+      Add x2gothinclient_cleanup script.
+      x2gothinclient_cleanup improvements
+      Add man page for x2gothinclient_cleanup.
+      Add empty line at end of create script.
+      Fixed open quotes in x2gothinclient_preptftpboot script
+      Run x2gothinclient_init from x2gothinclientd init script.
+      improved verbosity after PXE prep...
+      recommending no_subtree_check
+      man page fix
+      Add empty line at end of x2gothinclientmanagement_update script
+      Fix udev rules path in x2gosmartcardrules, improval of udev script, plus man page.
+      Fix udev rules path in x2gousbmount.
+      Add comment that names possible boot profiles to tftp config template.
+      quote fix
+      Add midnight commander to Recommends: of x2gothinclient.
+      Add kernel module blacklisting for x2gothinclient_create.
+      fix sourcing of x2gothinclient_init file in init script
+      newline at EOF
+      whitespace fix
+      Tweak mtab diversion on X2go Thin Client to avoid error messages.
+      fix of x2gousbmount/x2gosmartcardrules changes introduced earlier this day
+      filename fix
+      renamed x2gothinclientmanagement bin dir to sbin
+      Add some more PXE/TFTP info at end of x2gothinclient_pretftpboot script.
+      show TC_MODULE_BLACKLIST when loading x2gothinclient_settings
+      Fix $? statements, test-fix for mtab diversion
+      fix apt-get/dpkg issues during x2gothinclient_create
+      quote fix
+      fix of for-loop in x2gothinclient_create
+      informing the user about config deletion
+      info text fix
+      re-arranging line breaks
+      Disabled service restarts in chroot.
+      Disable service restarts during x2gothinclient_create.
+      Fix start-stop-daemon dummy script creation.
+      Fix for mount error while mounting procfs.
+      Trying to symlink /etc/mtab to /proc/mounts (should work with /etc/init.d/mtab.sh on Debian squeeze)
+      extra line breaks
+      Add a ,,hit &lt;RETURN&gt; before TCE creation.
+      Add tmpfs mount for /var/lib/dbus.
+      quote fix
+      improval/bugfix of start-stop-daemon disable code
+      More variable ($) escaping in x2gothinclient_* scripts. Fixes start-stop-daemon enable/disable code.
+      Reduce x2goclient CPU load from ~100% to ~0-1%.
+      Improvement for CPU load fix (gets rid of defunct sh process)
+      Boot TCE kernel with nomodeset boot option to avoid gCard incompatibilities (Fb vs. Xorg).
+      Some more verbosity...
+      Move kernel/initrd symlinks after install rather than copying.
+      Add detection of kernel upgrades to x2gothinclient_upgrade script.
+      handle vmlinuz.old/initrd.img.old as well (in case 486 _and_ 686 kernel gets upgraded at the same time)
+      output beautifications...
+      Adapt chroot file created by x2gothinclient_upgrade, escaping $-signs.
+      Use --no-session-edit option when starting x2goclient on TCE.
+      Delay thinshutdown button appearance for 6 more seconds on X server (re)start (that is: 10s on tce start or X server restart and 4s after session logout).
+      semikolon fixes...
+      Add post-run instructions of x2gothinclient_preptftpboot to its man page.
+      release 1.0.1.3, rework changelog
+      version increment
+      changelog update
+
+Moritz 'Morty' Str&#252;be (30):
+      cleanup
+      cleanup
+      add /etc/network/run to ramdrive
+      cleanup and typos
+      cleanup and typos
+      cleanup and typos
+      typo
+      typo
+      preperations for merge
+      merged with thinclient
+      cleanup for next merge
+      merge with x2gousbmount
+      cleanup for next merge
+      merge with x2gocdmanager
+      Merge with x2gocdmanager
+      cleanup
+      Mege with x2gosmartcardrules
+      Cleanup
+      cleanup bad folder names
+      rename powerej binary to x2goejectcd
+      Fix build-dep
+      Added missing build-dep to libqt4-dev
+      Remove sound from dependancy - must be solved differntly
+      Started create-script
+      Fixed script to build a thinclient
+      Removed to many commas
+      Some fixes by Alex and helpers to update and get a bash within the chroot. Need testing.
+      Prepare new package concept
+      Added extra file for settings.
+      Move files from create-script to files subfolder
+
+Oleksandr Shneyder (11):
+      Initializing repository
+      Initializing repository
+      Initializing repository
+      Initializing repository
+      Initializing repository
+      Importing x2gocdmanager (Uthoern)
+      importing x2gosmartcardrules (Uthoern)
+      importing x2gothinclient (Uthoern)
+      importing x2gothinclientsystem (Uthoern)
+      importing x2gousbmount (Uthoern)
+      x2gosmartcardrules: support for SCM SCR331-LC1 SmartCard Reader
+
+Reinhard Tartler (4):
+      fixup debian/control
+      fix rename
+      cleanup debian/rules
+      rename init scripts properly
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2gothinclient.git (X2go Thin Client Environment)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2gothinclient.git&quot; (X2go Thin Client Environment).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000045.html">[X2go-Tags] x2goserver.git - 3.0.99.6 (annotated tag) created:	3.0.99.6
+</A></li>
+	<LI>Next message: <A HREF="000047.html">[X2go-Tags] x2goserver.git - 3.0.99.7 (annotated tag) created:	3.0.99.7
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#46">[ date ]</a>
+              <a href="thread.html#46">[ thread ]</a>
+              <a href="subject.html#46">[ subject ]</a>
+              <a href="author.html#46">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

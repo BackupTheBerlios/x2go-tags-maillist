@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2gobroker.git - 0.0.2.1 (annotated tag) created:	0.0.2.1
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-May/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gobroker.git%20-%200.0.2.1%20%28annotated%20tag%29%20created%3A%0A%090.0.2.1&In-Reply-To=%3C20130519104345.B58285DB2C%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000317.html">
+   <LINK REL="Next"  HREF="000319.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2gobroker.git - 0.0.2.1 (annotated tag) created:	0.0.2.1</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gobroker.git%20-%200.0.2.1%20%28annotated%20tag%29%20created%3A%0A%090.0.2.1&In-Reply-To=%3C20130519104345.B58285DB2C%40ymir%3E"
+       TITLE="[X2go-Tags] x2gobroker.git - 0.0.2.1 (annotated tag) created:	0.0.2.1">git-admin at x2go.org
+       </A><BR>
+    <I>Sun May 19 12:43:45 CEST 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000317.html">[X2go-Tags] x2goserver.git - 4.0.0.2 (annotated tag) created:	4.0.0.2
+</A></li>
+        <LI>Next message: <A HREF="000319.html">[X2go-Tags] x2gobroker.git - 0.0.2.2 (annotated tag) created:	0.0.2.2
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#318">[ date ]</a>
+              <a href="thread.html#318">[ thread ]</a>
+              <a href="subject.html#318">[ subject ]</a>
+              <a href="author.html#318">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.0.2.1 has been created
+        at  e7ba5f8e1a81d814f4d3e9f82ad6e9bc2855e7cd (tag)
+   tagging  e0e9815beaf7d6de843ca0386cd92ed6cd14433f (commit)
+  replaces  0.0.2.0
+ tagged by  Mike Gabriel
+        on  Sun May 19 12:43:13 2013 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 0.0.2.1
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABAgAGBQJRmKzBAAoJEJr0azAldxsx3iAP/il8WBzJp6on2LT4sUNaCBRM
+49Cb70MvAtAy0+8uVxU0krc35TiMPo6zC03Fh1b6Jaep+XPF1hQDqoi4N6A41Pp5
+gknR5UFaEd9legkM9TuKzfEYy8FEN17kvL6oIwHFREIDlWUyKiQ/5RW5QIHwT8QP
+1SLPF+kOD2BO+XtkFcIP8N8Ix2e2o10/fk/5xIuFgTcY9VmkCVE/L9iZc/7KdFwa
+RU/47E0l2CZun2gHZyNVPNQ4N6U6DR2hlHakn8NxjWSxHzp/C/IidCCxtVICI2P4
++bZE3r8zOJghy4Dp7fe6Mp0vq602wPQvJNWMPKj+dsXvm8IZ/ABDsr7TmpfvoSZU
+tim2jn5RiAnI4GsjIUz1woFnUQ1bCbM26BtTlkFBtJ69BQbsCqX+oIWBAe7mlA2Z
+tv0qbOXLFxS6lCD5pkmh1s1mF1HZD+wpHUrlifMgy4rmKAKNc5/t1tJYJOOHPFlP
+4yb33g2AZI2blWm9MG9rC8JvuGA1Ctqsdh2dAh1k5fUV1lEI7T31xUANAobzusKi
+m5gwf/tJaCGvxoUD0EsBHgj4RUX/r5gMKyg/u3S6jKiuQLz+BSeLb5Pqu7yEybSG
+c/KlFVyxfpO0QQv9YrnjcIcYfrPVFWTMaM258JP3ozhdYB1kVpYLAh9p+gCLJM0y
+PhFPPlDv/rmveuSfe6a6
+=zB6U
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (21):
+      Continue development...
+      Remove trainling slashes from ManagementServer URLs.
+      official name of src:x2gobroker is: X2Go Session Broker
+      fix comments in *.postrm script
+      fix help text in x2gobroker.conf
+      remove obsolete X2GOBROKER_LOGCONFIG env var parsing
+      In Apache2 vhost configuration example, move WSGI environment variable settings into VirtualHost setup.
+      Remove unused, not-yet-developed broker backends and frontends.
+      Remove old cruft from x2gobroker.conf.
+      remove not-yet-programmed httpasswd authmech
+      Populate install target of Makefile. (Fixes: #201).
+      Security fix for setuid wrapper x2gobroker-agent.c. Hard-code path to x2gobroker-agent.pl during build via defining a macro in the Makefile. Thanks to Richard Weinberger for spotting this!!!
+      Provide init scripts and *.default files outside of /debian folder (as they are also relevant for non-Debian packaging.
+      changelog: typo fix
+      Install man pages and default files through Makefile, as well. (Fixes: #211).
+      Handle URLs in plain WebUI that have slashes (and subpaths) in the backend name.
+      In WSGI mode: only populate os.environ with variables matching &#187;X2GOBROKER_*&#171;.
+      code cleanup
+      Make X2GOBROKER_SESSIONPROFILES configurable through a SetEnv WSGI parameter in the httpd configuration. (Fixes: #210).
+      catch ValueError on non-resolvable hostnames, comment out client-ACL in x2gobroker-sessionprofiles.conf to avoid non-resolvable hostname
+      release 0.0.2.1
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2gobroker.git (HTTP(S) Session broker for X2Go)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2gobroker.git&quot; (HTTP(S) Session broker for X2Go).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000317.html">[X2go-Tags] x2goserver.git - 4.0.0.2 (annotated tag) created:	4.0.0.2
+</A></li>
+	<LI>Next message: <A HREF="000319.html">[X2go-Tags] x2gobroker.git - 0.0.2.2 (annotated tag) created:	0.0.2.2
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#318">[ date ]</a>
+              <a href="thread.html#318">[ thread ]</a>
+              <a href="subject.html#318">[ subject ]</a>
+              <a href="author.html#318">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

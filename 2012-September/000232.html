@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] nx-libs.git - redist-client/3.5.0.15 (annotated tag)	created: redist-client/3.5.0.15
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-September/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-client/3.5.0.15%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.15&In-Reply-To=%3C20120921080416.CCB065DB6D%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000233.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] nx-libs.git - redist-client/3.5.0.15 (annotated tag)	created: redist-client/3.5.0.15</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-client/3.5.0.15%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.15&In-Reply-To=%3C20120921080416.CCB065DB6D%40ymir%3E"
+       TITLE="[X2go-Tags] nx-libs.git - redist-client/3.5.0.15 (annotated tag)	created: redist-client/3.5.0.15">git-admin at x2go.org
+       </A><BR>
+    <I>Fri Sep 21 10:04:16 CEST 2012</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000233.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.15 (annotated tag)	created: redist-client/3.5.0.15
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#232">[ date ]</a>
+              <a href="thread.html#232">[ thread ]</a>
+              <a href="subject.html#232">[ subject ]</a>
+              <a href="author.html#232">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, redist-client/3.5.0.15 has been created
+        at  a9e3c1e5d538bf2e0bcdb2d3de409b64d53ba9e4 (tag)
+   tagging  51412cd02697bde91823766d8f318b76b5118271 (commit)
+  replaces  redist-server/3.5.0.14
+ tagged by  Mike Gabriel
+        on  Fri Sep 21 10:04:06 2012 +0200
+
+- Log -----------------------------------------------------------------
+release NX-redistributed 3.5.0.15 (client-only)
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABCAAGBQJQXB92AAoJEJr0azAldxsxuWgP/jwB77FkvXyl8H+WzUey5fBe
+2679gzoBARj9MnEAE+3I+yrb0azVMvLHdMAg86qpcca3LamziTZHgZA3LFBxGlT1
+zsq3R8xMUwj/7o5hnPzVSvtIG5Sfl7F54628orhYcrczD6DVVKJFvuAFWgFS+11X
+TNU0+fn1WTl7wTAV4JYae9Lu7zPqhxjJSDG9XguO8HKj1VO2yiPfQp4vtuSPWW0U
+huECxq6XxKRS8n+OcRNl65eut9eUlvMmyQvUVrTwDAf9PVGpVy676WWn0ED49Nwh
+1jeAZZxhaKqzdNf2DEbx9rrjh3pyY8xD5/3bygaQm8Sm4UfuwYmfdNA5BZAkrux4
+uLSzfM7jrZQdpWAE2vx2IBnEC1DZQLQAnbE+hHRIR3Nus58CYsL/SJ2k8bgMLmNa
+YevWKuT8PMWCm2BlPeqpGDSIrmnLv2KkEv/LQVy16e/DZyGRuW1MCYhDh2e0Wf1L
+/kKc7mTQLmGnwOcb+GAWlSlujXo6e2obXMPCP0lAlk+FKniLAoiWoNij/0kHzNbx
+ZPa+v8dXefwpr1BXG7mzA8I3wvk6AXC+tIbLCR5YXjbux01fiamE8lGmzMywKAlp
+WJbwjz+hqMYlGDRBqet4fdwCn5P7JtcI/SpzxvyraZMDMj+dC99sAzgLfZs+QtRa
+ihx/cDoV18xySShuOQnd
+=BETV
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (15):
+      Continue development...
+      debian/changelog
+      Improve 020_add-nxagent-wrapper.full.patch: Properly set NX_TEMP, make sure nxagent launches even with pam_tmpdir.so being in use.
+      Add VERSION.x2goagent to package x2goagent package so x2goversion command lists up x2goagent in the list of X2Go server-side packages.
+      Refresh patch 200_nxagent_check-binary-x2go-flavour.full.patch
+      Make sure the NX_TEMP envvar gets set in all wrapper script for all nx* executables
+      Link libNX_Xrandr to a separate location where we can provide it as libXrandr.
+      remove weird remainders of configure files...
+      /debian/control: Maintainer change in package: X2Go Developers &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/x2go-tags">x2go-dev at lists.berlios.de</A>&gt;. Priority: optional.
+      remove Priorty: extra from -dev package
+      Add patch: 220_nxproxy-bind-loopback-only.patch, adds loopback option to nxproxy options and forces nxproxy to bind to loopback devices only.
+      Add patch: 220_nxproxy-bind-loopback-only.full+lite.patch, adds loopback option to nxproxy options and forces nxproxy to bind to loopback devices only.
+      fix patch name
+      mark issue #16 as closed by last added patch
+      release 3.5.0.15
+
+Oleksandr Shneyder (1):
+      Add patch: 204-nxagent_repaint-solidpict.full.patch. Fixes repainting of SolidFill pictures by nxagent/x2goagent on reconnects.
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+nx-libs.git (NX (redistributed))
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;nx-libs.git&quot; (NX (redistributed)).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000233.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.15 (annotated tag)	created: redist-client/3.5.0.15
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#232">[ date ]</a>
+              <a href="thread.html#232">[ thread ]</a>
+              <a href="subject.html#232">[ subject ]</a>
+              <a href="author.html#232">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goserver.git - 4.0.0.8 (annotated tag) created:	4.0.0.8
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2014-January/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.0.8%20%28annotated%20tag%29%20created%3A%0A%094.0.0.8&In-Reply-To=%3C20140106172855.9AA2F5DB1E%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000371.html">
+   <LINK REL="Next"  HREF="000373.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goserver.git - 4.0.0.8 (annotated tag) created:	4.0.0.8</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.0.8%20%28annotated%20tag%29%20created%3A%0A%094.0.0.8&In-Reply-To=%3C20140106172855.9AA2F5DB1E%40ymir%3E"
+       TITLE="[X2go-Tags] x2goserver.git - 4.0.0.8 (annotated tag) created:	4.0.0.8">git-admin at x2go.org
+       </A><BR>
+    <I>Mon Jan  6 18:28:55 CET 2014</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000371.html">[X2go-Tags] x2goserver.git - 4.0.0.9 (annotated tag) created:	4.0.0.9
+</A></li>
+        <LI>Next message: <A HREF="000373.html">[X2go-Tags] x2goserver.git - 4.0.1.11 (annotated tag) created:	4.0.1.11
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#372">[ date ]</a>
+              <a href="thread.html#372">[ thread ]</a>
+              <a href="subject.html#372">[ subject ]</a>
+              <a href="author.html#372">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 4.0.0.8 has been created
+        at  6b2da3a6dced741db618d0cd6580bda396758f15 (tag)
+   tagging  11e1776012df80891d7a2277dec27ce742329af8 (commit)
+  replaces  4.0.0.7
+ tagged by  Mike Gabriel
+        on  Fri Jan 3 11:32:00 2014 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 4.0.0.8
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABCAAGBQJSxpGgAAoJEJr0azAldxsxvPQP/Rvr1I5dlH/mTfPpCAbvpdeK
+mgqo5cxJlgoiilHgs8dA7+1LjzfE2SwoXJKX2LW8fNGJqKsVlsx0OCbUVQDewmsO
+iWdX0AWj9fByc1fcF0GIo/uV+rJKaPCjGeohDMyKLHtSNW/Bh+OL/VCdD0E4TtEo
+jDP6KAIng7tI0YtifakIx4Umm7wCAeHMsvYRc9hLYdL+/dlxxtMqlFtq/NKkeuH8
+4Ilrsw8ChMF+5/EJRl+bvnIRLodk4oEEJJPdgSTbfLSA0NO8LaKurLgRaFvHOJXs
+VBie6UOMZiWLKP66wJi0iXpkxCag9krgA8hyOyDEPwJzJZ12fyJbs54D3iK/Q89B
+jnz1AIHJeO2D2bV6klJMqBefPzGu+5DXCMBsSWCmoQhpHQRMBoIXfGPWi7xsaIap
+/At4m0p4eRuIfG7Zpa2Hpx7ixQaiQIdNSn92lDu+r1sjHqOS62UGCeGIdfUDMyRv
+aCbV3ujZK0y0UrIHTy7Pn3uIEq0Obj9yxJi4NQrtVrI2M3Jof+NoUymZc8zYsK6s
+Ia+5gCljFlLGPKjvqzHOUAIhzmvBjy4u/zy+zboe+Yx1tFCfzB5yol3sEli8cl5w
+3KtHkfrY80dRnBY3ltjH1iX1ce1qLW2K8f3JR/ojysTFeBrmxNDze9ColhcKnFHz
+BWi46UTLTRS4b+F7Ricu
+=Uwp6
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (13):
+      Continue development for LTS Baikal branch of X2Go Server...
+      Use mktemp instead of tempfile (because Fedora does not have the tempfile binary). (Fixes: #347).
+      Replace makepasswd by pwgen (because Fedora does not have makepasswd).
+      Improve parsing of the NX session.log file where unexpected extra logging takes place during session suspension/resumption. Thanks to Gerald Richter for finding this!!! (Fixes: #356).
+      Avoid one argument system calls and backticks in x2gocleansessions and x2golistsessions_root.
+      Avoid one argument system calls and backticks in x2golistsessions.
+      Avoid one argument system calls and backticks in x2goprint.
+      fix system() call in x2golistsessions_root
+      Avoid backticks in x2goshowblocks, move script to &lt;prefix&gt;/sbin/ as it is for being run with root privileges.
+      whitespace fix
+      Sanitize session ID string, port numbers, display numbers and agent PID numbers.
+      improve changelog entry
+      release 4.0.0.8
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goserver.git (X2Go Server)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goserver.git&quot; (X2Go Server).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000371.html">[X2go-Tags] x2goserver.git - 4.0.0.9 (annotated tag) created:	4.0.0.9
+</A></li>
+	<LI>Next message: <A HREF="000373.html">[X2go-Tags] x2goserver.git - 4.0.1.11 (annotated tag) created:	4.0.1.11
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#372">[ date ]</a>
+              <a href="thread.html#372">[ thread ]</a>
+              <a href="subject.html#372">[ subject ]</a>
+              <a href="author.html#372">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

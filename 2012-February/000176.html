@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] nx-libs.git - redist-client/3.5.0.11 (annotated tag)	created: redist-client/3.5.0.11
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-client/3.5.0.11%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.11&In-Reply-To=%3C20120222134305.AB8EE5DB17%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000175.html">
+   <LINK REL="Next"  HREF="000177.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] nx-libs.git - redist-client/3.5.0.11 (annotated tag)	created: redist-client/3.5.0.11</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-client/3.5.0.11%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.11&In-Reply-To=%3C20120222134305.AB8EE5DB17%40ymir%3E"
+       TITLE="[X2go-Tags] nx-libs.git - redist-client/3.5.0.11 (annotated tag)	created: redist-client/3.5.0.11">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Feb 22 14:43:05 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000175.html">[X2go-Tags] x2goserver.git - 3.1.0.0 (annotated tag) created:	3.1.0.0
+</A></li>
+        <LI>Next message: <A HREF="000177.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.11 (annotated tag)	created: redist-client/3.5.0.11
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#176">[ date ]</a>
+              <a href="thread.html#176">[ thread ]</a>
+              <a href="subject.html#176">[ subject ]</a>
+              <a href="author.html#176">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, redist-client/3.5.0.11 has been created
+        at  8f27ce67da42bc2d11c93a262129d96f2c1d69ab (tag)
+   tagging  50690ea177ee39011a235bac6887a213f27e7f54 (commit)
+  replaces  redist-client/3.5.0.10
+ tagged by  Mike Gabriel
+        on  Wed Feb 22 14:42:57 2012 +0100
+
+- Log -----------------------------------------------------------------
+release NX-redistributed 3.5.0.11 (client-only)
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJPRPDhAAoJEIlP3EWN3QKAmRUIAIo3fsxyfS+TgGUax9Cdnfux
+PF8LiVb56nW9UeHVzRaFpadwD/blfE+1FcuE70+GHL8QPiy8m8Nli/oRS63TPnr7
+W65q0ObEooGnWYAbyN1r97rtJjLikaMrE+V4wMV+F2gK20aDtMzPBgLfNDfywZrI
+NQ6x7OjCwK97wkdVFdQp7c2+vb2bF6lIonttlR6G2KKcE59PIAKPudq3TPKOw9JQ
+XrTO7wqQhmO5gnCUAw5ip4hPXUgNWPWnqpYskSXDPWRl2eshCTX0P7SOCK0/sXy9
+Lozq2TlQMeVpus2bXDaY0B/GeNfkbhhW4/9NC667CrFSs8w0rxUw231HV5l9snE=
+=1grq
+-----END PGP SIGNATURE-----
+
+Jan Engelhardt (6):
+      Update patch: 001_add-main-makefile.full+lite.patch, allow passing of configure args.
+      Add patch: 030_nx-X11_configure-args.diff. Allow passing of configure args.
+      Add patch: 031_nx-X11_parallel-make.diff, enable parallel make.
+      Add patch: 301_nx-X11_use-shared-libs.full.diff, use shared libraries from distribution rather then libs included in source tree.
+      Add patch 032_nx-X11_no-x11r6-project-root. We must not overlap with any existing files, therefore, both /usr/X11R6 and /usr are excluded possibilities for ProjectRoot. Use %_libexecdir/somename, since that is still allowed by FHS.
+      Add patch 600_nx-X11+nxcompext+nxcompshad_unique-libnames.full.patch, use unique library names for nx-X11 based X11 libraries.
+
+Mike Gabriel (28):
+      Continue development...
+      Use ,,make -C'' in main Makefile for calling Makefiles in subdirectories.
+      Use ,,$(MAKE) -C'' in main Makefile for calling Makefiles in subdirectories, make build stanza work for nx-libs-full and nx-libs-lite.
+      simplify main Makefile a little...
+      more simplification of the main Makefile
+      another fix for the main Makefile
+      Add patch: 111_nxcomp_byerace.full+lite.patch. Work around race condition in qtnx and libnxcl.
+      Revert &quot;Add patch: 111_nxcomp_byerace.full+lite.patch. Work around race condition in qtnx and libnxcl.&quot;
+      Do not install libXinerama directly into /usr/lib/nx. Recommended method is installing to /usr/lib/nx/Xinerama, so that you can enable/disable usage of the Xinerama extension.
+      fix libXinerama removal
+      fix for intra-dependency lintian fix
+      Xinerama path has to be put into debian/rules, that dpkg-shlibs can find the libXinerama files.
+      changelog fix, long-line-wrap
+      Update patch: 001_add-main-makefile.full+lite.patch, use curly braces for macros.
+      Enable parallel build for Debian package.
+      Merge honor-ac-dirs.patch from Jan Engelhardt (OpenSUSE) with already existing Makefile patches (012_nxcomp..., 013_nxcompext_..., 014_nxcompshad_...).
+      Rename patches 030_nx-X11_... and 031_nx-X11_..., the tarball roll script currently requires ,,full'' or ,,full+lite'' in the file name.
+      Make patch headers DEP5 compliant (030_nx-X11_... and 031_nx-X11_...).
+      Update patch: 001_add-main-makefile.full+lite.patch, fix missing $(CONFIGURE) variable.
+      changelog cleanup, typo fix
+      changelog cleanup, fix long-line-wraps
+      Update patches: 012_nxcomp..., 013_nxcompext_..., 014_nxcompshad_.... Also make use of $(LIBFULL) in Makefile.in's install and uninstall stanzas. Inspired by Jan Engelhardt's so-version.diff patch. However, the version name change requested in that patch has been rejected for NX (redistributed).
+      Apply patches for the Debian package as the last patches in the series.
+      Fix faulty patch name suffix (has to be .patch, not .diff).
+      another last patch with .diff suffix
+      Fix Xinerama support in Debian package libnx-x11 when NX gets built with patch 600_nx-X11+nxcompext+nxcompshad_unique-libnames.full.patch. Still on the todo list: fix the nx-X11 installation via Makefile.
+      Fine-tune symlinking of libXinerama.
+      release 3.5.0.11
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+nx-libs.git (NX (redistributed))
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;nx-libs.git&quot; (NX (redistributed)).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000175.html">[X2go-Tags] x2goserver.git - 3.1.0.0 (annotated tag) created:	3.1.0.0
+</A></li>
+	<LI>Next message: <A HREF="000177.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.11 (annotated tag)	created: redist-client/3.5.0.11
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#176">[ date ]</a>
+              <a href="thread.html#176">[ thread ]</a>
+              <a href="subject.html#176">[ subject ]</a>
+              <a href="author.html#176">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

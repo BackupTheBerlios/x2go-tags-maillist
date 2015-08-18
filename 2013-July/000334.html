@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2gothinclient.git - 1.1.0.0 (annotated tag) created:	1.1.0.0
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-July/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gothinclient.git%20-%201.1.0.0%20%28annotated%20tag%29%20created%3A%0A%091.1.0.0&In-Reply-To=%3C20130719215302.BC6EF5DB3B%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000333.html">
+   <LINK REL="Next"  HREF="000335.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2gothinclient.git - 1.1.0.0 (annotated tag) created:	1.1.0.0</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gothinclient.git%20-%201.1.0.0%20%28annotated%20tag%29%20created%3A%0A%091.1.0.0&In-Reply-To=%3C20130719215302.BC6EF5DB3B%40ymir%3E"
+       TITLE="[X2go-Tags] x2gothinclient.git - 1.1.0.0 (annotated tag) created:	1.1.0.0">git-admin at x2go.org
+       </A><BR>
+    <I>Fri Jul 19 23:53:02 CEST 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000333.html">[X2go-Tags] pyhoca-gui.git - 0.4.0.4 (annotated tag) created:	0.4.0.4
+</A></li>
+        <LI>Next message: <A HREF="000335.html">[X2go-Tags] x2goserver.git - 4.0.1.4 (annotated tag) created:	4.0.1.4
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#334">[ date ]</a>
+              <a href="thread.html#334">[ thread ]</a>
+              <a href="subject.html#334">[ subject ]</a>
+              <a href="author.html#334">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 1.1.0.0 has been created
+        at  82d0f1a2a4c45b40e76ce98d2b8ad8b28e7aad56 (tag)
+   tagging  37470492cb86f3dd411f468c4a333840795776f3 (commit)
+  replaces  1.0.1.8
+ tagged by  Mike Gabriel
+        on  Fri Jul 19 23:36:28 2013 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 1.1.0.0
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABAgAGBQJR6bFcAAoJEJr0azAldxsxwJ0P+wWktKcjHT67toetoIHIw5vE
+YaRTAdlh1LkCQm/u5recvlaYdGPWVt07E+ROyvOCrcWdB9pJhWx3rg+qKpjJkazz
+Mok0I5LvmMXk1MENSu+aFNiKKLXIm5EnDJT5JI6hhcDlzWSJQNcD5UY/DGUHH9Md
+W8uJp+e+qIn5/py1hWmmJZNOKXnXgvX9BObOwKD93m33PjRWhp7tXUJqEFQk7t4f
+qNb+hY+ujG0QyRMb9M9SM0/8kQRM12UVfSj/aukfLmM/sscBxiUiIUSOGOddqRcN
+J+9XcgXRIx54aOQHzdK9zpL40Ywvyb/BczD8qMMp0hzK0vq78u4cyYttbVbBxlSz
+/qf0G4UX8Mw/iZils9NeFy8vAfOpUBB/5vq7u7dpbPsKeCmp/7gBYAy8Km959zqL
+id3jV+mjsVByjF133aXffIYzAbQuWWLoegJy+quXOVlfzqogj4rn+8Eu6p/k/uVs
+NBu57cZ+LYUhp4QU5B74rx9umeBfLhj9fzYoK7689RnPZvZpYgSKhxqw67isrztr
+JpHc7jG04MhBkkvKMZO4UT2yLZsMT52VnViBsosjrSBPI2ZxHbyLNrkGoAqqp7yH
+o3PMVPLemBoeKsYf7KTxa0wsvVN+aXghq600Pof2eW8g7QpHImlXmnhOnTZDXidw
+YV+iOhiwc/MF/9i8B/Cp
+=7cEa
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (117):
+      When X2Go TCE has plymouth installed, make sure pressing the halt button does not change to the wrong tty.
+      continue development, version increment...
+      update management README file
+      Truncate echo output lines to less than 80 chars.
+      Use sed to patch initramfs configuration (rather than a patch that fails on wheezy). The change is needed for squeeze only.
+      Fix x2go_tce_shell.sh script, escape braces.
+      Change method of mounting /proc, /sys and /dev inside of chroots.
+      Next upstream version will be 1.0.99.1: Step towards wheezy. Also: enable plymouth boot splash.
+      typo fix
+      typo
+      Symlink /etc/mtab to /proc/mounts before installing any kernel during the chroot creation process.
+      Handle /etc/fstab in TCE chroot differently for squeeze and wheezy (/dev/pts does not need an entry in fstab on wheezy systems, /var/run got relocated to /run).
+      drop /run/lock as mountpoint on wheezy TCEs
+      /etc/network/interfaces in wheezy already contains a loopback device entry.
+      Cleanly unmount --bind mounts in case there are more than one.
+      Allow thin client management (x2gothinclient_shell, x2gothinclient_upgrade) while thin clients are in use.
+      fix for commit 50ac97e71bbbfef035df648e3fef4e5ddc0369cd
+      Disable kms for radeon and i915 graphics adapters.
+      fix unmounting of proc, sys and dev
+      x2gothinclient_shell now does not affect boot behavious of the TCE machines anymore, thus, removing the notification output when launching the X2Go TCE maintenance shell.
+      Mount proc and sysfs from outside chroot, cleanly unmount both in case there are more than one mountpoints for sysfs or proc mounted.
+      Drop i686 kernel support, use i486 kernel by default. In Debian wheezy we only find a 686-pae kernel which fails on some (virtual) hardware (e.g. virtualbox).
+      Do not fail if proc or sysfs are already mounted within chroot.
+      Make sure that kernel + initrd symlinks are relative symlinks.
+      Remove /etc/hostname, whithout the file, the hostname gets set during PXE boot.
+      fix modesetting for i915 and radeon chipsets
+      Keep mounts for /proc and /dev/pts with option noauto for mounting inside of chroot. They are not needed during TCE boot.
+      Make the SSH daemon listen on IPv4 localhost address only.
+      whitespace fix
+      Provide /dev/pts inside chroot.
+      x2gothinlient_shell: typo fix
+      Move configuration template from /usr/share/tce to /usr/share/tce/etc.
+      Add direct FreeRDP support for defaults TCE installation.
+      no x-bit on svg files, whitespace cleanup
+      Start with US keyboard as default keyboard layout.
+      Only mount /proc, /sys, /dev/pts inside chroot if not already mounted.
+      Xorg appears as /usr/bin/X in ps ax output. Make sure it gets detected.
+      Revert &quot;Remove /etc/hostname, whithout the file, the hostname gets set during PXE boot.&quot;
+      Provide a README.hostname file in doc folder of x2gothinclientmanagement.
+      fix typos in x2gothinclient_shell
+      /debian/control: Priority: optional.
+      Maintainer change in package: X2Go Developers &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/x2go-tags">x2go-dev at lists.berlios.de</A>&gt;.
+      /debian/control: fix typo in longdescs
+      For TCE stations with multiple heads, align heads next to each other in order of appearance in xrandr.
+      Add dependency (x2gothinclient bin:package): x11-xserver-utils (for xrandr support).
+      /debian/x2gothinclient.examples: Fix src location of example config files.
+      changelog long-line-wrap
+      /debian/rules:
+      Bump Standards to 3.9.3 (no changes needed).
+      changelog fix
+      /debian/x2gothinclientmanagement.manpages: Make sure all man pages for bin:package x2gothinclientmanagement get installed into package.
+      Fix multi-head detection failures where xrandr write output to stderr (closes upstream issue #48).
+      fix typo
+      Rename x2goclient user to ,,x2gothinclient'' user (system user account). Make sure that the system user account gets created during x2gothinclient_create and during installation of the x2gothinclient package (closes upstream issue #47).
+      add forgotten files
+      /debian/x2gothinclient.init: Update pointer to X2Go TCE documentation on <A HREF="http://wiki.x2go.org.">http://wiki.x2go.org.</A>
+      typo fix
+      _do_ create home dir via x2gothinclient_create script
+      Add dependency (x2gousbmount, x2gocdmanager): libfile-path-expand-perl.
+      x2gothinclient_create: replace /home by /var/lib/x2gothinclient in /etc/fstab template.
+      fix shell of x2gothinclient user, has to be /bin/bash
+      remove redundant echo output from init script
+      Add empty known_host file for FreeRDP.
+      x2gothinclient_update: make sure config target folders exist.
+      make x2gothinclient_init more robust
+      Use expand_file from File::Path::Expand to detect full path of ~x2gothinclient/.halt.
+      x2gothinclient_create: syntax fix, spotted by Thomas G&#252;ttler (Fixes: #95).
+      Export de_DE.UTF-8 and  to TCE daemon.
+      Launch X2Go TCE via /etc/X11/default-display-manager. Add debconf template to handle default display manager selection. Inspired by Debian's gdm package.
+      Use po-debconf for translating debconf templates. Add German debconf translation.
+      fix tab indentations
+      fix wiki URL in init script
+      Install TCE config files into /etc/x2go by default.
+      fix default daemon check in init script
+      move plymout to Recommends: rather than Depends:
+      /debian/control: fix long descriptions, remove plymouth from Depends:
+      move plymouth to Suggests: even
+      fix expand_filename call in x2gothinclientd
+      use lsb init functions for x2gocdmanager
+      fix tab indentations
+      fix x2gothincient.postinst: was still referring to user x2goclient
+      no need to manually stop x2gothinclientd in prerm, debhelper handles this
+      Only start X2Go CD Manager if x2gothinclientd is the default display manager.
+      Use qx instead of open3 to launch x2goclient. (Fixes: #66).
+      Only make x2gousbmount and x2gognupgccid scripts functional if x2gothinclientd is running.
+      fix testing for default display manager
+      /debian/x2gothinclient.postrm: On action=purge, wait for 20s until x2gothinclientd has stopped.
+      syntax fix
+      fixing two syntax issues
+      fix checks for running x2gothinclientd
+      use --retry instead of some complex time construct in postrm
+      When finishing x2gothinclientd, wait when killing processes till all processes have vanished. Only kill processes owned by user x2gothinclient.
+      When finishing x2gothinclientd, make sure no dbus-* processes remain.
+      add --oknodo to start-stop-daemon when stopping services
+      install pulseaudio first, then x2gothinclient
+      Xorg runs as root...
+      Unmount /proc, /sys and /dev/pts before doing x2gothinclient_cleanup.
+      no i686 kernel anymore
+      replace blanks by tabs, use more quotes
+      fix URL to the TCE HowTo on wiki.x2go.org
+      Add README.qemu that explains how to test the X2Go TCE with qemu. (Fixes: #115).
+      add README.howto into x2gothinclientmanagement bin:package
+      follow-up commit for f3cba4107, add README.qemu
+      fix creation of x2gothinclient user during x2gothinclient_create
+      add symbolic link for etc folder that x2gothinclient and x2gothinclientmanagement/share/ have in common
+      add broker example for x2gothinclient
+      some more/better quoting for security reasons
+      make the x2go_tce_create.sh script (executed inside the chroot during creation) repeatable
+      Fix code that turns absolute symlinks into relative symlink for /vmlinuz and /initrd.img.
+      show howto debug a QEMU TCE instance via the vc serial of QEMU
+      Fix shutdown button failures.
+      TCE management: Do an apt-get clean after TCE creation/upgrade.
+      TCE creation: fix installation path of FreeRDP's known_hosts file.
+      Remove TCE tools (vim, mc, ...) from Recommends: field, install those via x2gothinclient_create. Add pulseaudio, dbus-x11, policykit-1 to Depends: field.
+      TCE creation: install the TCE from the nightly builds while this project is not yet released. (Fixes: #251).
+      TCE creation: default to wheezy for creating new TCE environments.
+      release 1.1.0.0
+
+Oleksandr Shneyder (1):
+      modified x2gothinclientd to find /var/lib/x2goclient/.halt
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2gothinclient.git (X2Go Thin Client Environment)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2gothinclient.git&quot; (X2Go Thin Client Environment).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000333.html">[X2go-Tags] pyhoca-gui.git - 0.4.0.4 (annotated tag) created:	0.4.0.4
+</A></li>
+	<LI>Next message: <A HREF="000335.html">[X2go-Tags] x2goserver.git - 4.0.1.4 (annotated tag) created:	4.0.1.4
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#334">[ date ]</a>
+              <a href="thread.html#334">[ thread ]</a>
+              <a href="subject.html#334">[ subject ]</a>
+              <a href="author.html#334">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

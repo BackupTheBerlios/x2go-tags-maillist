@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] libpam-x2go.git - 0.0.0.1 (annotated tag) created:	0.0.0.1
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-November/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20libpam-x2go.git%20-%200.0.0.1%20%28annotated%20tag%29%20created%3A%0A%090.0.0.1&In-Reply-To=%3C20121110212223.676B45DB19%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000247.html">
+   <LINK REL="Next"  HREF="000249.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] libpam-x2go.git - 0.0.0.1 (annotated tag) created:	0.0.0.1</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20libpam-x2go.git%20-%200.0.0.1%20%28annotated%20tag%29%20created%3A%0A%090.0.0.1&In-Reply-To=%3C20121110212223.676B45DB19%40ymir%3E"
+       TITLE="[X2go-Tags] libpam-x2go.git - 0.0.0.1 (annotated tag) created:	0.0.0.1">git-admin at x2go.org
+       </A><BR>
+    <I>Sat Nov 10 22:22:23 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000247.html">[X2go-Tags] lightdm-remote-session-x2go.git - 0.0.0.1 (annotated	tag) created: 0.0.0.1
+</A></li>
+        <LI>Next message: <A HREF="000249.html">[X2go-Tags] x2godesktopsharing.git - 3.1.0.5 (annotated tag)	created: 3.1.0.5
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#248">[ date ]</a>
+              <a href="thread.html#248">[ thread ]</a>
+              <a href="subject.html#248">[ subject ]</a>
+              <a href="author.html#248">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.0.0.1 has been created
+        at  01578b99c23a040466ee96619a936314246ab250 (tag)
+   tagging  482b1f21434d33edc8685da1ddbe14f2c5b72508 (commit)
+ tagged by  Mike Gabriel
+        on  Sat Nov 10 22:21:37 2012 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version (draft status) 0.0.0.1
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABCAAGBQJQnsVhAAoJEJr0azAldxsxPr4P/3asmRDfLFYMh+1UIED2HB8L
+B9pbwIkGALZrWu7QpXTA1vy8yoY6CRvOPVkq1dcL5r1a7KVf2QZZEYKYWwjxIlPD
+xiBrsA9BXNEZaBA0Bm1c99+B1YPVjDJI8laqlvlx3okvWz5qO8vvrArzJTHq3OH4
+71dJax8wSKZHWuzJLnfPDy5yaSyeOtIUBkOb4cwjo7FCaewHsbkEt4e0Dyj8Df/P
+kCbs/uWaQt/VAUGzNypEMuMYVkrJkwdEKa9JndD/dw4GB8oze1hVxAQ3Ano4O4pi
+V2grQFbzyxBTILFPjSVhkxbfYblPSUnSIFPz4j8lMQt1JMllh/BCWYhxkJrjO9Qp
+3p2pAHXT983b41rNGlNg14ukwIavhH4oYsB6o6fW+araRb4IZh3J4dUbhXDFaAhb
+4HpKM2ldOuFKuRQRjbRTgvDmKuWr/qhPYQPb7/wjjEMIrwPx3e/MAq2GIZ+BTibO
+P+BLT+cNHExIU4RBPnJW6fFIGpbpc/FiNJyS3PxzbQrH5gISdwWHwv8I6frT6zuY
+V1rhQ7D+S8ly3Rc9L52zoL9xBAaBN/ZtKibey5mYdf0Wi0TJJ+2i2MdqvfH22nDP
+OTrzZcWLClX4nScQJOGeS9DLWAYdK4N1Y+8lcmADVf4ib8Pi0iA1rbs+UCBvOQb3
+2nl6YCJ/Arfq2RTR5th1
+=3dz6
+-----END PGP SIGNATURE-----
+
+Albert Astals (2):
+      Merge lp:~ted/libpam-freerdp/save-values
+      Saving the domain and password between auth and open session. Approved by jenkins, Albert Astals Cid.
+
+Iftikhar Ahmad (3):
+      Improving the test coverage for libpam-freerdp
+      adding the files missed in last push
+      Improving the test coverage.. Approved by David Barth.
+
+Mike Gabriel (48):
+      fork libpam-x2go from libpam-freerdp
+      Adaptations of the forked original to work with X2Go: Check the authentication token via libssh (ssh login to the remote server).
+      /debian/rules: Use dh-autoreconf with debhelper.
+      wrap too-long-changelog-line
+      Override auto_build with our own automake mechanism.
+      replace dh-autoreconf dependency by autotools-dev, automake and libtool
+      change-over to CDBS
+      depende on cdbs
+      check for libssh .pc (pkg-config) file
+      /debian/control: Depend on dh-autoreconf.
+      fix /debian/watch file
+      remove remnants of libpam-freerdp
+      fix missing type
+      fixing syntax errors
+      fixing up x2go-auth-check.c
+      add pam-x2go.h to avoid multiple definitions
+      drop pam-x2go.h again, fix linking against libssh
+      remove duplicat ssh_connect call
+      add some debug code
+      slightly different logic for finding a proper return value
+      missing ;
+      missing ; (2)
+      sedate type mismatch warning
+      add debug marker
+      add log verbosity
+      report the type of error during SSH connection
+      split up hostname and port properly
+      fixed x2go-auth-check.c (at least for IPv4 and DNS type hostnames)
+      change upstream authorname
+      change order of rhost and rdomain, we will use rdomain as placeholder for the X2Go desktop shell (session type)
+      install x2go-auth-check not libexecdir, not pkglibexecdir
+      versioned dependency on cdbs
+      fix tests
+      try to make the tests look ok...
+      fix AUTH_CHECK
+      Set PAM_SM_AUTH and PAM_SM_SESSION before including security/pam_modules.h.
+      fix missing compilation of pam-x2go.c and pam-x2go-children.c
+      add missing pam_x2go_la_LIBADD stanza
+      copy+paste fix
+      merge rules for pam_x2go and libx2gocore
+      let the buffer end with a space character
+      Revert &quot;let the buffer end with a space character&quot;
+      renaming rdomain to rsession, put password as last string into the socket buffer
+      whitespace fix
+      remove .a and .la files from /lib/security
+      not available anymore: clean-la
+      fixing copyright headers
+      release 0.0.0.1
+
+Ted Gould (106):
+      Basic build system
+      Adding a local directory option and setting the PAM install directory based on whether we're local or not
+      Woot, we've got a PAM module
+      Ignoring stuff
+      Understanding the design
+      Trying to get the values that we should know well
+      Restructured so we can get all the items with prompts
+      match the string by pam-remotelogin
+      Let's call it!
+      Enough that it's likely to authenticate.  Though, lots of TODOs at this point
+      0.0.1
+      Fixing the name to be what everyone else thinks it should be
+      Only built the .so, it's a loadable module
+      Matching the naming convention of the other modules
+      0.0.2
+      Changing the conv to a pointer of a pointer
+      Fixing pointers to make PAM happy.  Uhg.  No segfault though
+      Switch to pushing the creditials via stdin
+      Setting the home directory to the user's directory
+      Make sure we're running as the guest user before we execute the freerdp utility
+      Setting up our pipes, dropping privs, and fixing TODOs
+      First make sure we clean up
+      Set up the buffer and the socket and stuff like that as well.
+      Drop privs if we have 'em
+      Adding session stuff
+      Adding a copyright header
+      If we don't fork, then clean up
+      Fixing up the ignore
+      0.1.0
+      Adding a dep on the FreeRDP library
+      Building ourselves a little binary
+      Adding some freerdp-ness to it
+      Making PAM call the auth check utility
+      A newline for scanf
+      Adding a copyright header
+      Adding an auth helper
+      0.2.0
+      Crazy cheap URL parser
+      Switch to looking for '://' in the string
+      If we've got a colon for a port number split that out
+      Using 'strstr' instead our own loop.
+      Cleaning up the code to make it easier to read
+      Handle URLs as the remote host value. Approved by Albert Astals Cid, jenkins.
+      Adding a setcred function so callers are happy
+      Saving the values once we get them
+      Remove an unused define (cleanup)
+      Protecting from a crazy thing that LightDM does
+      Adding a setcred function so callers are happy. Approved by Albert Astals Cid, jenkins.
+      Caching the password between authenticate and open_session
+      Now that we have long running memory with a password in it, we need to lock it down
+      Neat little trick that I found in PAM Kerberos where it uses the PAM handle's version of the value so that there doesn't have to be memory free'd in the returning function.  Cleans some things up and removes a bunch of extra allocation
+      Set the permissions on the socket
+      Making sure that there's no way that we can write over the end of the buffer even for very, very, very long home directory names.
+      Locking the buffer 'cause it would have the password in it
+      Set the permissions on the socket. Approved by Albert Astals Cid, jenkins.
+      Lock buffer memory and protect to memory overruns.. Approved by Albert Astals Cid, jenkins.
+      Change internal API to do less memory allocation.. Approved by Albert Astals Cid, jenkins.
+      Comments clear up some of the if statements
+      Addign clarification comments. Approved by .
+      0.3.0
+      Refactor to pull the long running stuff out of the if statement and into a function
+      Move the socket creation into the fork'd function
+      Moving buffer allocation into the function
+      Restructure so that clean up is all at the end of the function
+      Checking the return for mlock and snprintf
+      Setting up a pipe to communicate with the sub process
+      Use the pipe to signal when the subprocess has gotten to a point where it can opperate.
+      Checking the return value of the mlock
+      Locking memory if we expect the prompt to be returning a password
+      Make sure to clear the environments
+      Clear the groups when dropping privs
+      Make sure to lock the password buffer
+      Dropping the ignoring of the cert
+      Make sure to change the working directory for the subprocesses to the guest user's home directory
+      Making sure to kill as the user so that if there is PID wrap or something else we won't kill the wrong thing
+      Clear the session_pid after trying to kill it.
+      Removing setgroups as it doesn't seem to be working
+      Attaching bug
+      Clearing the groups, but handling the EPERM issue with not being root
+      Resolving concerns of the security team. Fixes: <A HREF="https://bugs.launchpad.net/bugs/1039634.">https://bugs.launchpad.net/bugs/1039634.</A> Approved by Albert Astals Cid, jenkins.
+      Moving the kill code into a function
+      Using the new function in the open_session function instead of killing directly.
+      Making the open_session kill also unpriv. Approved by Albert Astals Cid, jenkins.
+      0.4.0
+      Make sure there's a character even if we don't have a domain
+      Add a '.' for a blank domain. Approved by Albert Astals Cid, jenkins.
+      Steal a bunch of test infrastructure from libpam-icaclient
+      Adding in Google test and Coverage build stuff
+      Adding in coverage build flags
+      Clean up Makefile and add proper files
+      Make sure to distribute the header files
+      Adding in coverage make rules
+      Make sure to close so we don't leave processes around
+      Check for spaces in the username, block them
+      Set everything up so that the auth check binary can be different in the tests
+      Adding a small auth check utility
+      Make the auth use the auth check utility
+      Make sure we have the full path to execute the auth check
+      Adding an authenticate
+      Add a set cred call like LightDM does it
+      Block usernames with spaces. Approved by Albert Astals Cid, jenkins.
+      Adding a testing framework. Approved by Albert Astals Cid, jenkins.
+      1.0.0
+      Adding the core library to the module.
+      Adding the compiled lib to the link.
+      1.0.1
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+libpam-x2go.git (Remote login session via X2Go (PAM module))
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;libpam-x2go.git&quot; (Remote login session via X2Go (PAM module)).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000247.html">[X2go-Tags] lightdm-remote-session-x2go.git - 0.0.0.1 (annotated	tag) created: 0.0.0.1
+</A></li>
+	<LI>Next message: <A HREF="000249.html">[X2go-Tags] x2godesktopsharing.git - 3.1.0.5 (annotated tag)	created: 3.1.0.5
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#248">[ date ]</a>
+              <a href="thread.html#248">[ thread ]</a>
+              <a href="subject.html#248">[ subject ]</a>
+              <a href="author.html#248">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

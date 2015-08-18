@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goclient.git - 3.99.2.2 (annotated tag) created:	3.99.2.2
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-August/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goclient.git%20-%203.99.2.2%20%28annotated%20tag%29%20created%3A%0A%093.99.2.2&In-Reply-To=%3C20120810080925.B2D895DB67%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000228.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goclient.git - 3.99.2.2 (annotated tag) created:	3.99.2.2</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goclient.git%20-%203.99.2.2%20%28annotated%20tag%29%20created%3A%0A%093.99.2.2&In-Reply-To=%3C20120810080925.B2D895DB67%40ymir%3E"
+       TITLE="[X2go-Tags] x2goclient.git - 3.99.2.2 (annotated tag) created:	3.99.2.2">git-admin at x2go.org
+       </A><BR>
+    <I>Fri Aug 10 10:09:25 CEST 2012</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000228.html">[X2go-Tags] x2gothinclient.git - 1.0.1.8 (annotated tag) created:	1.0.1.8
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#227">[ date ]</a>
+              <a href="thread.html#227">[ thread ]</a>
+              <a href="subject.html#227">[ subject ]</a>
+              <a href="author.html#227">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 3.99.2.2 has been created
+        at  c7438e8e02bd5abeeb0f10c21095f3c059ea29ba (tag)
+   tagging  a0461e289073d223db2f486fa171f7fbd3be7707 (commit)
+  replaces  3.99.2.1
+ tagged by  Mike Gabriel
+        on  Fri Aug 10 10:09:13 2012 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 3.99.2.2
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABCAAGBQJQJMGpAAoJEJr0azAldxsxB6IQAKXH22XIWtdeapoLLRNdqtQR
+Xvs1zV3qH28maSp2SRJqVzV197C94YisKptwh2qosnl39DyhQOGO/l8lcYuEoZdU
+REyey/YcR9wQ+yRxmJle1klEByANrqAjm1i/SvjAHOE80tYvtB9H7l16yHTV1UIb
+JPsWtpWFmK/AvGpN3lQpPYZa+0yEWbQdNtFkjRl0hdtYlygawhvYRpnwc1ZOi85H
+hXUWaHu5v/+AjRus5zu34xzVApjBKDykpSKWhyYXLEfeOBA+x4XdxSs6jyd1ekBM
+GLYPN0GUYZoUsh1MqYRSNoBc1nfZK1UyH44QsGhkqDSGHMyj9zLnvhtIFIub/8iT
+t4FjzGlylgwJHp0IFz+VamszWnsS12FksM7yeihhbtjpMdVym1ChcYju3I23/eOj
+KsZc6gm4bhJhhRXrdBa135SpARYEtJwCXwM4H3wKrlHevny1D0UCzE9l8H7pTe0U
+5dTohttB2YuaLWn2Y9TEPjXt2BntkPPSdx6UNylgBBWPYpg4bgzF354cEDFlL8DQ
+qFWuMn2XV8NJA0pcn5wsWvhbVX8vANAcZ3nxnmwE0tRPoBZLepWtevo0kew1WFVX
+LEOD6y+B0EHjcz3KJsbjI4ikhfyR+g8vmkwtxOj+Rl+df2+VuicAY3E6bQnmgPTI
+49JYV3G+Dp/oBUROKgq4
+=KK9G
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (9):
+      Continue development...
+      Drop Encoding key from .desktop file (as it is deprecated according to latest FreeDesktop.org specs).
+      Correct spelling for mis-spelled work ,,authentication''.
+      Allow QMAKE_* parameters that are needed for hardening x2goclient (see <A HREF="http://wiki.debian.org/Hardening">http://wiki.debian.org/Hardening</A>).
+      Provide CPPFLAGS for QMAKE_CFLAGS _and_ QMAKE_CXXFLAGS. Provide them as first build parameters.
+      Allow x2goclient to connect to user accounts that have other shells than /bin/sh and alike configured as default shell. Also: removal bashisms in shell execution commands.
+      X2Go resume session slot: double click on a selected session is supposed to resume that session. To make this feature functional for running sessions the session has to be suspended first.
+      changelog cleanup
+      release 3.99.2.2
+
+Oleksandr Shneyder (2):
+      Fixing X2Go Plugin
+      Cleaning code: double click on running session. Instead of using function &quot;sleep&quot; starting resume-session after suspend-session is returned
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goclient.git (X2Go Client)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goclient.git&quot; (X2Go Client).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000228.html">[X2go-Tags] x2gothinclient.git - 1.0.1.8 (annotated tag) created:	1.0.1.8
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#227">[ date ]</a>
+              <a href="thread.html#227">[ thread ]</a>
+              <a href="subject.html#227">[ subject ]</a>
+              <a href="author.html#227">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

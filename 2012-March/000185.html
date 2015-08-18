@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] nx-libs.git - redist-client/3.5.0.12 (annotated tag)	created: redist-client/3.5.0.12
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-March/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-client/3.5.0.12%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.12&In-Reply-To=%3C20120307195234.4864D5DB35%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000184.html">
+   <LINK REL="Next"  HREF="000186.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] nx-libs.git - redist-client/3.5.0.12 (annotated tag)	created: redist-client/3.5.0.12</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-client/3.5.0.12%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.12&In-Reply-To=%3C20120307195234.4864D5DB35%40ymir%3E"
+       TITLE="[X2go-Tags] nx-libs.git - redist-client/3.5.0.12 (annotated tag)	created: redist-client/3.5.0.12">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Mar  7 20:52:34 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000184.html">[X2go-Tags] x2gothinclient.git - 1.0.1.6 (annotated tag) created:	1.0.1.6
+</A></li>
+        <LI>Next message: <A HREF="000186.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.12 (annotated tag)	created: redist-client/3.5.0.12
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#185">[ date ]</a>
+              <a href="thread.html#185">[ thread ]</a>
+              <a href="subject.html#185">[ subject ]</a>
+              <a href="author.html#185">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, redist-client/3.5.0.12 has been created
+        at  2986b7f9ceac9d60d22e1c1de8b755e81fd3b5b9 (tag)
+   tagging  1b1a26ae66725db1d8e8a3b3b5b3f755457f5068 (commit)
+  replaces  redist-client/3.5.0.11
+ tagged by  Mike Gabriel
+        on  Wed Mar 7 20:52:03 2012 +0100
+
+- Log -----------------------------------------------------------------
+release NX-redistributed 3.5.0.12 (client-only)
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJPV7xjAAoJEIlP3EWN3QKAeMQH/j20OGTaSSUD8nlSjBI8EoZ6
+Zup3t+Wz1gvlZKMdOeEl2l3VeV2NZ6Pm9UmJxWtaYLIt3eQ2M+GTJVcMLL3gwWnX
+Su7ChpM7tJa4zmOAzxoKQjXdfkSMnDWM4HNQ9pDZygGSbaHWSWBU3wZHgUKzxEUv
+6TekzSxTk2Bx6Xspqa3kjAgW5+syi4PesT7WK2CxSFocO7rETudJ+uUCdWxgsHwX
+0oG9I/2c7JhMBvuSjJPKajHudyP5q7o3Mda2M9T+1BWvACEY5XWiB+TMBLVxOe6+
+qcxPao5gXZyFwjETfl3ieHlEc4CrzgMJbWsoNZm5a8UzRuDixbJ0OlldidrbApI=
+=cG/b
+-----END PGP SIGNATURE-----
+
+Mihai Moldovan (2):
+      Add patch: 051_nxcomp_macos105-fdisset.full+lite.patch, work around issue in Mac OS X 10.5 SDK.
+      Update patch: 005_nxcomp_gcc43.full+lite.patch, fix faulty path to nxcomp/Split.cpp.
+
+Mike Gabriel (11):
+      Continue development...
+      Update patch: 001_add-main-makefile.full+lite.patch, adapt patch from packaging. Test for Makefiles in subfolders before calling them. Fixes build failure during ,,make distclean'' calls.
+      Pass address of fd_set structs on the stack to the FD_ISSET macro/function, instead of the struct itself.
+      Provide temporary workaround for installation on Debian 64bit with multiarch support.
+      typofix in libnx-x11.postinst
+      fix wrong lib-name in libnx-x11.postinst
+      Provide temporary workaround for installation on Debian 64bit with multiarch support (via libnx-x11.postinst and .prerm).
+      changelog cleanup: fixing too-long-line
+      no bashisms in package scripts
+      Re-introduce proper Xinerama support on non-multiarch systems.
+      release 3.5.0.12
+
+Oleksandr Shneyder (1):
+      Create patch: 203_nxagent_disable-rootless-exit.full.patch
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+nx-libs.git (NX (redistributed))
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;nx-libs.git&quot; (NX (redistributed)).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000184.html">[X2go-Tags] x2gothinclient.git - 1.0.1.6 (annotated tag) created:	1.0.1.6
+</A></li>
+	<LI>Next message: <A HREF="000186.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.12 (annotated tag)	created: redist-client/3.5.0.12
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#185">[ date ]</a>
+              <a href="thread.html#185">[ thread ]</a>
+              <a href="subject.html#185">[ subject ]</a>
+              <a href="author.html#185">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

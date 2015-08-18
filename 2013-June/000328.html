@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] python-x2go.git - 0.4.0.4 (annotated tag) created:	0.4.0.4
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-June/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20python-x2go.git%20-%200.4.0.4%20%28annotated%20tag%29%20created%3A%0A%090.4.0.4&In-Reply-To=%3C20130618182820.B8A7D3BC45%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000327.html">
+   <LINK REL="Next"  HREF="000329.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] python-x2go.git - 0.4.0.4 (annotated tag) created:	0.4.0.4</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20python-x2go.git%20-%200.4.0.4%20%28annotated%20tag%29%20created%3A%0A%090.4.0.4&In-Reply-To=%3C20130618182820.B8A7D3BC45%40ymir%3E"
+       TITLE="[X2go-Tags] python-x2go.git - 0.4.0.4 (annotated tag) created:	0.4.0.4">git-admin at x2go.org
+       </A><BR>
+    <I>Tue Jun 18 20:28:20 CEST 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000327.html">[X2go-Tags] x2goserver.git - 4.0.1.1 (annotated tag) created:	4.0.1.1
+</A></li>
+        <LI>Next message: <A HREF="000329.html">[X2go-Tags] x2goserver.git - 4.0.1.2 (annotated tag) created:	4.0.1.2
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#328">[ date ]</a>
+              <a href="thread.html#328">[ thread ]</a>
+              <a href="subject.html#328">[ subject ]</a>
+              <a href="author.html#328">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.4.0.4 has been created
+        at  541cc325a92511fb2dfe8cbe4fb318a1b20bb40e (tag)
+   tagging  349717f7568a66089965fdce13c5344e6e3a7975 (commit)
+  replaces  0.4.0.3
+ tagged by  Mike Gabriel
+        on  Tue Jun 18 20:28:08 2013 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 0.4.0.4
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABAgAGBQJRwKa4AAoJEJr0azAldxsxVXMP/RyeeQB0VpqZT3HibLSFGEMb
+NWLOIy5ZdoSMQA6/8rQZ2o2gxC+Ys9O1Z0pUrKXEf+Kprtlf374Z2KPGwiKgHJzT
+ReUxZQQiK6XG3WzxFtt1AjXF1iqlNdcMsD6RiP27DEQMTftVV3/mzYikL+oQKYSB
+Um0rRlBLAeiuuEK5lD1SEB+wSlZQEHEEVveQxsiY2ntwinA5om9FFNOkzZMnQ8jY
+jBGU3X3d1CigPXNwzCikeXQLRJ3Ro7AAmA0+nkNgG3Gl72cbOySF0Q3eYMECsXdA
+sr89HgtkI88jNqUIR1GMhZuVVq1SWI8YUQUYDcWWkZyzV8U+Rs/1CeerAy9OHO8V
+qoHKCHrNyJ/FIMdJoTFe6yOZUD5S2YjdwvvPEVbBYTqdCCa9hwb0e1fstvcYo80n
+Ky9FzVsIc0nO4iHPXivoSHy9dyr2IYxIAELHNqqZvGQXQ9DT9ZfMnTY4j62CQTG5
+wF/zCTP+qVX0krR0NxJIm85O4YjALRMvDUDJSRWjdSDk6Lun0fto5vZ6RGoEEloi
+6yuxOUVzXhnNaQev9RUh1Uyod+bA3yRO/9doGmrXJ5qbGbz9/6kD5YHku/nmtAHO
+f863zBzBb8DTX5gJDm79HuQs2IzeuM0FHvxW9Va7J12c5K6UnsgnhgS7pjNh+Kkg
+gK6iczbkrvVg7IRycILs
+=ydDr
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (13):
+      Continue development...
+      increment egg version
+      Save exports in session profile directly after mounting/unmounting a share if the session profile parameter restoreexports is set.
+      fix last commit
+      Fix the restoreexports logic on mount/unmount/unmount all requests. Make sure client-side offline network shares do not get purged from the session profile configuration if unavailable. (Fixes: #192).
+      Become aware of fixed paramiko features since paramiko 1.11.0. Stop monkey patching those methods that got fixed in 1.11.0.
+      Ignore KeyError exceptions in session cache for suddenly removed cache items. Silence/fix some race conditions on connection failures.
+      Support mounting client-side folders on UNC paths.
+      Enable keepalive callbacks on open SSH client connections.
+      Only do x2golistmounts calls for the session cache on running sessions.
+      fix for last commit
+      Fix renaming of profile names.
+      release 0.4.0.4
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+python-x2go.git (Python X2Go Client API)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;python-x2go.git&quot; (Python X2Go Client API).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000327.html">[X2go-Tags] x2goserver.git - 4.0.1.1 (annotated tag) created:	4.0.1.1
+</A></li>
+	<LI>Next message: <A HREF="000329.html">[X2go-Tags] x2goserver.git - 4.0.1.2 (annotated tag) created:	4.0.1.2
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#328">[ date ]</a>
+              <a href="thread.html#328">[ thread ]</a>
+              <a href="subject.html#328">[ subject ]</a>
+              <a href="author.html#328">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

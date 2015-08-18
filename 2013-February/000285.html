@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2gobroker.git - 0.0.0.2 (annotated tag) created:	0.0.0.2
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gobroker.git%20-%200.0.0.2%20%28annotated%20tag%29%20created%3A%0A%090.0.0.2&In-Reply-To=%3C20130221184857.483965DB1A%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000283.html">
+   <LINK REL="Next"  HREF="000286.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2gobroker.git - 0.0.0.2 (annotated tag) created:	0.0.0.2</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gobroker.git%20-%200.0.0.2%20%28annotated%20tag%29%20created%3A%0A%090.0.0.2&In-Reply-To=%3C20130221184857.483965DB1A%40ymir%3E"
+       TITLE="[X2go-Tags] x2gobroker.git - 0.0.0.2 (annotated tag) created:	0.0.0.2">git-admin at x2go.org
+       </A><BR>
+    <I>Thu Feb 21 19:48:57 CET 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000283.html">[X2go-Tags] python-wsgilog.git - upstream/0.3 (annotated tag)	created: upstream/0.3
+</A></li>
+        <LI>Next message: <A HREF="000286.html">[X2go-Tags] x2gobroker.git - 0.0.0.3 (annotated tag) created:	0.0.0.3
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#285">[ date ]</a>
+              <a href="thread.html#285">[ thread ]</a>
+              <a href="subject.html#285">[ subject ]</a>
+              <a href="author.html#285">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.0.0.2 has been created
+        at  2547f8030df9f5bf213c427a4b7c19673a8a2a4b (tag)
+   tagging  015ccfd30ce69e3cba7cad23c766f19eb7009ad6 (commit)
+  replaces  0.0.0.1
+ tagged by  Mike Gabriel
+        on  Thu Feb 21 19:51:49 2013 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 0.0.0.2
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABAgAGBQJRJmzGAAoJEJr0azAldxsxBv8P+gJ0vKhfMMB8Kmkb5kckY+sS
+WBTKt9ozo3a03T5CJtM36yedq4Mp0c9RjKFJiPGJS431V14n/TKi9q4Ig/ZK7y8A
+kOWSFHVcXPRGS5P8BR6ILjPUZogSoZwZns7Nu5mVMEAl/Ot6gC3ndkIYa+dMd4Qp
+8QPPNXc4v7wVsbrjBoAz0entQMQRFc5J1wtBLqKWwiCmJ2rl2J9+zHAm9eV9+8WQ
+hB8fIzGCtcpV6GKO+zClPY3et98rr6thbHooMBbisER5puCTRWyrfeZndBMsLPh3
+gp9vKjGO+VEp1G56pWd1K9/wuv68ILunP2V3RFzCx/XuSE7vAxxX5/pbfHXX3BvG
+Sesn8qS11YOdBPd2QnY2bc2ND6tqb5CpIXz8gfry++CiZ46mXC4i3GndM2VjL9ad
+RoeBPXarU9eieuOzkHAmeaXWtPUbnHasibdv/wiUtqF+U9JYrX+HV2eHjVT3o3VR
+J9YqfWM99ZnbiTiggc5QIeb4Kcqurc6Ux13QAPWhn8WzQWwwyYQe3gYeVen94769
+rLc9uEfaAge1JDWAKle1CrmIUav6MicvGLf8bzrfTb9IYYJFscoh+s6pp5bAjL0x
+YXU4416wE4eZFxHPTWMbr2knIfiXe2Z61KJ6UW6nNTT85jOMLDILOSL2Ves+IGLZ
+XnCckmwQjvSUy1CJ40m6
+=HEvs
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (72):
+      Make CC, CFLAGS and LDFLAGS configurable through build system.
+      /debian/control: Add bin:package x2gobroker-agent.
+      really build x2gobroker-agent setuidwrapper
+      Make host session option a list, not string.
+      whitespace fix
+      Add load balancing support.
+      some minor fixes found during first load balancing tests
+      Add foundation for logging support.
+      Add man page for x2gobroker executable.
+      remove debug stdout code
+      create log folder with setgid bit set
+      Add logrotate configuration for x2gobroker log files.
+      divert logging to stdout if called by other user than user x2gobroker
+      add some first logging output
+      Make the daemon user ID configurable through x2gobroker-daemon.default.
+      typo fix
+      Handle different situation for X2GOBROKER_DAEMON_USER. Make sure the getpass.getuser() function sees the correct effective UID.
+      Make sure the unprivileged daemon user (x2gobroker) has access to the PID file directory.
+      /debian/x2gobroker-daemon.init: Handle stale PID file and already running daemon.
+      properly tabified init script
+      remove debug output code
+      remove enforcement to DEBUG loglevel, was test code
+      be more strict with UID providing variables in init script
+      typo fix
+      typo fix
+      only override X2GOBROKER_DEBUG if cmdline arg --debug is set
+      fix function name, fix variable name
+      do not manipulate X2GOBROKER_CONFIG_DEFAULTS, this has an effect on all other test units
+      Set log level to CRITICAL if running unit tests.
+      add some debug messages
+      add some debug messages
+      fix test_broker_base: two options (user, host) have been added to the DEFAULT_SESSIONPROFILE recently
+      only run agent code if there are 2 or more servers configured in the session profile
+      add debug log messages, remember config file name as class property
+      Perform PAM authentication via an authentication service (the broker runs as non-privileged user, the authentication service as root).
+      separate x2gobroker-daemon and x2gobroker-authservice into two separate packages
+      follow-up for last commit: complete the service separation of x2gobroker-daemon and x2gobroker-authservice
+      postinst/postrm scripts:The user x2gobroker is required by x2gobroker-agent and x2gobroker-daemon. So now both bin:packages provide that user account.
+      more work on the session broker (this commit might break functionality)
+      code cleanup using pyflakes
+      fix .deb package build
+      typo fix in init script
+      fixes after testing broker agent calls
+      simplyfy findbusyservers mode in broker agent
+      fine-tuning of the select_session handshake
+      fix faulty list handling in agent.py
+      list with empty string is an empty list...
+      use stderr rather than stdout for display log messages
+      typo fix
+      drop empty line, make the encoding be recognized again
+      Add tool: x2gobroker-keygen. Generate pub/priv SSH keypair for the system user x2gobroker.
+      install x2gobroker-keygen into bin:package x2gobroker
+      fix x2gobroker-keygen after testing an installed instance
+      x2gobroker sysuser needs a real home and bash as shell for the agent to work properly
+      fix file extension of pubkey
+      more fixes around x2gobroker-keygen
+      log msg indentation
+      create public keyfiles with ssh-dss at the line beginning
+      log msg change
+      To make SSH pubkey deployment easier, serve the broker's public SSH key(s) under this URL http(s)://&lt;broker_hostname&gt;:&lt;port&gt;/pubkeys/.
+      improve the PubKey Authorizer, make it more robust and avoid ever-growing authorized_keys files
+      add x2gobroker-pubkeyauthorizer to bin:package x2gobroker-agent
+      fix x2gobroker-agent.install
+      -bin:package x2gobroker-agent now also depends on python-x2gobroker, due to x2gobroker-pubkeyauthorizer script
+      create {broker_home}/.ssh before importing authorized_keys
+      use some variables for broker user properties
+      fix typo
+      fine-tune agent query mode SSH
+      add man pages for all executables found in /usr/sbin
+      rewrite changelog
+      add python as dependency to bin:package x2gobroker-agent
+      release 0.0.0.2
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2gobroker.git (HTTP(S) Session broker for X2Go)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2gobroker.git&quot; (HTTP(S) Session broker for X2Go).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000283.html">[X2go-Tags] python-wsgilog.git - upstream/0.3 (annotated tag)	created: upstream/0.3
+</A></li>
+	<LI>Next message: <A HREF="000286.html">[X2go-Tags] x2gobroker.git - 0.0.0.3 (annotated tag) created:	0.0.0.3
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#285">[ date ]</a>
+              <a href="thread.html#285">[ thread ]</a>
+              <a href="subject.html#285">[ subject ]</a>
+              <a href="author.html#285">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

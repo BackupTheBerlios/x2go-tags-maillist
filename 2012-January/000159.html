@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goserver.git - 3.0.99.9 (annotated tag) created:	3.0.99.9
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-January/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%203.0.99.9%20%28annotated%20tag%29%20created%3A%0A%093.0.99.9&In-Reply-To=%3C20120118134136.E587B5DB33%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000158.html">
+   <LINK REL="Next"  HREF="000160.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goserver.git - 3.0.99.9 (annotated tag) created:	3.0.99.9</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%203.0.99.9%20%28annotated%20tag%29%20created%3A%0A%093.0.99.9&In-Reply-To=%3C20120118134136.E587B5DB33%40ymir%3E"
+       TITLE="[X2go-Tags] x2goserver.git - 3.0.99.9 (annotated tag) created:	3.0.99.9">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Jan 18 14:41:36 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000158.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.7 (annotated tag)	created: redist-client/3.5.0.7
+</A></li>
+        <LI>Next message: <A HREF="000160.html">[X2go-Tags] nx-libs.git - build-main (annotated tag) created:	redist-server/3.5.0.7
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#159">[ date ]</a>
+              <a href="thread.html#159">[ thread ]</a>
+              <a href="subject.html#159">[ subject ]</a>
+              <a href="author.html#159">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 3.0.99.9 has been created
+        at  80dece02d55e61e4519c894c015288c4913668b1 (tag)
+   tagging  d578560869faad7bc5e1c7be02d07ac7f725d6be (commit)
+  replaces  3.0.99.8
+ tagged by  Mike Gabriel
+        on  Wed Jan 18 14:41:25 2012 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 3.0.99.9
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJPFswFAAoJEIlP3EWN3QKAn28H/0y15aBTgWgJV/rlRSu2P7A/
+UjY8l+PZ2q3C7ramN3p2AF2hBq+LXZ5HjhZvKuqxbuRaiUGFlHcZUCe1fVyZSnPS
+6D+HQpAGEat5tDJa4sKq09nc8KL74ni9DdwD0TDnahzvvHDeB/1YmKbW6mVnzwyN
+W/4LgjL2oqU6gIV+6fCfQufDI6wj/8WtSVxCrCIwxim3noez2TdIpYf2mZvghuyr
+aKkoV5BqfQ7dd3+D2D5q0uJVCUqHbTIVp9vuujpLpCuMLi9qnlAUKfjhWG88N5T2
+l0EChYJIyfEOQjKpv9zIrrZttsLoOq7BYxH1wuWNsxJmsQFOxf5CRYIy/eIN0P4=
+=qW9C
+-----END PGP SIGNATURE-----
+
+Hayawardh V (1):
+      Fix potentially empty LD_LIBRARY_PATH in x2gostartagent.
+
+Mike Gabriel (45):
+      x2goserver Makefile fix, only chown if x2gouser group exists
+      INSTALL howto update
+      fix for x2goserver Makefile (2)
+      Makefile fix for x2goserver-extensions
+      Makefile fix for x2goserver-extensions (2)
+      Makefile fix for x2goserver-xsession
+      Makefile fix for x2goserver-xsession (2)
+      Makefile fix for x2goserver-xsession (3)
+      Makefile fix for x2goserver-xsession (4)
+      Makefile fix for x2goserver-xsession (5)
+      Makefile fix for x2goserver-xsession (6, typo fix)
+      version increment, changelog entry for Makefile fixes derived from work on lenny backport
+      Give X2Go session windows a human readable title.
+      Desktop sharing: fix username of user who requests desktop sharing.
+      Allow client-side setting of session window title.
+      fix username recognition for desktop sharing sessions
+      Fix x2gobasepath for Perl versions &lt; 5.10.x.
+      Add psmisc package as dependency.
+      Fix x2godbadmin for Perl versions &lt; 5.10.x.
+      improve session window renaming from client side
+      add syslog debug line that shows the value of
+      revert latest session renaming changes and provide functionality via an x2gofeature
+      Remove x2gosetkeyboard from x2goserver-extensions package.
+      Add new binary package to x2goserver source: x2goserver-pyhoca.
+      complete build env of x2goserver-pyhoca
+      shell-script-fails-syntax-check ./usr/bin/x2gosessiontitle
+      changelog fix
+      Add man page for x2gosessiontitle.
+      changelog fix
+      x2goserver package suggests x2goserver-pyhoca.
+      comma/typo fix
+      fix x2gostartagent
+      Use cmd line parameters when calling x2gosessiontitle.
+      fixing x2gosessiontitle
+      log output fix
+      Call x2golistmounts with user privileges instead of using db_getmounts in x2goprint script.
+      revert session title renaming from server code, has been implemented in clients
+      Fix directory permissions of $HOME directory of x2goprint system user.
+      fix for grepping of x2golistmounts output
+      update author name in changelog
+      fix for LD_LIBRARY_PATH fix (last commit) dropping the X2GO_LIB var completely as it is considered cruft from older versions
+      changelog cleanup
+      Avoid potentially empty LD_LIBRARY_PATH path in x2goruncommand.
+      Install x2gogetservers to $PREFIX/bin instead of $PREFIX/lib/x2go.
+      release 3.0.99.9
+
+Oleksandr Shneyder (1):
+      Xinerama support
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goserver.git (X2Go Server)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goserver.git&quot; (X2Go Server).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000158.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.7 (annotated tag)	created: redist-client/3.5.0.7
+</A></li>
+	<LI>Next message: <A HREF="000160.html">[X2go-Tags] nx-libs.git - build-main (annotated tag) created:	redist-server/3.5.0.7
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#159">[ date ]</a>
+              <a href="thread.html#159">[ thread ]</a>
+              <a href="subject.html#159">[ subject ]</a>
+              <a href="author.html#159">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] nx-libs.git - redist-client/3.5.0.0 (annotated tag)	created: redist-client/3.5.0.0
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-January/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-client/3.5.0.0%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.0&In-Reply-To=%3C20120110104157.5F17A5DB20%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000146.html">
+   <LINK REL="Next"  HREF="000148.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] nx-libs.git - redist-client/3.5.0.0 (annotated tag)	created: redist-client/3.5.0.0</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-client/3.5.0.0%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.0&In-Reply-To=%3C20120110104157.5F17A5DB20%40ymir%3E"
+       TITLE="[X2go-Tags] nx-libs.git - redist-client/3.5.0.0 (annotated tag)	created: redist-client/3.5.0.0">git-admin at x2go.org
+       </A><BR>
+    <I>Tue Jan 10 11:41:57 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000146.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.0 (annotated tag)	created: redist-server/3.5.0.0
+</A></li>
+        <LI>Next message: <A HREF="000148.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.1 (annotated tag)	created: redist-client/3.5.0.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#147">[ date ]</a>
+              <a href="thread.html#147">[ thread ]</a>
+              <a href="subject.html#147">[ subject ]</a>
+              <a href="author.html#147">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, redist-client/3.5.0.0 has been created
+        at  3218f02f0ac283b8e307c15335e0b6653dbd0135 (tag)
+   tagging  fe1b8592ad6f8d9193a53f6a329b8d94e145e370 (commit)
+ tagged by  Mike Gabriel
+        on  Tue Jan 10 11:41:49 2012 +0100
+
+- Log -----------------------------------------------------------------
+release NX re-distributed 3.5.0.0 (client-only)
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJPDBXtAAoJEIlP3EWN3QKAYL0IAI6Q6zizBvZQDhlFQuaPxTif
+2NuW5Wfk+LAqUs/rsprZl+GJLiiMSRxKVAS6rc/IE4X1U0doCNk4W+GaFsAD6G6+
+cZ5rcGFwj6jJHv1ypS7n50BP6D9ItoVGq84zx90LeCEjLLk2qyRGmHXOlBtAox3/
+c9MlhrWUrwMYK4lKOsH1eiecHkNjNqVMpADOlFTr0ClkVGs68uL3MTbq/5BWfNQj
+S2wTfonsut3l+ZvXh49qBqI2kEodqYYLQ+XNgD8FmhS2y6ObwkHAFmkWOowQB9SQ
+jmip6e1IBRGdY0QhfmrlE6tyW38V2ENOpbuVHVqswcHYO6BN5snS2tQI1vxBMuE=
+=5z1d
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (26):
+      add /debian folder
+      reduce main Makefile patch to building nxcomp and nxproxy
+      Enforce nxcomp package build from main Makefile (via patch).
+      Add patch: 005_nxcomp_gcc43.patch.
+      Add patch: 011_nxcomp_sa-restorer.patch.
+      Add x11proto-core-dev as build-dependency, remove direct dependency to libx11-6 from libxcomp3. Also: wrap long line in changelog.
+      fix copy+paste error in 011_nxcomp_sa-restorer.patch
+      fix dh_link for libxcomp-dev
+      rename source package to nx-libs, close x2go ITP with this (and other X2Go client-side packages)
+      Use source format 3.0 (quilt).
+      Release debian/3.5.0-1
+      Drop useless override stanza in /debian/rules.
+      Call dh_clean from /debian/rules again.
+      Release debian/3.5.0-2
+      Remove branding from package descriptions.
+      Release debian/3.5.0-3
+      add close tags for BTS
+      Fix Vcs-Browser to put emphasis on the client-only branch that this package is developed on.
+      Release debian/3.5.0-4
+      Reintroduce removal of build cruft in orig sources via patch system (to fix package building with git-buildpackage).
+      No removal of files shipped by upstream via dh_clean rule.
+      Exclude autoconf build dirs from dh_clean, as they are shipped with upstream source tarball (nxproxy).
+      Add patch: 000_add-NX-redistribution-README.patch.
+      Add patches: 009_add-nxproxy-man-page.patch. Reintroduce man page creation via patch system, so that all man pages find their way into the NX-redistribution tarball created from this source project.
+      switch NX-redistribution version to 3.5.0.0
+      release NX re-distributed 3.5.0.0 (client-only)
+
+Reinhard Tartler (18):
+      creating nx-X11
+      Imported nxcomp-3.1.0-4.tar.gz
+      Imported nxcomp-3.1.0-6.tar.gz
+      Imported nxcomp-3.2.0-6.tar.gz
+      Imported nxcomp-3.2.0-7.tar.gz
+      Imported nxcomp-3.3.0-3.tar.gz
+      Imported nxcomp-3.3.0-4.tar.gz
+      Imported nxcomp-3.4.0-1.tar.gz
+      Imported nxcomp-3.4.0-6.tar.gz
+      Imported nxcomp-3.4.0-7.tar.gz
+      Imported nxcomp-3.5.0-1.tar.gz
+      Imported nxcomp-3.5.0-2.tar.gz
+      Imported nxproxy-3.0.0-4.tar.gz
+      Imported nxproxy-3.1.0-2.tar.gz
+      Imported nxproxy-3.2.0-1.tar.gz
+      Imported nxproxy-3.3.0-2.tar.gz
+      Imported nxproxy-3.4.0-2.tar.gz
+      Imported nxproxy-3.5.0-1.tar.gz
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+nx-libs.git (NX libraries)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;nx-libs.git&quot; (NX libraries).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000146.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.0 (annotated tag)	created: redist-server/3.5.0.0
+</A></li>
+	<LI>Next message: <A HREF="000148.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.1 (annotated tag)	created: redist-client/3.5.0.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#147">[ date ]</a>
+              <a href="thread.html#147">[ thread ]</a>
+              <a href="subject.html#147">[ subject ]</a>
+              <a href="author.html#147">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

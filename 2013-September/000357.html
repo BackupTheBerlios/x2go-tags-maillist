@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goclient.git - 4.0.1.1 (annotated tag) created:	4.0.1.1
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-September/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goclient.git%20-%204.0.1.1%20%28annotated%20tag%29%20created%3A%0A%094.0.1.1&In-Reply-To=%3C20130911100710.197C45DB40%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goclient.git - 4.0.1.1 (annotated tag) created:	4.0.1.1</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goclient.git%20-%204.0.1.1%20%28annotated%20tag%29%20created%3A%0A%094.0.1.1&In-Reply-To=%3C20130911100710.197C45DB40%40ymir%3E"
+       TITLE="[X2go-Tags] x2goclient.git - 4.0.1.1 (annotated tag) created:	4.0.1.1">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Sep 11 12:07:10 CEST 2013</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#357">[ date ]</a>
+              <a href="thread.html#357">[ thread ]</a>
+              <a href="subject.html#357">[ subject ]</a>
+              <a href="author.html#357">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 4.0.1.1 has been created
+        at  dad4fcc24868504be24ccc9a3ab0fcac41859080 (tag)
+   tagging  d5ff7886ae22a1e36541570e7095fac9860af6e8 (commit)
+  replaces  4.0.1.0
+ tagged by  Mike Gabriel
+        on  Wed Sep 11 12:06:28 2013 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 4.0.1.1
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABCAAGBQJSMEClAAoJEJr0azAldxsxX/MP/juwxWsRApVmrasK17hhxSer
+u9V2oVguimiu9uzcpleO+9lDBUaXmQvLpBtmUcgf7pzwxAba/lyNC6ERzezkFuEv
+4Pnvsxk7zxq8OiS0YcHdcvtjps3HWOkwuwWADLeG3kOqASTG2yfWsGjAwuTKWJ6M
+UTOMNWH3hhSLNY/0WHtmdfHKo20fyxBQqLDm4FGJ6NZb8MZjFC+ZZ8LePAW2kd8m
+oTGFLBYfxktplDHUpLYBicd6elgFpmM37VjLrCeXamxK+NwBqXnvadsUtiLHUGno
+fGK3JojDZ+5h9Lk7uHHihcIKhprkUsOwhWvVsZ+bGxG9JV+0Qe24v1RmO73P6Yzy
+PxWjwrOE7Nuje0ifrMHltiosiPM9HKGpNvVi7kxjR2kHTWTSfbAJiQTGRfnPl1k0
+M+W6xVmaUUHxoJoPuk3sz01kOGHrFsbEQagzJExZOVwc4xDkoCqdJhwmumnCLGGk
+Rk2SgoHoj/RX51MbHn+jtrmExVx5qlJo5OmEUXE8v2dFwRY9XpMQkQjFCImuu6Zw
+5NBBRSYMAB27r4iCIOuxcO/2B0xc05Hh+QbAsoG3qkmJMitzMjUuOjggWNFJWQfM
+vhtf8EjsAYRm6HSgFD9pR7X1DZ89DeMYzM+cesraee9L2RlnCYhvbWNZ703FSH+A
+bWdw9BIxeQVmx+Es5lNy
+=vpLw
+-----END PGP SIGNATURE-----
+
+Daniel Lindgren (1):
+      Swedish translation update.
+
+Ezra Buehler (1):
+      Fix auto-resume when session type is &#187;Single Application&#171;. (Fixes: #183).
+
+Mike Gabriel (36):
+      Continue development...
+      add closure of bug #151
+      fix name of X2Go Client
+      changelog cleanup
+      If a priv SSH key has been specified, skip the autologin procedure. Let's consider a given SSH private key that fails to log the user in as an overall login failure. (Fixes: 141).
+      adapt packaging from latest x2goclient package in Debian
+      debian/upstream/changelog does not exist in our upstream packages
+      fix upstream version in changelog
+      typo fix in changelog
+      typo fix in changelog
+      whitespace removed
+      add changelog entry for the new parsable stdout+stderr output style
+      Fix detection of maximum screen area available for a session. (Fixes: #165).
+      Use the session icon as tray icon, pop up notification bubble that informs about current session actions. (Fixes: #177).
+      Enable full access desktop sharing across user accounts.
+      Avoid multiple selectUserSession requests when in broker mode.
+      Properly set the remote server address received via selectUserSession method when in broker mode. (Fixes: #226).
+      Fix segmentation fault that started occurring since the custom trayIcon patch was applied. Segfault only occurred if the tray icon was not used.
+      Show session name in notification bubbles.
+      rebuild i18n files
+      Update German translation.
+      fix some de_DE strings
+      Allow for setting maximum available desktop size as window size via the session profile card. Unfortunately, this feature is for now only available on Linux. (Fixes: #214).
+      Add cmdline option --broker-autologoff: Enforce re-authentication against X2Go Session Broker after a session has been suspended or terminated. (Fixes: #179).
+      add whitespace after colon in notification bubble
+      Revert &quot;Enable full access desktop sharing across user accounts.&quot;
+      Enable full access desktop sharing across user accounts. (Fixes: #222).
+      Call ssh_clean_pubkey_hash() for deallocating public key hashes instead of just calling free(). Required under MS Windows as documented in libssh2 API. (Fixes: #243). (For further details see: <A HREF="http://api.libssh.org/master/group__libssh__session.html">http://api.libssh.org/master/group__libssh__session.html</A>).
+      Provide bin:package with debug symbols for X2Go Client. (Fixes: #255).
+      only package debug symbols for x2goclient
+      /debian/changelog: fix too-long-line
+      changelog fix
+      Make X2Go Client aware of the MATE desktop environment.
+      Make X2Go Client work in SSH broker mode without the need of a auth-id file.
+      provide Finnish translation files
+      release 4.0.1.1
+
+Nicolai Hansen (1):
+      Update Danish translation file.
+
+Oleksandr Shneyder (4):
+      Use &quot;127.0.0.1&quot; instead of localhost to avoid wrong IPv6 hostname resolution
+      waiting for x2gocmdexitmessage to return before closing in hidden mode
+      Support for published applications in X2Go Plugin
+      Support for &quot;shadow&quot; mode in X2Go Plugin
+
+Orion Poplawski (1):
+      Instead of using a hard-code DPI of 96, use local DPI settings for new sessions if not explicitly set in session profile (Fixes: #164).
+
+Otto Kjell (1):
+      Enable debug mode through cmd line parameter. (Fixes: #142).
+
+Ricardo D&#237;az Mart&#237;n (1):
+      Update Spanish translation file.
+
+Terje Andersen (1):
+      Update Norwegian Bokmaal translation file.
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goclient.git (X2Go Client)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goclient.git&quot; (X2Go Client).
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#357">[ date ]</a>
+              <a href="thread.html#357">[ thread ]</a>
+              <a href="subject.html#357">[ subject ]</a>
+              <a href="author.html#357">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

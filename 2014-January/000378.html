@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] python-x2go.git - 0.4.0.9 (annotated tag) created:	0.4.0.9
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2014-January/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20python-x2go.git%20-%200.4.0.9%20%28annotated%20tag%29%20created%3A%0A%090.4.0.9&In-Reply-To=%3C20140108142934.DAA875DCDC%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000377.html">
+   <LINK REL="Next"  HREF="000379.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] python-x2go.git - 0.4.0.9 (annotated tag) created:	0.4.0.9</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20python-x2go.git%20-%200.4.0.9%20%28annotated%20tag%29%20created%3A%0A%090.4.0.9&In-Reply-To=%3C20140108142934.DAA875DCDC%40ymir%3E"
+       TITLE="[X2go-Tags] python-x2go.git - 0.4.0.9 (annotated tag) created:	0.4.0.9">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Jan  8 15:29:34 CET 2014</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000377.html">[X2go-Tags] x2goserver.git - 4.0.1.12 (annotated tag) created:	4.0.1.12
+</A></li>
+        <LI>Next message: <A HREF="000379.html">[X2go-Tags] pyhoca-gui.git - 0.4.0.9 (annotated tag) created:	0.4.0.9
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#378">[ date ]</a>
+              <a href="thread.html#378">[ thread ]</a>
+              <a href="subject.html#378">[ subject ]</a>
+              <a href="author.html#378">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.4.0.9 has been created
+        at  62f82b9324d1ed8240af1ad0bf0e5ff82f08ee49 (tag)
+   tagging  eb2f3b21a3f4ac7d56ffa3ed513164781f99d4a5 (commit)
+  replaces  0.4.0.8
+ tagged by  Mike Gabriel
+        on  Wed Jan 8 15:14:38 2014 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 0.4.0.9
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABCAAGBQJSzV1OAAoJEJr0azAldxsxX3QP/REix73cnMyi0/Zsj07QmIOU
+mFyYK0br4EjRjDBvXOdBMaxUB5xZjUH6pB1qQ1H6gbJl70i1hYiWdy2g3CHG4NFn
+TQ0Aqew6IR17goZd8+OAbytCPX8xbSrsEXLn31PunXFpcMyK+wsNVZkSvnPkTBfk
+8ohgTfCCfsb+sRbRqpwDAq+XpKr7tdhVxlYlZ8LsOcWeoZlcu1OdGWXe6zfYHy+f
+RbfRXcdlpj42AsU4VSCafAla9vgTzMEkTfJMooFsRYesbYxY12kC2HtoXYd4h4JE
+VIX2v4MY8yf/d1MhF1VzMXg1cg7g4fAtlxcXu9l5bYQwaYvkJf0UZv6NJNLO/mNe
+vbeLmQSt5P7wA8DlRC2WpJ33yxBnTb0FamYTG6mZyMdz3EPcL4FjeY4Wh8QwRx7q
+YuMpYzHVW2PuEBiu40gnLIzb093YsPXt/y+EfNmLf6FvQmNlr2JAZmpYlTphvvL/
+turvfa/M0jkT8WfxpMm/G21+nVu20B5aePJ378AKgnEFOu0RitDdk+KgtxYFegYu
+yVZZUuce4YJKyumzz+eQULCdqsvR3UGspQK8qhLyoYaqqFE640acOMfllm4jaLZ1
+Teoh9pL+SJG0F5mXR333t5bflgvdIF4XktalmMC8T7u1REDOutt7Wgucn3qxE4fo
+5m0O8SfUqRQzjIpWVidz
+=2ifr
+-----END PGP SIGNATURE-----
+
+Kenneth Pedersen (1):
+      Color depth detection: Stop using win32api.GetSystemMetrics(2) which actually returns the width of a vertical scroll bar in pixels. Instead, create a screen display context and query it for the color depth. (Fixes: #330).
+
+Mike Gabriel (42):
+      Continue development...
+      Agent channels in Paramiko can raise an EOFError if the connection has got disrupted. Ignoring this.
+      Store the session password in base64 encoded string in order to make  it harder spotting the long term stored (for the duration of the session) plain text password.
+      Support encryption passphrases on SSH private key files.
+      Support encryption passphrases on SSH private key files (X2Go SSH connections as well as SSH proxy connections).
+      fine-tuning SSH proxy auth
+      Invalidate SSH private keys (filename, pkey object) when look_for_keys is requested.
+      change from empty string to None as default values
+      slightly modify exception messages
+      Keep private key information even if force_password_auth is set in the control session's connect() method.
+      Fix parameter handling in X2GoSession.connect().
+      Rewrite passwords that are not string/unicode to an empty string.
+      No Unicode chars in log messages. Eliminated one more in checkhosts.py.
+      Implement two-factor authentication.
+      Handle echoing ~/.*shrc files gracefully via SSH client connections. Do not allow data injections via ~/.*shrc files. (Fixes: #335).
+      Properly handle (=expand) the &quot;~&quot; character in key filenames. (Brought to attention by Eldamir on IRC. Thanks!).
+      fix for last commit
+      Differentiate between desktop sharing errors and desktop sharing access that gets denied by the other/remote user.
+      Report about found session window / session window retitling in debug mode.
+      Fix session window detection when local session manager is the i3 session manager (which uses _NET_CLIENT_LIST_STACKING instead of _NET_CLIENT_LIST).
+      Check for pulse cookie file in old (~/.pulse-cookie) and new (~/.config/pulse/cookie) location.
+      debian/source/format: Switch to format 1.0.
+      change versioning scheme
+      Import python-x2go-py3.patch from Fedora. Thanks to Orion!!!
+      Ship python-x2go.spec (RPM package definitions) in upstream project. (Thanks to the Fedora package maintainers).
+      improve python-x2go.spec: LDAP support is deprecated and replaced by session broker, build for HEAD, python-x2go-py3.patch is already applied upstream
+      Improve setup.py script: make it run with Python3 and older Python2 versions.
+      debian/changelog: wrap too-long lines
+      typo fix
+      make sure our RPM package version is lower than a package version from EPEL
+      python-x2go.spec: Drop dependency on python-cups.
+      Clear (Fedora package) changelog.
+      whitespace fix
+      Fix tests for two-factor authentication in control session and SSH proxy code.
+      Fix regression: Make password logins with PyHoca-CLI succeed again.
+      Make channel compression to all authentication methods.
+      Set keepalive on proxy channel.
+      fix for previous+1 commit
+      Only use [&lt;host&gt;]:&lt;port&gt; if &lt;port&gt; is not 22.
+      Handle host key checks for hosts that do not have a port specified.
+      happy new year
+      release 0.4.0.9
+
+Orion Poplawski (1):
+      debian/control: Drop python-cups from Depends: field. Python CUPS is no dependency if Python X2Go. (Fixes: #329).
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+python-x2go.git (Python X2Go Client API)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;python-x2go.git&quot; (Python X2Go Client API).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000377.html">[X2go-Tags] x2goserver.git - 4.0.1.12 (annotated tag) created:	4.0.1.12
+</A></li>
+	<LI>Next message: <A HREF="000379.html">[X2go-Tags] pyhoca-gui.git - 0.4.0.9 (annotated tag) created:	0.4.0.9
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#378">[ date ]</a>
+              <a href="thread.html#378">[ thread ]</a>
+              <a href="subject.html#378">[ subject ]</a>
+              <a href="author.html#378">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

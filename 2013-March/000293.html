@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2gobroker.git - 0.0.0.7 (annotated tag) created:	0.0.0.7
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-March/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gobroker.git%20-%200.0.0.7%20%28annotated%20tag%29%20created%3A%0A%090.0.0.7&In-Reply-To=%3C20130307061532.4C5875DB14%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000292.html">
+   <LINK REL="Next"  HREF="000294.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2gobroker.git - 0.0.0.7 (annotated tag) created:	0.0.0.7</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2gobroker.git%20-%200.0.0.7%20%28annotated%20tag%29%20created%3A%0A%090.0.0.7&In-Reply-To=%3C20130307061532.4C5875DB14%40ymir%3E"
+       TITLE="[X2go-Tags] x2gobroker.git - 0.0.0.7 (annotated tag) created:	0.0.0.7">git-admin at x2go.org
+       </A><BR>
+    <I>Thu Mar  7 07:15:32 CET 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000292.html">[X2go-Tags] x2gobroker.git - 0.0.0.6 (annotated tag) created:	0.0.0.6
+</A></li>
+        <LI>Next message: <A HREF="000294.html">[X2go-Tags] x2gobroker.git - 0.0.1.0 (annotated tag) created:	0.0.1.0
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#293">[ date ]</a>
+              <a href="thread.html#293">[ thread ]</a>
+              <a href="subject.html#293">[ subject ]</a>
+              <a href="author.html#293">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 0.0.0.7 has been created
+        at  52ea452e5e34f679a034a2470fc6bba6cf9e4c29 (tag)
+   tagging  15fba676bee4d4cebb9d44afe30259ca282ea7ef (commit)
+  replaces  0.0.0.6
+ tagged by  Mike Gabriel
+        on  Thu Mar 7 07:15:14 2013 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 0.0.0.7
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABAgAGBQJRODByAAoJEJr0azAldxsxoC0QAIPGuhpqR5HBZsHcPEmSMPiB
++K5UFjH76W1bil8BcVXDst5ALZH1ZjFiSUrnL47hyJxbjG/w6GAjvzPClSuQufpZ
+83xI54IfAe/KpTA5NMJ0rJm4ryBHaZdGC+I6BpR4QTICFihb5elHoMfSn04rmfLm
+odau6qTTZgzQd4OFLO9cvpuTXJcrDlpFbEgynaUb4CotIKTIImcXB8+ip5RDsr0T
+6+NLmWJTWbNU01guYIKPxCbKg4OOOoxcoI8tL8b7ouEwPpP5WVO67KziK8zIHXAk
+5OmBmqI/biTsnFzrt0ok9tgpslW/50fY9bb9UNKrp46/lxV8lMouACBA4g6t0o01
+E4rB2+qnhXqINXPlOhL+GcsSGBFOsYCYuJo7XW8Zej5BfKbV76d/Z0ytG7HSHMbZ
+GiPHV658qTxqz6F+m5b7948OWCmPzhqjlU9Ki3gnkuFIV5Hf21J+j8dGta0aucEk
+acqxh41VHWr/mHUvq19buhz8Z2sA0RG/HHHole+udtawV7QkAZQhxjd0/O5vWN9C
+I9vp+QTQxUH/MeGHF4vu6XXBROf1pDQTALTqEWYL47b92MeDoB/vBvVVJRhvCkqK
+b8d5LEGn53elL2qlkWUCn3uaSLxrsP2IxL0zVYZsdUUYN/6MShtwSiLJ+BhRQFta
+8Kav7PpQmLa9yCMlzuIP
+=2Aeh
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (18):
+      typo fix
+      Continue development...
+      /debian/control: Build-Depend on python-paste, python-nose (testsuite needs them).
+      remove remnant traces of webpy engine (replaced by tornado httpd engine)
+      Add algorithm to ,,normalize'' hostnames used in session profiles vs. those returned by the broker agent. (Fixes: #133).
+      add debug log message that tells about the server load analysis
+      fix hostname normalization, works now...
+      Ignore off-line X2Go servers in multi-node load-balanced setups. (Fixes: #132).
+      fix agent fallback code
+      interpret a failing agent as a machine downtime
+      handle cases where the provided server is not available
+      update changelog about downtime machines
+      syntax fix
+      fix call of self.random_remote_agent()
+      fix for load balancing of agent query mode is LOCAL
+      Tornado: Use RequestHandler.set_header() instead of RequestHandler.add_header().
+      differentiate between empty dict and None
+      release 0.0.0.7
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2gobroker.git (HTTP(S) Session broker for X2Go)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2gobroker.git&quot; (HTTP(S) Session broker for X2Go).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000292.html">[X2go-Tags] x2gobroker.git - 0.0.0.6 (annotated tag) created:	0.0.0.6
+</A></li>
+	<LI>Next message: <A HREF="000294.html">[X2go-Tags] x2gobroker.git - 0.0.1.0 (annotated tag) created:	0.0.1.0
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#293">[ date ]</a>
+              <a href="thread.html#293">[ thread ]</a>
+              <a href="subject.html#293">[ subject ]</a>
+              <a href="author.html#293">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goserver.git - 4.0.0.0 (annotated tag) created:	4.0.0.0
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-December/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.0.0%20%28annotated%20tag%29%20created%3A%0A%094.0.0.0&In-Reply-To=%3C20121230164139.DDA8F5DB1A%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000262.html">
+   <LINK REL="Next"  HREF="000264.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goserver.git - 4.0.0.0 (annotated tag) created:	4.0.0.0</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.0.0%20%28annotated%20tag%29%20created%3A%0A%094.0.0.0&In-Reply-To=%3C20121230164139.DDA8F5DB1A%40ymir%3E"
+       TITLE="[X2go-Tags] x2goserver.git - 4.0.0.0 (annotated tag) created:	4.0.0.0">git-admin at x2go.org
+       </A><BR>
+    <I>Sun Dec 30 17:41:39 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000262.html">[X2go-Tags] x2goclient.git - 4.0.0.0 (annotated tag) created:	4.0.0.0
+</A></li>
+        <LI>Next message: <A HREF="000264.html">[X2go-Tags] x2godesktopsharing.git - 3.1.0.6 (annotated tag)	created: 3.1.0.6
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#263">[ date ]</a>
+              <a href="thread.html#263">[ thread ]</a>
+              <a href="subject.html#263">[ subject ]</a>
+              <a href="author.html#263">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 4.0.0.0 has been created
+        at  f4b806b394c1b9f8e3383da7aa771fc2918950a0 (tag)
+   tagging  3bb58b5faea060b778de8a35d6f509f42a8a7e0d (commit)
+  replaces  3.1.1.9
+ tagged by  Mike Gabriel
+        on  Sun Dec 30 17:40:28 2012 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 4.0.0.0
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABCAAGBQJQ4G58AAoJEJr0azAldxsx580P+QGs7hDJ8hzNQqpT5upft70w
+Y6+TTIDsC8YmTZXtAqh/NNl6HNXxlDSb9lEJvwyfLrT6migQg9YsXFSX5bkMUzaY
+o7MS8wUTGzFqXqBWgTz3Vuf9VoBD7C202Q5sURdci08FLdg5sXDY1CTWRj0OxxKd
+/IS3t+XVfiLgcA6v+oDS6I/7UvAjqRhxYvjB7jSrg8TONKKKgxiKhSXMFQMhSXJJ
+VFRXMN5dhiSUAv70Kw29lQZUkz8Izco4+dgL4LeUNPjXFYll5YRhBuULAPKcERk1
+tcOCM7PbV7MrO3FKWcz1ekNNEFWH/tfto8i7W/bqSb+gSseqmUUifT0uf3L/GtHv
+H0suPUNJkwVHrFO8FOGJaVnSW74gF/tu4dD9xw3npmLDdoyLPSkMZXnaO4OXAWgR
+HSh7x4Xdw7z24hBUmEgCLj5ngsp0MWP/nEYGX7JortKfkfxPTbfYQ+QCFnJvFKW5
+l/G69qXQrrmAwMSj2WZqsJZKRzGHtBGnhhSzRZ+Z07lADznP/xJKCBAihHuLNgaI
+cQ7vNh3d/oAdhfYShg4BHyjYQ8BHPVnB88Mo+wIfSf9MEaH9+TWu++v1G5HSYZGE
+l6drb3RpAuACFNQhR3Q926tIaTVhSBs6QTdyg6XvoLRFaSdIf2XaQ6wGiiAG09ta
+i3TIO6x+OGyhHn/3td2M
+=MKCO
+-----END PGP SIGNATURE-----
+
+Jan Engelhardt (1):
+      Replace script x2gobasepath by script x2gopath that makes it much easier for distro packagers to tweak the installation paths of X2Go Server components.
+
+Mike Gabriel (13):
+      Continue development...
+      fine-tune layout of x2gopath
+      Adapt Xinerama path in x2gopath: use $base for detecting the path to the Xinerama libs, as well, as is done with all the other paths.
+      Fix mounting of multiple paths, thanks to Pascal Vibet. (Closes upstream issue #67).
+      rewrite bug closures from Closes: &lt;nnn&gt; -&gt; Fixes: &lt;nnn&gt;
+      fix changelog
+      Create /tmp/.X11-unix if not exists.
+      fix changelog
+      rename nxagent.options to x2goagent.options
+      Bump version to 4.0.0.0 (for Baikal bundle release).
+      uncomment LD_LIBRARY_PATH for Xrandr when KDE4 is launched
+      whitespace/indentation fix
+      release 4.0.0.0
+
+Oleksandr Shneyder (1):
+      Fix SSHFS mounting from Ubuntu clients
+
+Orion Poplawski (1):
+      Honour CFLAGS when compiling the server's sgid wrapper script (closes upstream.issue #83).
+
+Reinhard Tartler (1):
+      Introduce /etc/x2go/nxagent.options to allow overriding nxagent options
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goserver.git (X2Go Server)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goserver.git&quot; (X2Go Server).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000262.html">[X2go-Tags] x2goclient.git - 4.0.0.0 (annotated tag) created:	4.0.0.0
+</A></li>
+	<LI>Next message: <A HREF="000264.html">[X2go-Tags] x2godesktopsharing.git - 3.1.0.6 (annotated tag)	created: 3.1.0.6
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#263">[ date ]</a>
+              <a href="thread.html#263">[ thread ]</a>
+              <a href="subject.html#263">[ subject ]</a>
+              <a href="author.html#263">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

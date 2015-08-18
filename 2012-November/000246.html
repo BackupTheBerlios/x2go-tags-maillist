@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] nx-libs.git - redist-server/3.5.0.16 (annotated tag)	created: redist-client/3.5.0.16
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-November/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-server/3.5.0.16%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.16&In-Reply-To=%3C20121107200927.830E75DB18%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000245.html">
+   <LINK REL="Next"  HREF="000247.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] nx-libs.git - redist-server/3.5.0.16 (annotated tag)	created: redist-client/3.5.0.16</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-server/3.5.0.16%20%28annotated%20tag%29%0A%09created%3A%20redist-client/3.5.0.16&In-Reply-To=%3C20121107200927.830E75DB18%40ymir%3E"
+       TITLE="[X2go-Tags] nx-libs.git - redist-server/3.5.0.16 (annotated tag)	created: redist-client/3.5.0.16">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Nov  7 21:09:27 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000245.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.16 (annotated tag)	created: redist-client/3.5.0.16
+</A></li>
+        <LI>Next message: <A HREF="000247.html">[X2go-Tags] lightdm-remote-session-x2go.git - 0.0.0.1 (annotated	tag) created: 0.0.0.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#246">[ date ]</a>
+              <a href="thread.html#246">[ thread ]</a>
+              <a href="subject.html#246">[ subject ]</a>
+              <a href="author.html#246">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, redist-server/3.5.0.16 has been created
+        at  c382168d8c3b824283753aafee1fcbad0972da53 (tag)
+   tagging  3fd30962b9c3eda3b92ee5f998ffc4eeef6faeed (commit)
+  replaces  redist-client/3.5.0.15
+ tagged by  Mike Gabriel
+        on  Wed Nov 7 21:08:44 2012 +0100
+
+- Log -----------------------------------------------------------------
+release NX-redistributed 3.5.0.16
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABCAAGBQJQmr/MAAoJEJr0azAldxsxkHkQAIqig/CDfIg7VHQWid/B9QwJ
+etOivB5blMEfUKOGQZ+GAo05x+RDjmkjNF+e/8hGMzNH+sVT3WGNHizyEGs3Q6bK
+ImT+TOdMfzmUXM7+TvksE30LAtv21yXW0hhaau0m2IJf6yRPjnDutX26SKdw1CIG
+4HdMi8vAci1AeEC/IXUVQ48gvDldRlt0DfyGyDSwseniikYNuS7QNh+yL5rlfy2k
+9FskKW88OqHgiqE9WnTspr3lHtehlfD1jPw59bFv1nRe6SDMCFbO4QjDOOqts92N
+4k0/RBBt8SkmEwirX6WF0c1jFpHlMlkOzh+fbqf1vxJgFq3mbtt2ej95boeuXLrr
+SbkNHQMObWgX9WibpRLTcIAAhvb/GsXkeYwX1MzSzeqL/xLVihYiQtzgGJWeRn5T
+iKnEO+eB3FEUZYPt35rVYp4W8TIh1jeFZvj/jGBM6mN/oHIEh/q0f/vkW13W/v2/
+tjpeejXarSbwvnSapenyTblZrNFJin11BtGP3WOivrGwpP3BBqNB8QR650rm1y08
+3Zyee8vbo5M9OOS/PSSbV0cqJ2vSVnN3YzGhanSxJ7tGIB+V7e7yrDjcLOaxuzve
+Uq4pPn+sxJhvylJ5xzmNK29NQ0Ne2x4kZcPl/FlxIKPGhHF8Vd+2JWz3wFN418fm
+8atWWhIOnB4iTJlTNPaI
+=DA9r
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (15):
+      Continue development...
+      Fix installation of header files in Debian package.
+      Fix patch file names concerning component nx-X11.
+      Modify patch: 032_no-x11r6.full.patch. Install nx-X11 to /usr/local/lib/nx. Add patch: 032_no-x11r6.debian.patch. Use /usr/lib/nx for nx-X11 on Debian.
+      Drop patch 032, fix other patches so that installation via make install installs NX components to /usr/local/lib/nx and /usr/local/include/nx.
+      drop build file from nx-libs tree
+      Add patches: 024_fix-make-clean.full.patch, 024_fix-make-clean.full+lite.patch. Fix clean-up of build tree after make build has run.
+      Add patch: 025_nxproxy_no-configure-file.full+lite.patch. Remove unneeded build file from NoMachine's nxproxy sources.
+      Modify patch: 001_add-main-makefile.full+lite.patch. Install nx* and x2goagent wrapper scripts during make install.
+      Fix wrapper scripts: make sure all NX executables can be launched if NX gets installed via the tarball installation method.
+      Modify patch: 001_add-main-makefile.full+lite.patch. Add uninstall routine.
+      Dropping empty override rules for quilt patch from /debian/rules.
+      Bump Debian Standards to 3.9.3 (no changes needed).
+      Bump Debian Standards to 3.9.3 (no changes needed). Update Home page and Vcs information.
+      release 3.5.0.16
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+nx-libs.git (NX (redistributed))
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;nx-libs.git&quot; (NX (redistributed)).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000245.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.16 (annotated tag)	created: redist-client/3.5.0.16
+</A></li>
+	<LI>Next message: <A HREF="000247.html">[X2go-Tags] lightdm-remote-session-x2go.git - 0.0.0.1 (annotated	tag) created: 0.0.0.1
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#246">[ date ]</a>
+              <a href="thread.html#246">[ thread ]</a>
+              <a href="subject.html#246">[ subject ]</a>
+              <a href="author.html#246">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

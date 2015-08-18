@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goclient.git - 3.99.1.0 (annotated tag) created:	3.99.1.0
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goclient.git%20-%203.99.1.0%20%28annotated%20tag%29%20created%3A%0A%093.99.1.0&In-Reply-To=%3C20120222135027.E23DE5DB17%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000178.html">
+   <LINK REL="Next"  HREF="000180.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goclient.git - 3.99.1.0 (annotated tag) created:	3.99.1.0</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goclient.git%20-%203.99.1.0%20%28annotated%20tag%29%20created%3A%0A%093.99.1.0&In-Reply-To=%3C20120222135027.E23DE5DB17%40ymir%3E"
+       TITLE="[X2go-Tags] x2goclient.git - 3.99.1.0 (annotated tag) created:	3.99.1.0">git-admin at x2go.org
+       </A><BR>
+    <I>Wed Feb 22 14:50:27 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000178.html">[X2go-Tags] x2goclient.git - 3.99.1.0 (annotated tag) created:	3.99.1.0
+</A></li>
+        <LI>Next message: <A HREF="000180.html">[X2go-Tags] x2golxdebindings.git - 1.0.1.2 (annotated tag) created:	1.0.1.2
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#179">[ date ]</a>
+              <a href="thread.html#179">[ thread ]</a>
+              <a href="subject.html#179">[ subject ]</a>
+              <a href="author.html#179">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 3.99.1.0 has been created
+        at  ccbdf18c4e547894badafebdb02d0783074461b1 (tag)
+   tagging  5f90e9ae43cecf2e82ec10ae93e64a854383f763 (commit)
+  replaces  3.99.0.6
+ tagged by  Mike Gabriel
+        on  Wed Feb 22 14:50:20 2012 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 3.99.1.0
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJPRPKcAAoJEIlP3EWN3QKAsOoH/R8v2HcVx73wijURrrHvzvkV
+EZjN1hvTXFvDpPQTQAvofVKs2GJHfU6P5tnwxtyN47U+orUagnH7MfiLCy3S1FHZ
+mB+KmFHM5EohtGZmECdLepLjq2qN5HtUJP82wynqTbEsBMZxJ5Vsai8Q2Kql7t2s
+DWWVvOYSdyvMFaBvUrE7yydoy1khU6hWJDxMEvtaBPtH3IvhGWn8rC3ht1CJTNbO
+GIyJHNDFX8YV4MzlGSAypnQUgz+ufxfmopQPh+1cHcisWf6oVSF7UrqzQ9X9oSAf
+wUiI5CqC/xpBSddPdV6LBimLctY6hR9aUITF2/LElw6R5Kc8NBjluOA3SdNNlkU=
+=ckoX
+-----END PGP SIGNATURE-----
+
+Daniel Lindgreann (1):
+      Fine-tune Swedish translation file.
+
+Daniel Lindgren (1):
+      Add swedish translation file.
+
+Jan Engelhardt (3):
+      Use /cgi-bin/man/ path in web'ified man pages.
+      Use ,,${MAKE}'' instead of ,,make'' in Makefile.
+      Include &lt;netinet/in.h&gt; in sshprocess.h to fix missing struct sockaddr_in.
+
+Mihai Moldovan (1):
+      Mac OS patch: Raise the stack space to 2MB for secondary threads. It previously used the 512KB system default.
+
+Mike Gabriel (23):
+      Continue development...
+      Update German translation file (thanks to Stefan Baur).
+      changelog cleanup
+      changelog cleanup, wrong contributor fixed
+      changelog typo fix
+      remove i18n build cruft
+      Build .qm translation files on the fly during build.
+      Fix for zh_TW translation: add qt_zh_TW.qm file from Qt4.8.
+      Add language property to the French translation file.
+      Update qt_&lt;LANG&gt;.qm files from Qt4.8 (as in current Debian sid).
+      Rename x2goclient_nb.ts to x2goclient_nb_no.ts.
+      fix weird copy+paste errors during creation of x2goclient_sv.ts
+      typo fix in x2goclient_fr.ts
+      Update all translation files (lupdate), translate unfinished translation tags in x2goclient_de.ts.
+      put qt_sv.qm and qt_zh_tw.qm into resources.rcc
+      typo fix
+      changelog update: whitespace fix
+      Provide empty translation file x2goclient_en.ts.
+      rebuild of .ts files from source code (lupdate)
+      Fix misspelled word ,,Authentification'' -&gt; ,,Authentication''.
+      Fix misspelled word ,,recieved'' -&gt; ,,received''.
+      Update date and release version in man page.
+      release 3.99.1.0
+
+Oleksandr Shneyder (2):
+      Get new ports from x2goresume-session if reserved ports are busy
+      Fixed segmentation fault by failed SSH connection to X2Go server
+
+Terje Andersen (2):
+      Add Norwegian (Bokmal) translation. Qt4 lacks Norwegian/Bokmal support, so some of the widgets may stay in English.
+      Fine-tune/fix Norwegian (Bokmal) translation.
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goclient.git (X2Go Client)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goclient.git&quot; (X2Go Client).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000178.html">[X2go-Tags] x2goclient.git - 3.99.1.0 (annotated tag) created:	3.99.1.0
+</A></li>
+	<LI>Next message: <A HREF="000180.html">[X2go-Tags] x2golxdebindings.git - 1.0.1.2 (annotated tag) created:	1.0.1.2
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#179">[ date ]</a>
+              <a href="thread.html#179">[ thread ]</a>
+              <a href="subject.html#179">[ subject ]</a>
+              <a href="author.html#179">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

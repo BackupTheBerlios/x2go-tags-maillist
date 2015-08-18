@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] nx-libs.git - redist-server/3.5.0.0 (annotated tag)	created: redist-server/3.5.0.0
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-January/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-server/3.5.0.0%20%28annotated%20tag%29%0A%09created%3A%20redist-server/3.5.0.0&In-Reply-To=%3C20120110104018.259BF5DB1F%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000145.html">
+   <LINK REL="Next"  HREF="000147.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] nx-libs.git - redist-server/3.5.0.0 (annotated tag)	created: redist-server/3.5.0.0</H1>
+    <B>X2go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20nx-libs.git%20-%20redist-server/3.5.0.0%20%28annotated%20tag%29%0A%09created%3A%20redist-server/3.5.0.0&In-Reply-To=%3C20120110104018.259BF5DB1F%40ymir%3E"
+       TITLE="[X2go-Tags] nx-libs.git - redist-server/3.5.0.0 (annotated tag)	created: redist-server/3.5.0.0">git-admin at x2go.org
+       </A><BR>
+    <I>Tue Jan 10 11:40:18 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000145.html">[X2go-Tags] nx-libs.git - debian/3.5.0-4 (annotated tag) created:	debian/3.5.0-4
+</A></li>
+        <LI>Next message: <A HREF="000147.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.0 (annotated tag)	created: redist-client/3.5.0.0
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#146">[ date ]</a>
+              <a href="thread.html#146">[ thread ]</a>
+              <a href="subject.html#146">[ subject ]</a>
+              <a href="author.html#146">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, redist-server/3.5.0.0 has been created
+        at  1d77e7175329cb86020967f99e299cadf1009f72 (tag)
+   tagging  d97802ad793d92579deabefdb692f78d46751545 (commit)
+  replaces  nxproxy/3.5.0-1
+ tagged by  Mike Gabriel
+        on  Tue Jan 10 11:40:00 2012 +0100
+
+- Log -----------------------------------------------------------------
+release NX re-distributed 3.5.0.0
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAABAgAGBQJPDBWAAAoJEIlP3EWN3QKAAooH/2p2RIWTzYp09hTkcndNe4rb
+K3+Iy4IwDFm52NPEoYE4MYDZi5uY/xF/7YQzNa+0LTVncWfRXZcdAlLUM5qvGyZh
+mq3+0zzaF8tdkSrtxD0oHb9CL6qrqDfPEZEs/FiFPrxTnhbn7T+3GusGzg37R91g
+GKFNQKVUCDNMV97NMM5mgXjQmx2XlmHiA2l+6QAB8G6mBwNWZVHfa/CIglY532fs
++XCr6rSLXRR9/Hn3hgoteuNF8WS3jbavN5wkhXK28OEMQ/O5p5kPhOx4G3aqXzSG
+g3pOS9em9tr60PVThougVBkw34zBFUMaKzlT1PMI5bFnSbAZpjZ9sSQWOVEmTJs=
+=S8jH
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (113):
+      Merge branch 'nxcomp'
+      Merge branch 'nxcompext'
+      Merge branch 'nxcompshad'
+      Merge branch 'nxproxy'
+      add /debian folder
+      Add quilt as build dependency.
+      Add main Makefile via patch: 001_add-main-makefile.patch.
+      Add patch: 002_nxcompshad-build-against-nx-x11-only.patch
+      Add patch: 003_nxcompshad-gcc43.patch
+      Add patch: 004_nx-x11-fix-nxcompshad-build.patch.
+      changelog maintenance
+      Add patch: 005_add_nxagent_wrapper.patch.
+      add newline at EOF
+      add chown a+x for nxagent wrapper script
+      chown has to be chmod... stupid error...
+      Fix for lintian issue: missing-build-dependency quilt (&gt;= 0.46-7~).
+      Fix for lintian issue: extended-description-line-too-long (nxagent).
+      Disable build of *-dbg packages.
+      Add patch: 006_remove-configure-files.patch.
+      Add patch: 007_nxcompshad-clean-gch-files.patch.
+      fix distclean for patch 001_add-main-makefile.patch
+      remove build cruft from nxproxy, adapt patch set 006
+      Remove unknown option --with from dh_auto_clean.
+      Add autoconf as build dependency.
+      Add patch: 008_add-nxproxy-wrapper.patch. Build nxproxy package.
+      rename 005_add-nxagent-wrapper.patch
+      fix permission of nxproxy wrapper
+      Add patch: 009_nxproxy-add-man-page.patch.
+      Add nxproxy man page to nxproxy package.
+      main Makefile does not need x-bits set
+      Fix of nxproxy build in main Makefile (modifies 001_add-main-makefile.patch).
+      Add patch: 010_nxauth-fix-binary-name-in-man-page.patch.
+      Add patch: 011_add-nxauth-wrapper.patch.
+      add forgotten patch files for patch 010 and 011
+      Build nxauth package.
+      fix patch 001
+      fix ext. description of nxagent in control file
+      Add lintian overrides for libxcomp*: breaks-without-version.
+      missing control file changes to build nxauth
+      fix EOF of pre-build-nx.sh script
+      Add patches: 012, 013, 014 - Makefile uninstall stanza patches for nxcomp, nxcompext, nxcompshad.
+      Add patch: 015_nxproxy-makefile-uninstall.patch.
+      Add install/uninstall stanza to main Makefile (via patch 001_add-main-makefile.patch).
+      forgot to add file (015_nxproxy-makefile-uninstall.patch)
+      Add patch 016_nx-x11-install.patch, to allow installation of nx-X11 from Makefile (via make install).
+      fix for patch 016_nx-x11-install.patch
+      fix for patch 016_nx-x11-install.patch (2)
+      Imported nxagent-3.5.0-7.tar.gz
+      Merge branch 'nxagent'
+      changelog update: new upstream release of nxagent 3.5.0-7
+      Add lintian-overrides for every package. Override lintian warning: possible-new-upstream-release-without-new-version as there will be new upstream releases of NX subprojects that will not require a version increment of the Debian package.
+      Add individual watch files for NX components in this source package.
+      Change naming scheme of patch files.
+      forgot to commit changelog for last two commits (adding of watch files, change of patch file naming scheme)
+      Add man page for nxagent. Fix lintian warning: binary-without-manpage.
+      Add FreeNX patches for nxagent (some with other names compared to FreeNX):
+      fix debian/patches/series file to reflect new patch naming scheme...
+      Adapt path names in FreeNX patches to meet requirements for source tree of this package.
+      Rework FreeNX patches to be applicable to latest NX sources.
+      Install nxagent.xpm icon to /usr/share/pixmaps.
+      Rename patch: 008_nxproxy_add-nx-proxy-wrapper.patch to 008_nxproxy_add-nxproxy-wrapper.patch. Add patch from FreeNX patchset: 110_nxagent_createpixmap-bounds-check.patch.
+      wrap long lines in /debian/changelog
+      add possible-new-upstream-release-without-new-version lintian override for *-dev packages, as well
+      Disable patch: 104_nxagent_enable_debug.patch for now as it let's the build fail.
+      changelog fix: wrap long line
+      Add patch: 017_nx-x11_update-autotools-helper-files.patch.
+      Add README.source file, fixes lintian warning: patch-system-but-no-source-readme.
+      Add lintian-override: outdated-autotools-helper-file to source.lintian-overrides as we patch-update the outdated helper files before building binaries.
+      Add patch: 018_nx-x11_update-libtool-ltmain-script.patch. Silence lintian warning ancient-libtool via lintian override as we patch in a new version of ltmain.sh by this patch.
+      changelog fix: wrap long lines
+      Update patch: 017_nx-x11_update-autotools-helper-files.patch. Add lintian override to source.lintian-overrides: ancient-autotools-helper-file as we handle autotools helper file updates via patch system.
+      explicitly name all source version from upstream used for initial package release.
+      Add upstream CHANGELOG files to all .deb packages of this source package.
+      * Override lintian warnings
+      Make sure upstream changelog file names are in lower case.
+      Disable patch: 006_remove-configure-files.patch, remove configure files from within /debian/rules.
+      Add patch: 019_nx-x11_expat-build-against-system-libxmltok.patch, fixes lintian error: embedded-library: expat. Build-depend on libxmltok1-dev.
+      Fix LD_LIBRARY_PATH export in wrapper scripts/patches.
+      X2Go Packaging Team becomes maintainer, Mike Gabriel + Reinhard Tartler become uploaders.
+      changelog modification: use Debianic revision numbers
+      Make `breaks-without-version' lintian overrides needless.
+      Break/conflict with nxlibs and nxlibs-dev (packages provided by freenx-team on Launchpad).
+      changelog fix: wrap long line
+      changelog fix: typo
+      control file: fixing Breaks/Replaces statements
+      changelog fix for latest changelog line
+      Set homepage of X2Go upstream project (using <A HREF="http://wiki.x2go.org">http://wiki.x2go.org</A>). Packaging Vcs has been relocated to Alioth.
+      Set homepage of NoMachine upstream site (using <A HREF="http://www.nomachine.com/sources.php">http://www.nomachine.com/sources.php</A>).
+      Add more upstream source information to README.source.
+      Remove *-dbg packages from /debian/control file.
+      Make package descriptions in /debian/control more explanatory.
+      Remove patch 006_remove-configure-files.patch. Implemented via /debian/rules.
+      * Remove patches and put as executable scripts into /debian/bin/
+      changelog: forgot to ship with last commit
+      also forgotten: scripts for last two commits
+      Remove patch: 104_nxagent_enable_debug.patch, as it breaks package build.
+      Add patch headers to all patch files, report most patches upstream. Waiting for feedback and quotable URLs from NoMachine.
+      grammar fix in pre-build-nx.sh
+      Fix linking of doc folders for nxcomp*-dev.
+      Transfer patch: 009_nxproxy_add-man-page.patch into man page file in /debian/man.
+      Add patch: 011_nxcomp_sa-restorer.patch.
+      Add/insert patch: 005_nxcomp_gcc43.patch.
+      patches/series cleanup
+      Revert &quot;Fix linking of doc folders for nxcomp*-dev.&quot;
+      Fix line hunks: 011_nxcomp_sa-restorer.patch.
+      forgot to add patch file: 005_nxcomp_gcc43.patch
+      Call dh_clean again. This got lost somewhere on the way.
+      Remove branding from descriptions in control file.
+      Add patch: 000_add-NX-redistribution-README.patch.
+      switch NX-redistribution version to 3.5.0.0
+      Fix dh_installman for nxproxy.
+      Add patches: 009_add-nxagent-man-page.patch, 009_add-nxproxy-man-page.patch. Reintroduce man page creation via patch system, so that all man pages find their way into the NX-redistribution tarball created from this source project.
+      release NX re-distributed 3.5.0.0
+
+Reinhard Tartler (74):
+      creating nxauth
+      Imported nx-X11-3.1.0-1.tar.gz
+      Imported nx-X11-3.1.0-3.tar.gz
+      Imported nx-X11-3.1.0-4.tar.gz
+      Imported nx-X11-3.2.0-1.tar.gz
+      Imported nx-X11-3.2.0-2.tar.gz
+      Imported nx-X11-3.3.0-3.tar.gz
+      Imported nx-X11-3.3.0-4.tar.gz
+      Imported nx-X11-3.3.0-5.tar.gz
+      Imported nx-X11-3.3.0-6.tar.gz
+      Imported nx-X11-3.3.0-7.tar.gz
+      Imported nx-X11-3.4.0-1.tar.gz
+      Imported nx-X11-3.4.0-3.tar.gz
+      Imported nx-X11-3.4.0-4.tar.gz
+      Imported nx-X11-3.5.0-1.tar.gz
+      Imported nx-X11-3.5.0-2.tar.gz
+      Imported nxauth-3.1.0-1.tar.gz
+      Imported nxauth-3.2.0-1.tar.gz
+      Imported nxauth-3.3.0-1.tar.gz
+      Imported nxauth-3.4.0-1.tar.gz
+      Imported nxauth-3.4.0-2.tar.gz
+      Imported nxauth-3.4.0-3.tar.gz
+      Imported nxauth-3.5.0-1.tar.gz
+      creating nxagent
+      Imported nxagent-3.1.0-2.tar.gz
+      Imported nxagent-3.1.0-6.tar.gz
+      Imported nxagent-3.1.0-7.tar.gz
+      Imported nxagent-3.2.0-10.tar.gz
+      Imported nxagent-3.2.0-5.tar.gz
+      Imported nxagent-3.2.0-6.tar.gz
+      Imported nxagent-3.2.0-7.tar.gz
+      Imported nxagent-3.2.0-8.tar.gz
+      Imported nxagent-3.3.0-10.tar.gz
+      Imported nxagent-3.3.0-13.tar.gz
+      Imported nxagent-3.3.0-18.tar.gz
+      Imported nxagent-3.3.0-6.tar.gz
+      Imported nxagent-3.3.0-9.tar.gz
+      Imported nxagent-3.4.0-11.tar.gz
+      Imported nxagent-3.4.0-16.tar.gz
+      Imported nxagent-3.4.0-3.tar.gz
+      Imported nxagent-3.4.0-5.tar.gz
+      Imported nxagent-3.4.0-8.tar.gz
+      Imported nxagent-3.4.0-9.tar.gz
+      Imported nxagent-3.5.0-2.tar.gz
+      Imported nxagent-3.5.0-5.tar.gz
+      Merge branch 'nxauth'
+      Merge branch 'nxagent'
+      Merge branch 'nx-X11'
+      Imported nxcomp-3.1.0-4.tar.gz
+      Imported nxcomp-3.1.0-6.tar.gz
+      Imported nxcomp-3.2.0-6.tar.gz
+      Imported nxcomp-3.2.0-7.tar.gz
+      Imported nxcomp-3.3.0-3.tar.gz
+      Imported nxcomp-3.3.0-4.tar.gz
+      Imported nxcomp-3.4.0-1.tar.gz
+      Imported nxcomp-3.4.0-6.tar.gz
+      Imported nxcomp-3.4.0-7.tar.gz
+      Imported nxcomp-3.5.0-1.tar.gz
+      Imported nxcomp-3.5.0-2.tar.gz
+      Imported nxcompext-3.1.0-2.tar.gz
+      Imported nxcompext-3.2.0-1.tar.gz
+      Imported nxcompext-3.3.0-2.tar.gz
+      Imported nxcompext-3.3.0-3.tar.gz
+      Imported nxcompext-3.3.0-4.tar.gz
+      Imported nxcompext-3.4.0-1.tar.gz
+      Imported nxcompext-3.5.0-1.tar.gz
+      Imported nxcompshad-3.1.0-2.tar.gz
+      Imported nxcompshad-3.2.0-1.tar.gz
+      Imported nxcompshad-3.2.0-3.tar.gz
+      Imported nxcompshad-3.3.0-2.tar.gz
+      Imported nxcompshad-3.3.0-3.tar.gz
+      Imported nxcompshad-3.4.0-1.tar.gz
+      Imported nxcompshad-3.4.0-3.tar.gz
+      Imported nxcompshad-3.5.0-2.tar.gz
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+nx-libs.git (NX libraries)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;nx-libs.git&quot; (NX libraries).
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000145.html">[X2go-Tags] nx-libs.git - debian/3.5.0-4 (annotated tag) created:	debian/3.5.0-4
+</A></li>
+	<LI>Next message: <A HREF="000147.html">[X2go-Tags] nx-libs.git - redist-client/3.5.0.0 (annotated tag)	created: redist-client/3.5.0.0
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#146">[ date ]</a>
+              <a href="thread.html#146">[ thread ]</a>
+              <a href="subject.html#146">[ subject ]</a>
+              <a href="author.html#146">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

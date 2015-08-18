@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goserver.git - 4.0.1.7 (annotated tag) created:	4.0.1.7
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2013-November/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.1.7%20%28annotated%20tag%29%20created%3A%0A%094.0.1.7&In-Reply-To=%3C20131122205928.025955DB24%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000360.html">
+   <LINK REL="Next"  HREF="000362.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goserver.git - 4.0.1.7 (annotated tag) created:	4.0.1.7</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%204.0.1.7%20%28annotated%20tag%29%20created%3A%0A%094.0.1.7&In-Reply-To=%3C20131122205928.025955DB24%40ymir%3E"
+       TITLE="[X2go-Tags] x2goserver.git - 4.0.1.7 (annotated tag) created:	4.0.1.7">git-admin at x2go.org
+       </A><BR>
+    <I>Fri Nov 22 21:59:27 CET 2013</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000360.html">[X2go-Tags] x2goserver.git - 4.0.0.6 (annotated tag) created:	4.0.0.6
+</A></li>
+        <LI>Next message: <A HREF="000362.html">[X2go-Tags] x2goserver.git - 4.0.1.8 (annotated tag) created:	4.0.1.8
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#361">[ date ]</a>
+              <a href="thread.html#361">[ thread ]</a>
+              <a href="subject.html#361">[ subject ]</a>
+              <a href="author.html#361">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 4.0.1.7 has been created
+        at  447e68e8b82ea4b14e5072e57a0fbc82ef32d687 (tag)
+   tagging  f09263a3bdad231b6c53563c4c84d16754e16aaf (commit)
+  replaces  4.0.1.6
+ tagged by  Mike Gabriel
+        on  Fri Nov 22 21:58:49 2013 +0100
+
+- Log -----------------------------------------------------------------
+Upstream version 4.0.1.7
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAABCAAGBQJSj8WJAAoJEJr0azAldxsxMYsP/ipO3ZGB6L5ZdM5/2bOV6Zwk
+nFyUDZzEC1hKk3hflIbQgmuW+/VnQhqFS/NkDGwLcu00Osis3eQu41iwnXSm0Is1
+ULpLunNi+yU9Vxw7bnEI51yuutDpZcvPBvF1XlBlwKl5Ezx3owv7V7e/EBQSGrCu
+L3CdNB+P2RrN3ZaBrEIY6B7NM5pHWOmDeO7YP/OAqG1JD+DeltqMIc1sLfSbuzmG
+sz7hkoF3RqCeP6dwxah14w6Rp4t2ho4sz/gvai5ZbGUSTSfXgLgYtZn1KX6jc4PD
+HJzfbgYBl+r7l9ruB5maT6Gk6zPTEaegmBXzMJc02ydK1PpmM/tjiJRGnx3/UAi+
+jo8cJyq4nw3wOx+pgCktE1o9EqtESZ5RA93DLW043hoq3BgPXZejmS/cXUtoCOT7
+P3ns3d4bdHdB4N5fawt8X4y+dFXb7kk9S/DUf8hr8b701ydb40afSplb3P3RMSSf
+S+4CVRkEkMvDaKdoqHzOfEoWJEoIcaIYyIRleJV3FjClxAu6ypq9cMraKIy6sjox
+0MW90u7Y1Wdj7/I1JwPn9pZCt7AkhK/67W1AbT8do8ItAmDLXEiHyqDpy+WNpXZF
+pjgMvs5mVjvPQdmFVUis6BkN2jrxnPM3goNcLn24prZiHGaMSX0WM3/W97mJFydo
+WLHpvSjIGGPergPmDLn/
+=k8V8
+-----END PGP SIGNATURE-----
+
+Helmer Teles (1):
+      Make umask that is used when mounting client-side folders via SSHFS configurable in x2goserver.conf. (Fixes: #331).
+
+J&#252;rgen H&#246;tzel (1):
+      Use bash-builtin 'type' instead of to be avoided 'which'. (Fixes: #305).
+
+Mike Gabriel (23):
+      /debian/control: Update LONG_DESCRIPTIONS
+      Install Xsession file as executable.
+      Fine-tune x2goserver-xsession/Makefile: if /etc/X11 has Xsession.d and/or Xsession.options they get symlinked into /etc/x2go. Otherwise Xsession.d and Xsession.options are created under /etc/x2go as empty dir/file. (Fixes: #278).
+      Move xfonts-base from Recommends: field to Depends: field (bin:package x2goserver).
+      Fix automatic keyboard setup (via x2gosetkeyboard) while resuming a session. (Fixes: #285).
+      Provide sudoers.d/x2goserver file that allows sudoed commands under KDE (by pertaining the env var QT_GRAPHICSSYSTEM. (Fixes: #276).
+      With PostgreSQL as session db backend, prevent the root user from launching sessions. Also, prevent x2gouser_root from being added as a PostgreSQL user. (Fixes: #310).
+      Work around buggy X2Go Client on Mac OS. If the keyboard type is set to &quot;query&quot;, we force X2GO_SET_KBD to 1. (Partly resolves: #112).
+      indentation fix
+      Raise Standards: to 3.9.4 (no changes needed). Move xfonts-base to Recommends: field of bin:package x2goserver.
+      fix parentheses
+      Make init script LSB compliant.
+      Execute DB status changes as late as possible during suspend / terminate.
+      fix for commit e6cdad13
+      Start/resume rootless sessions without geometry parameter. Esp. using X2GO_GEOMETRY=fullscreen for rootless sessions lead to an extra 1x1 px session window (nxagentCreateIconWindow in nxagent's Window.c).
+      Typo fix in x2goruncommand (for MATE session startup).
+      fix for commit c7026a5
+      wrap too-long changelog line
+      follow-up commit for 90cd1a0
+      move x2goruncommand fix from Oleksandr Shneyder into release 4.0.1.7
+      remove duplicate log entry
+      release 4.0.0.6 (cherry-picked from release/4.0.0.x branch)
+      release 4.0.1.7
+
+Oleksandr Shneyder (1):
+      Fix x2goruncommand: &quot;type -P $cmd&quot; can create new lines in EXEC variable if command have the arguments wich have same names as existing commands, for example &quot;rdesktop -k nl&quot; -&gt; &quot;/usr/bin/rdesktop\n/usr/bin/nl&quot;. Now we splitting $cmd and taking only first part.
+
+Orion Poplawski (1):
+      Install Xsession file as executable, make Xsession.d directory location configurable during build process, do not create unused Xsession.options. (Fixes: #278).
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goserver.git (X2Go Server)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goserver.git&quot; (X2Go Server).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000360.html">[X2go-Tags] x2goserver.git - 4.0.0.6 (annotated tag) created:	4.0.0.6
+</A></li>
+	<LI>Next message: <A HREF="000362.html">[X2go-Tags] x2goserver.git - 4.0.1.8 (annotated tag) created:	4.0.1.8
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#361">[ date ]</a>
+              <a href="thread.html#361">[ thread ]</a>
+              <a href="subject.html#361">[ subject ]</a>
+              <a href="author.html#361">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X2go-Tags] x2goserver.git - 3.1.1.4 (annotated tag) created:	3.1.1.4
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-tags/2012-September/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%203.1.1.4%20%28annotated%20tag%29%20created%3A%0A%093.1.1.4&In-Reply-To=%3C20120925112552.DE4065DB19%40ymir%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000233.html">
+   <LINK REL="Next"  HREF="000235.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X2go-Tags] x2goserver.git - 3.1.1.4 (annotated tag) created:	3.1.1.4</H1>
+    <B>X2Go dev team</B> 
+    <A HREF="mailto:x2go-tags%40lists.berlios.de?Subject=Re%3A%20%5BX2go-Tags%5D%20x2goserver.git%20-%203.1.1.4%20%28annotated%20tag%29%20created%3A%0A%093.1.1.4&In-Reply-To=%3C20120925112552.DE4065DB19%40ymir%3E"
+       TITLE="[X2go-Tags] x2goserver.git - 3.1.1.4 (annotated tag) created:	3.1.1.4">git-admin at x2go.org
+       </A><BR>
+    <I>Tue Sep 25 13:25:52 CEST 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000233.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.15 (annotated tag)	created: redist-client/3.5.0.15
+</A></li>
+        <LI>Next message: <A HREF="000235.html">[X2go-Tags] x2goserver.git - 3.1.1.4 (annotated tag) created:	3.1.1.4
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#234">[ date ]</a>
+              <a href="thread.html#234">[ thread ]</a>
+              <a href="subject.html#234">[ subject ]</a>
+              <a href="author.html#234">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The annotated tag, 3.1.1.4 has been created
+        at  604066f74f1570fc9935740a652b057c34e7fea7 (tag)
+   tagging  6a4297593750ae34015a3686de65d63f5a43dd23 (commit)
+  replaces  3.1.1.3
+ tagged by  Mike Gabriel
+        on  Tue Sep 25 13:25:41 2012 +0200
+
+- Log -----------------------------------------------------------------
+Upstream version 3.1.1.4
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAABCAAGBQJQYZS2AAoJEJr0azAldxsxvPkP/17Iv21F5sWMlmbZSE/8HMEM
+6VYgG25UGzwmAg0nPjnM1GORYGJPajwYaOTxG1gH/h4HK1awvIew+vE/xPVUetzW
+pzZF+Fg46lyov5V6bUn5+aiOiLdcyKZnY9gfPK8QCYJH8MaLlPkm1tGKzU2iNZto
+/WInu7PyZmUjqlBWa/YszKJRBYnm8a70T4QeTMpC2bSy+w98jEpdVCSctiZHUjfR
+JXCPTN3s2qFzQMzhh1KhpXO4khN9ucaN8/C0aVmyArpKhdFHOKR3HmO5hacrzHiX
+mcLvHXR7oGblvg4tH4Xz+xl6h2HcVFsQ8+8J8kYOlPrrDYMV804NRJS/3z4s54Yx
+sGLRTfIpjV5G4wKLHPb1RoSiYJIRpcKEOhUYtBh1JVmS6kry/CllVW3xuCVuUq4N
+uYijv6mRhZqkktuPawYVqZ+XjF8Ce0vbpeyg2/yaRCnpaoFSmeWCEVOBdSCIZCfD
+tTNYAGSc9MKnVUoFhNHUeeJAF/mUgkM2YvS7zj2nfXqAoC6j0VgJzkxl7Tk+KGWZ
+uv5vXCbGqyYmLLlH9sjK1OXD0ENVwEU0t1SlwnoSBg6DlvFuLtNsgcdAJQaGeKSw
+OJWeAdypP81MG4FYv9EDuA1mkogEXY4BIV1VJebJolbyrY9sb8cBp8soNPTaMOjX
+dsuIQ5ypyR901437484l
+=sj6D
+-----END PGP SIGNATURE-----
+
+Mike Gabriel (59):
+      Continue development...
+      Fix x2gosessionlimit script.
+      /debian/control: Fix x2goagent dependency.
+      fix for commit d70b136ab99623678f34c12f2175570a856eaa77
+      typo fix in new upstream version
+      Add -pie as linker flag. Fixes non-position-independent-executable (x2gosqlitewrapper.c). The executable is now completely position independent.
+      Wrap padsp around rdesktop calls if pulse is used as audio protocol.
+      Add option ,,-r sound:local'' to rdesktop calls if pulse is enabled.
+      Add rdesktop and pulseaudio-utils to Suggests.
+      Proxy X2Go client-side shares into remote desktop session.
+      use if clauses instead of ampersand shell constructions
+      /debian/control: typo fix
+      For applications inside of a session, use NX's Xrandr library instead of Xorg's Xrandr library (partially closes #28).
+      Depend on nx-libs (&gt;=3.5.0.15-0~) which has the Xrandr symlinks folder.
+      Make sure when launching desktop session through the Xsession mechanism that the LD_LIBRARY_PATH variable stays intact. Closes #29.
+      /debian/control: Maintainer change in package: X2Go Developers &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/x2go-tags">x2go-dev at lists.berlios.de</A>&gt;.
+      Priority: optional.
+      /debian/control: fix typo in longdescs
+      * Bump next upstream version to 3.2.0.0.
+      typo fix in x2goserver dependency
+      fix function name in X2Go::Log
+      more fixes for X2GO::* module transistion
+      Transform x2godbwrapper.pm into proper Perl module X2Go::Server::DB, package X2Go::Server::DB in separate package: libx2go-server-db-perl.
+      /debian/changelog: typo
+      x2goserver package: Depend on libx2go-log-perl, libx2go-server-db-perl.
+      whitespace fix
+      fix for X2Go::Server::DB transition -&gt; make sure that db_* functions are available in the &amp;main namespace
+      we do not provide Perl modules, we provide packages
+      fix package name in X2Go::Server::DB
+      fix in perldoc template
+      add forgotten files for X2Go::Server package
+      Transform x2gosqlitewrapper.pl into small wrapper script and move the SQLite3 into Perl package X2Go::Server::DB::SQLite3.
+      update wrapper script, last commit was the test version
+      Move x2gosqlitewrapper into package X2Go::Server::DB::SQLite3 Perl package.
+      Fix file permission.
+      Move PostgreSQL DB code into Perl package X2Go::Server::DB::PostgreSQL.
+      changelog fix
+      add perldoc header to SQLite3 db backend, make sure all man3 pages get installed into libx2go-server-db-perl package
+      PostgreSQL.pm is a module now, return True at the end
+      bumb VERSION.* files to 3.2.0.0
+      Only extend LD_LIBRARY_PATH by Xrandr extension for KDE. Breaks GNOME.
+      Move X2Go SQL configuration files (/etc/x2go/x2gosql) into package libx2go-server-db-perl.
+      update version and date in man pages
+      Install /etc/x2go/x2go_logout with its directory x2go_logout.d via Makefile installation.
+      Move x2goserver.conf into separate package: x2goserver-common. Provide man page for x2goserver.conf.
+      follow-up commit, call Makefile in x2goserver-common from main Makefile
+      fix man page section in Makefile
+      fix x2goserver-common.install
+      wrap too-long changelog line
+      Use Breaks/Replaces to exchange x2goserver.conf in x2goserver package by x2goserver.conf in new x2goserver-common package.
+      Move code in pre/post+inst/rm scripts around (from x2goserver package to libx2go-server-db-perl and x2goserver-common).
+      more packaging fixes
+      Move several x2goserver-* package to x2goserver's Recommends field.
+      fix control file
+      let libx2go-server-db-perl also break x2goserver
+      make sure the x2gouser can access his own home
+      Fix new SQLite3 wrapper for db_getmounts Perl call.
+      Fix list output in new SQLite3 wrapper.
+      Remove redundant setting of loglevel in x2gogetapps.
+
+Oleksandr Shneyder (1):
+      remove &quot;-nolisten tcp&quot; option with XDMCP sessions
+
+-----------------------------------------------------------------------
+
+
+hooks/post-receive
+-- 
+x2goserver.git (X2Go Server)
+
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project &quot;x2goserver.git&quot; (X2Go Server).
+
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000233.html">[X2go-Tags] nx-libs.git - redist-server/3.5.0.15 (annotated tag)	created: redist-client/3.5.0.15
+</A></li>
+	<LI>Next message: <A HREF="000235.html">[X2go-Tags] x2goserver.git - 3.1.1.4 (annotated tag) created:	3.1.1.4
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#234">[ date ]</a>
+              <a href="thread.html#234">[ thread ]</a>
+              <a href="subject.html#234">[ subject ]</a>
+              <a href="author.html#234">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-tags">More information about the X2go-Tags
+mailing list</a><br>
+</body></html>
